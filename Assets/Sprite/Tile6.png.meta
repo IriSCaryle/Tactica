@@ -1,175 +1,175 @@
 fileFormatVersion: 2
-guid: 03cd5f76ce42e304da73a72aa13ea710
+guid: eec4e8a9cecf47b44a5e199be08813b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7130555951642648298
-    second: BaseBaseChip_pipo_18_0
+      213: 5325935112898577828
+    second: Tile6_0
   - first:
-      213: -6226620009573333952
-    second: BaseBaseChip_pipo_18_1
+      213: 4687622818789253435
+    second: Tile6_1
   - first:
-      213: -4781247857430092668
-    second: BaseBaseChip_pipo_18_2
+      213: -7988625629516561829
+    second: Tile6_2
   - first:
-      213: 1678804845861691887
-    second: BaseBaseChip_pipo_18_3
+      213: -3944621380835633312
+    second: Tile6_3
   - first:
-      213: 1829998350605109392
-    second: BaseBaseChip_pipo_18_4
+      213: -5746585941305216147
+    second: Tile6_4
   - first:
-      213: -3591482270194655916
-    second: BaseBaseChip_pipo_18_5
+      213: 8703460754221077159
+    second: Tile6_5
   - first:
-      213: 4667607896561677270
-    second: BaseBaseChip_pipo_18_6
+      213: 5344964394088690565
+    second: Tile6_6
   - first:
-      213: 2477954429445746265
-    second: BaseBaseChip_pipo_18_7
+      213: -7563069750241602732
+    second: Tile6_7
   - first:
-      213: 7485339643164636522
-    second: BaseBaseChip_pipo_18_8
+      213: 8401390067262593563
+    second: Tile6_8
   - first:
-      213: -5617033856003900917
-    second: BaseBaseChip_pipo_18_9
+      213: 2986957902413325704
+    second: Tile6_9
   - first:
-      213: -584661859616721212
-    second: BaseBaseChip_pipo_18_10
+      213: 5778104935259470158
+    second: Tile6_10
   - first:
-      213: -1961635956791430459
-    second: BaseBaseChip_pipo_18_11
+      213: 1139715223183721795
+    second: Tile6_11
   - first:
-      213: -4621587050235343710
-    second: BaseBaseChip_pipo_18_12
+      213: 4536957313903006359
+    second: Tile6_12
   - first:
-      213: -7146532824106726750
-    second: BaseBaseChip_pipo_18_13
+      213: -4045106789964766783
+    second: Tile6_13
   - first:
-      213: -4173414313972204649
-    second: BaseBaseChip_pipo_18_14
+      213: 3447031331908678233
+    second: Tile6_14
   - first:
-      213: 510600328700609945
-    second: BaseBaseChip_pipo_18_15
+      213: 6995393056914863929
+    second: Tile6_15
   - first:
-      213: -7833213149934394864
-    second: BaseBaseChip_pipo_18_16
+      213: -5702319316702760761
+    second: Tile6_16
   - first:
-      213: 2507640403334231607
-    second: BaseBaseChip_pipo_18_17
+      213: 271510111445923705
+    second: Tile6_17
   - first:
-      213: 4120821388744375847
-    second: BaseBaseChip_pipo_18_18
+      213: 540940018382194293
+    second: Tile6_18
   - first:
-      213: 674586693140590868
-    second: BaseBaseChip_pipo_18_19
+      213: -4194697137472980692
+    second: Tile6_19
   - first:
-      213: -2659336217817498836
-    second: BaseBaseChip_pipo_18_20
+      213: -8230674193274597836
+    second: Tile6_20
   - first:
-      213: -7657488990714991291
-    second: BaseBaseChip_pipo_18_21
+      213: -5641043065566579834
+    second: Tile6_21
   - first:
-      213: -4139637407135544458
-    second: BaseBaseChip_pipo_18_22
+      213: 4541049784527162548
+    second: Tile6_22
   - first:
-      213: 8147653727862383617
-    second: BaseBaseChip_pipo_18_23
+      213: 7597359424143294303
+    second: Tile6_23
   - first:
-      213: -6166800393459126466
-    second: BaseBaseChip_pipo_18_24
+      213: 1953735592427177505
+    second: Tile6_24
   - first:
-      213: -3691974082238768940
-    second: BaseBaseChip_pipo_18_25
+      213: 1263979082852121755
+    second: Tile6_25
   - first:
-      213: -55784572159414945
-    second: BaseBaseChip_pipo_18_26
+      213: -4449078763369110738
+    second: Tile6_26
   - first:
-      213: -1037131262482469756
-    second: BaseBaseChip_pipo_18_27
+      213: 8004696444679589678
+    second: Tile6_27
   - first:
-      213: 4601879671325834647
-    second: BaseBaseChip_pipo_18_28
+      213: -4732832186508242705
+    second: Tile6_28
   - first:
-      213: -4836059080819105871
-    second: BaseBaseChip_pipo_18_29
+      213: -4968770791260708431
+    second: Tile6_29
   - first:
-      213: 1514083009260378373
-    second: BaseBaseChip_pipo_18_30
+      213: 1666592993731533550
+    second: Tile6_30
   - first:
-      213: -1615204574393483668
-    second: BaseBaseChip_pipo_18_31
+      213: 414334576789135344
+    second: Tile6_31
   - first:
-      213: -6145347084450297807
-    second: BaseBaseChip_pipo_18_32
+      213: 8814451323257987125
+    second: Tile6_32
   - first:
-      213: 4775625872880751410
-    second: BaseBaseChip_pipo_18_33
+      213: -9181817485458742046
+    second: Tile6_33
   - first:
-      213: -2201919626516369012
-    second: BaseBaseChip_pipo_18_34
+      213: 442747913015571820
+    second: Tile6_34
   - first:
-      213: 8444510850214530886
-    second: BaseBaseChip_pipo_18_35
+      213: -7470329658196277028
+    second: Tile6_35
   - first:
-      213: -8559829969733185156
-    second: BaseBaseChip_pipo_18_36
+      213: -6928174574809616490
+    second: Tile6_36
   - first:
-      213: -713321917418714484
-    second: BaseBaseChip_pipo_18_37
+      213: 7117780308927597109
+    second: Tile6_37
   - first:
-      213: 7025685543153242021
-    second: BaseBaseChip_pipo_18_38
+      213: 2709135436538158326
+    second: Tile6_38
   - first:
-      213: -7054370588845236609
-    second: BaseBaseChip_pipo_18_39
+      213: -5208040940953843815
+    second: Tile6_39
   - first:
-      213: -8920701274665284827
-    second: BaseBaseChip_pipo_18_40
+      213: 2484206590419081101
+    second: Tile6_40
   - first:
-      213: 624819889754727252
-    second: BaseBaseChip_pipo_18_41
+      213: -5147780225163528194
+    second: Tile6_41
   - first:
-      213: -798461330895716835
-    second: BaseBaseChip_pipo_18_42
+      213: -5787886175012636350
+    second: Tile6_42
   - first:
-      213: 7204801355021996299
-    second: BaseBaseChip_pipo_18_43
+      213: -3037660733830246373
+    second: Tile6_43
   - first:
-      213: 8963786321464395698
-    second: BaseBaseChip_pipo_18_44
+      213: -1597824106804203941
+    second: Tile6_44
   - first:
-      213: 5404263465225985493
-    second: BaseBaseChip_pipo_18_45
+      213: 6293271578134463478
+    second: Tile6_45
   - first:
-      213: -4140297211625978331
-    second: BaseBaseChip_pipo_18_46
+      213: 6747589927108438854
+    second: Tile6_46
   - first:
-      213: -3601775314819167509
-    second: BaseBaseChip_pipo_18_47
+      213: -8787504370057336665
+    second: Tile6_47
   - first:
-      213: -6516678353889570433
-    second: BaseBaseChip_pipo_18_48
+      213: -199147115607309671
+    second: Tile6_48
   - first:
-      213: 8705628610856186356
-    second: BaseBaseChip_pipo_18_49
+      213: -1470008437457341253
+    second: Tile6_49
   - first:
-      213: 4631670543872323361
-    second: BaseBaseChip_pipo_18_50
+      213: -7667690351380916927
+    second: Tile6_50
   - first:
-      213: 356023625672051248
-    second: BaseBaseChip_pipo_18_51
+      213: 5751523778126316762
+    second: Tile6_51
   - first:
-      213: 7938696495427668038
-    second: BaseBaseChip_pipo_18_52
+      213: -2523938027903188395
+    second: Tile6_52
   - first:
-      213: -3765655150500287334
-    second: BaseBaseChip_pipo_18_53
+      213: -1940686138878242696
+    second: Tile6_53
   - first:
-      213: 3268845532380000465
-    second: BaseBaseChip_pipo_18_54
+      213: -6219002400383068617
+    second: Tile6_54
   - first:
-      213: 5475623956688866429
-    second: BaseBaseChip_pipo_18_55
+      213: 4356461387790635198
+    second: Tile6_55
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -267,13 +267,517 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_0
+      name: Tile6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5891564c589e940800000000000000
+      internalID: 5325935112898577828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31e2fa1e18cd0140800000000000000
+      internalID: 4687622818789253435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b528515c053b22190800000000000000
+      internalID: -7988625629516561829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06791ede0c3e149c0800000000000000
+      internalID: -3944621380835633312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63bf3978860040b0800000000000000
+      internalID: -5746585941305216147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a296eb6177e8c870800000000000000
+      internalID: 8703460754221077159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58374ce2cc02d2a40800000000000000
+      internalID: 5344964394088690565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453d85d02249a0790800000000000000
+      internalID: -7563069750241602732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a9ea2f0cbb79470800000000000000
+      internalID: 8401390067262593563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885646cf26ec37920800000000000000
+      internalID: 2986957902413325704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49721d23d3ff2050800000000000000
+      internalID: 5778104935259470158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34588fef4f411df00800000000000000
+      internalID: 1139715223183721795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7929c40a3a286fe30800000000000000
+      internalID: 4536957313903006359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c121a17ec4ecd7c0800000000000000
+      internalID: -4045106789964766783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952fe04bbb056df20800000000000000
+      internalID: 3447031331908678233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937f4ad0ce0a41160800000000000000
+      internalID: 6995393056914863929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0751c2bca4dd0b0800000000000000
+      internalID: -5702319316702760761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97739a1020994c300800000000000000
+      internalID: 271510111445923705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576c678a41ec18700800000000000000
+      internalID: 540940018382194293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29339c8d2179c5c0800000000000000
+      internalID: -4194697137472980692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e84efdd65c6cd80800000000000000
+      internalID: -8230674193274597836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683393a283df6b1b0800000000000000
+      internalID: -5641043065566579834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0b1238bc050f30800000000000000
+      internalID: 4541049784527162548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ff60bc42e3f6960800000000000000
+      internalID: 7597359424143294303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_24
       rect:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,41 +785,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 611ea4b242d2b0d90800000000000000
-      internalID: -7130555951642648298
+      spriteID: 126c8a38b201d1b10800000000000000
+      internalID: 1953735592427177505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 044ca02671a9699a0800000000000000
-      internalID: -6226620009573333952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_2
+      name: Tile6_25
       rect:
         serializedVersion: 2
         x: 64
         y: 192
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,41 +806,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48428c2e76895adb0800000000000000
-      internalID: -4781247857430092668
+      spriteID: b9cbcec674e8a8110800000000000000
+      internalID: 1263979082852121755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe16ac4dc105c4710800000000000000
-      internalID: 1678804845861691887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_4
+      name: Tile6_26
       rect:
         serializedVersion: 2
         x: 128
         y: 192
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,41 +827,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0984e5bddc5756910800000000000000
-      internalID: 1829998350605109392
+      spriteID: e2366abdf62b142c0800000000000000
+      internalID: -4449078763369110738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45d1feb57ed782ec0800000000000000
-      internalID: -3591482270194655916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_6
+      name: Tile6_27
       rect:
         serializedVersion: 2
         x: 192
         y: 192
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,20 +848,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3fd51e6aca6c040800000000000000
-      internalID: 4667607896561677270
+      spriteID: e2f85f77105661f60800000000000000
+      internalID: 8004696444679589678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_7
+      name: Tile6_28
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 192
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,20 +869,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e28b0cc66736220800000000000000
-      internalID: 2477954429445746265
+      spriteID: fe014a5b33a915eb0800000000000000
+      internalID: -4732832186508242705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_8
+      name: Tile6_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,20 +890,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a653af51fb441e760800000000000000
-      internalID: 7485339643164636522
+      spriteID: 1b1a1908a416b0bb0800000000000000
+      internalID: -4968770791260708431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_9
+      name: Tile6_30
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +911,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a7b81e7794c02b0800000000000000
-      internalID: -5617033856003900917
+      spriteID: eead5807f7de02710800000000000000
+      internalID: 1666592993731533550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_10
+      name: Tile6_31
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,125 +932,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c673d7e22dd2e7f0800000000000000
-      internalID: -584661859616721212
+      spriteID: 0ff9da33a1300c500800000000000000
+      internalID: 414334576789135344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c230d09d7ed6c4e0800000000000000
-      internalID: -1961635956791430459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_12
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ac4d246013dcdfb0800000000000000
-      internalID: -4621587050235343710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_13
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa037ba24a62dc90800000000000000
-      internalID: -7146532824106726750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79bf72b0bcd0516c0800000000000000
-      internalID: -4173414313972204649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_15
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 995c56e2b44061700800000000000000
-      internalID: 510600328700609945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_16
+      name: Tile6_32
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,41 +953,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 012ed3c6426da4390800000000000000
-      internalID: -7833213149934394864
+      spriteID: 530a3cc07c8335a70800000000000000
+      internalID: 8814451323257987125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 736772929adecc220800000000000000
-      internalID: 2507640403334231607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_18
+      name: Tile6_33
       rect:
         serializedVersion: 2
         x: 64
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,41 +974,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72eb0f25839103930800000000000000
-      internalID: 4120821388744375847
+      spriteID: 2e4e2c2f4a1a39080800000000000000
+      internalID: -9181817485458742046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_19
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 411b9d6f50d9c5900800000000000000
-      internalID: 674586693140590868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_20
+      name: Tile6_34
       rect:
         serializedVersion: 2
         x: 128
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,41 +995,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2b38a6bcc3281bd0800000000000000
-      internalID: -2659336217817498836
+      spriteID: c65b65091e4f42600800000000000000
+      internalID: 442747913015571820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_21
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54de7f485522bb590800000000000000
-      internalID: -7657488990714991291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_22
+      name: Tile6_35
       rect:
         serializedVersion: 2
         x: 192
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,20 +1016,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67b44c006bd0d86c0800000000000000
-      internalID: -4139637407135544458
+      spriteID: cd8452061ce045890800000000000000
+      internalID: -7470329658196277028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_23
+      name: Tile6_36
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,20 +1037,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 104ef1ab5e7421170800000000000000
-      internalID: 8147653727862383617
+      spriteID: 69f64966eed2adf90800000000000000
+      internalID: -6928174574809616490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_24
+      name: Tile6_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,20 +1058,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f212b17bf1b6aa0800000000000000
-      internalID: -6166800393459126466
+      spriteID: 53a46e6ba7f67c260800000000000000
+      internalID: 7117780308927597109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_25
+      name: Tile6_38
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,20 +1079,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d89534122973ccc0800000000000000
-      internalID: -3691974082238768940
+      spriteID: 6fc974f6358c89520800000000000000
+      internalID: 2709135436538158326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_26
+      name: Tile6_39
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,125 +1100,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5dad782a30d93ff0800000000000000
-      internalID: -55784572159414945
+      spriteID: 99741ca8b5259b7b0800000000000000
+      internalID: -5208040940953843815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_27
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48ca74a9c9e5b91f0800000000000000
-      internalID: -1037131262482469756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_28
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79db774ed292ddf30800000000000000
-      internalID: 4601879671325834647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_29
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bf99f673edd2ecb0800000000000000
-      internalID: -4836059080819105871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_30
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5095b67997a130510800000000000000
-      internalID: 1514083009260378373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_31
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6eb0bf4ff3a599e0800000000000000
-      internalID: -1615204574393483668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_32
+      name: Tile6_40
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,41 +1121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1388bd9d26757baa0800000000000000
-      internalID: -6145347084450297807
+      spriteID: d871d9a6bbca97220800000000000000
+      internalID: 2484206590419081101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_33
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 233d835dd6e664240800000000000000
-      internalID: 4775625872880751410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_34
+      name: Tile6_41
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,41 +1142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c81f78514c53171e0800000000000000
-      internalID: -2201919626516369012
+      spriteID: ef7f859c8296f88b0800000000000000
+      internalID: -5147780225163528194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_35
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64f08f890ede03570800000000000000
-      internalID: 8444510850214530886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_36
+      name: Tile6_42
       rect:
         serializedVersion: 2
         x: 128
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,41 +1163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c719f449eff553980800000000000000
-      internalID: -8559829969733185156
+      spriteID: 2493af9703c4dafa0800000000000000
+      internalID: -5787886175012636350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_37
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8ac1c5de75c916f0800000000000000
-      internalID: -713321917418714484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_38
+      name: Tile6_43
       rect:
         serializedVersion: 2
         x: 192
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,20 +1184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5af0f3f17cf308160800000000000000
-      internalID: 7025685543153242021
+      spriteID: b1055e328af08d5d0800000000000000
+      internalID: -3037660733830246373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_39
+      name: Tile6_44
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,20 +1205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7e9ae93357d91e90800000000000000
-      internalID: -7054370588845236609
+      spriteID: b5e2164c07363d9e0800000000000000
+      internalID: -1597824106804203941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_40
+      name: Tile6_45
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,20 +1226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52b8330647d433480800000000000000
-      internalID: -8920701274665284827
+      spriteID: 6f344c93821365750800000000000000
+      internalID: 6293271578134463478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_41
+      name: Tile6_46
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,20 +1247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453ed69116ecba800800000000000000
-      internalID: 624819889754727252
+      spriteID: 64b6d47d94144ad50800000000000000
+      internalID: 6747589927108438854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_42
+      name: Tile6_47
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,125 +1268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e331566ab4be4f0800000000000000
-      internalID: -798461330895716835
+      spriteID: 7a82a8865538c0680800000000000000
+      internalID: -8787504370057336665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_43
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b01d653e8a89cf360800000000000000
-      internalID: 7204801355021996299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_44
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b7046dca24c56c70800000000000000
-      internalID: 8963786321464395698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_45
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dd9a651dfccffa40800000000000000
-      internalID: 5404263465225985493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_46
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5264e7c4f95ba86c0800000000000000
-      internalID: -4140297211625978331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_47
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beace672f6ce30ec0800000000000000
-      internalID: -3601775314819167509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_48
+      name: Tile6_48
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1289,41 +1289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f715fe0609b1095a0800000000000000
-      internalID: -6516678353889570433
+      spriteID: 992ce24e0cc7c3df0800000000000000
+      internalID: -199147115607309671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_49
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f17f80e81b90d870800000000000000
-      internalID: 8705628610856186356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_50
+      name: Tile6_49
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1331,41 +1310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12f662ce1dff64040800000000000000
-      internalID: 4631670543872323361
+      spriteID: bb437845d1b799be0800000000000000
+      internalID: -1470008437457341253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_51
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03a44dbe999d0f400800000000000000
-      internalID: 356023625672051248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_52
+      name: Tile6_50
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,41 +1331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 648ca9dc66aeb2e60800000000000000
-      internalID: 7938696495427668038
+      spriteID: 14510462044e69590800000000000000
+      internalID: -7667690351380916927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_53
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9c6fc78794bdbbc0800000000000000
-      internalID: -3765655150500287334
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_54
+      name: Tile6_51
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1415,20 +1352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d0f12f41b54d5d20800000000000000
-      internalID: 3268845532380000465
+      spriteID: ad48e60476481df40800000000000000
+      internalID: 5751523778126316762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaseBaseChip_pipo_18_55
+      name: Tile6_52
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1436,8 +1373,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c0f0e3af25dfb40800000000000000
-      internalID: 5475623956688866429
+      spriteID: 5520bbb6cbb29fcd0800000000000000
+      internalID: -2523938027903188395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87053a72d3c4115e0800000000000000
+      internalID: -1940686138878242696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369ddb344aa1b9a0800000000000000
+      internalID: -6219002400383068617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile6_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb057f8fc82457c30800000000000000
+      internalID: 4356461387790635198
       vertices: []
       indices: 
       edges: []

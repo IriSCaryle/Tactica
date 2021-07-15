@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 702d97096d19c5e4cbcb889a084ed1f1
+guid: 31825322e4c5fa2439ee19fd4253c22b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1825248754923849155
-    second: toge20161103_0
+      213: -4181546928558874088
+    second: TIle3_0
   - first:
-      213: 7253459912878859476
-    second: toge20161103_1
+      213: -282762552553809433
+    second: TIle3_1
   - first:
-      213: -841759426877849971
-    second: toge20161103_2
+      213: -1116895631308359293
+    second: TIle3_2
   - first:
-      213: -978600178707564669
-    second: toge20161103_3
+      213: 4484330267629291950
+    second: TIle3_3
   - first:
-      213: -2667056659713425940
-    second: toge20161103_4
+      213: -4106457850547285149
+    second: TIle3_4
   - first:
-      213: -151094593490223639
-    second: toge20161103_5
+      213: 708283773424514310
+    second: TIle3_5
   - first:
-      213: -7499749648325021642
-    second: toge20161103_6
+      213: 3113433653050593158
+    second: TIle3_6
   - first:
-      213: -1506197357688964419
-    second: toge20161103_7
+      213: -7667258613376749773
+    second: TIle3_7
   - first:
-      213: -912808487461444177
-    second: toge20161103_8
+      213: 7410883451836204911
+    second: TIle3_8
   - first:
-      213: -7764764977683205899
-    second: toge20161103_9
+      213: 8909353517493992435
+    second: TIle3_9
   - first:
-      213: -2835012129241996539
-    second: toge20161103_10
+      213: -302333518499302215
+    second: TIle3_10
   - first:
-      213: -5810424951288462566
-    second: toge20161103_11
+      213: 371097983195707193
+    second: TIle3_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toge20161103_0
+      name: TIle3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,41 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a3a009de96ba6e0800000000000000
-      internalID: -1825248754923849155
+      spriteID: 8126f97293928f5c0800000000000000
+      internalID: -4181546928558874088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d42eab3c5779a460800000000000000
-      internalID: 7253459912878859476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toge20161103_2
+      name: TIle3_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
-        width: 32
-        height: 32
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +170,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8efb96d2487154f0800000000000000
-      internalID: -841759426877849971
+      spriteID: 7e95f33e4fc631cf0800000000000000
+      internalID: -282762552553809433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_3
+      name: TIle3_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389fda4475dff70f0800000000000000
+      internalID: -1116895631308359293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle3_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea983919e9a8b3e30800000000000000
+      internalID: 4484330267629291950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle3_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363d305875ee207c0800000000000000
+      internalID: -4106457850547285149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle3_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605342bd65454d900800000000000000
+      internalID: 708283773424514310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle3_6
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,41 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 387700382505b62f0800000000000000
-      internalID: -978600178707564669
+      spriteID: 68fc3d96963253b20800000000000000
+      internalID: 3113433653050593158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cedf0f14916bcfad0800000000000000
-      internalID: -2667056659713425940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toge20161103_5
+      name: TIle3_7
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ed788b844437edf0800000000000000
-      internalID: -151094593490223639
+      spriteID: 33fef9cf9ec689590800000000000000
+      internalID: -7667258613376749773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_6
+      name: TIle3_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,62 +317,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 630f9332e698be790800000000000000
-      internalID: -7499749648325021642
+      spriteID: f6784822c3fb8d660800000000000000
+      internalID: 7410883451836204911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dba315dbb79e81be0800000000000000
-      internalID: -1506197357688964419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toge20161103_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa526e4548d0553f0800000000000000
-      internalID: -912808487461444177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toge20161103_9
+      name: TIle3_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,41 +338,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f07ccc64630e3490800000000000000
-      internalID: -7764764977683205899
+      spriteID: 3fb3b9402d164ab70800000000000000
+      internalID: 8909353517493992435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toge20161103_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5036b9e2d7308a8d0800000000000000
-      internalID: -2835012129241996539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toge20161103_11
+      name: TIle3_10
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,8 +359,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a138260ba493d5fa0800000000000000
-      internalID: -5810424951288462566
+      spriteID: 9b4b72a4445edcbf0800000000000000
+      internalID: -302333518499302215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle3_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9377e3946a7662500800000000000000
+      internalID: 371097983195707193
       vertices: []
       indices: 
       edges: []

@@ -1,0 +1,2375 @@
+fileFormatVersion: 2
+guid: f09c0140ca9fbcf4586e5afdce6951e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2860326332973997980
+    second: TIle13_0
+  - first:
+      213: -2225285336798416102
+    second: TIle13_1
+  - first:
+      213: 8553832264936718161
+    second: TIle13_2
+  - first:
+      213: -2085624897991527875
+    second: TIle13_3
+  - first:
+      213: 6789094880904119343
+    second: TIle13_4
+  - first:
+      213: 4835598494343624889
+    second: TIle13_5
+  - first:
+      213: 5318482744835429002
+    second: TIle13_6
+  - first:
+      213: -1739461948593178477
+    second: TIle13_7
+  - first:
+      213: -8238951766218396635
+    second: TIle13_8
+  - first:
+      213: 1423377441969979083
+    second: TIle13_9
+  - first:
+      213: 5185928680593784189
+    second: TIle13_10
+  - first:
+      213: -8192850297279025271
+    second: TIle13_11
+  - first:
+      213: -4140876513706149406
+    second: TIle13_12
+  - first:
+      213: -6786623355442260083
+    second: TIle13_13
+  - first:
+      213: 1350750192978484238
+    second: TIle13_14
+  - first:
+      213: -2266961418967910943
+    second: TIle13_15
+  - first:
+      213: 2898201902231280028
+    second: TIle13_16
+  - first:
+      213: 7322275415671325062
+    second: TIle13_17
+  - first:
+      213: -244615741007130876
+    second: TIle13_18
+  - first:
+      213: 9073871606160082847
+    second: TIle13_19
+  - first:
+      213: 1907736209032206638
+    second: TIle13_20
+  - first:
+      213: -3870835409201170611
+    second: TIle13_21
+  - first:
+      213: -4047840613744867458
+    second: TIle13_22
+  - first:
+      213: -7653284139472161295
+    second: TIle13_23
+  - first:
+      213: 975208628590072191
+    second: TIle13_24
+  - first:
+      213: 9173192845143628438
+    second: TIle13_25
+  - first:
+      213: 4585946054414444181
+    second: TIle13_26
+  - first:
+      213: -7958840667358352951
+    second: TIle13_27
+  - first:
+      213: -5508728275902540936
+    second: TIle13_28
+  - first:
+      213: 9078192873029061457
+    second: TIle13_29
+  - first:
+      213: 4411048647382513145
+    second: TIle13_30
+  - first:
+      213: -3191595700650595597
+    second: TIle13_31
+  - first:
+      213: 4310614631216571429
+    second: TIle13_32
+  - first:
+      213: 2635275543755648481
+    second: TIle13_33
+  - first:
+      213: 3519143403277465066
+    second: TIle13_34
+  - first:
+      213: 2902967904864006212
+    second: TIle13_35
+  - first:
+      213: -7876578665697530153
+    second: TIle13_36
+  - first:
+      213: 6273152925437272448
+    second: TIle13_37
+  - first:
+      213: -185355714410927318
+    second: TIle13_38
+  - first:
+      213: -6552904954586056922
+    second: TIle13_39
+  - first:
+      213: 8083394978901105083
+    second: TIle13_40
+  - first:
+      213: -9103363139062729620
+    second: TIle13_41
+  - first:
+      213: -298354198782065879
+    second: TIle13_42
+  - first:
+      213: -3396467307645913364
+    second: TIle13_43
+  - first:
+      213: -8318652964953015167
+    second: TIle13_44
+  - first:
+      213: -4598001988680471240
+    second: TIle13_45
+  - first:
+      213: 6932422639727819986
+    second: TIle13_46
+  - first:
+      213: -8476242161940319169
+    second: TIle13_47
+  - first:
+      213: -3080877066601414243
+    second: TIle13_48
+  - first:
+      213: -8085494865099552120
+    second: TIle13_49
+  - first:
+      213: 7214977281856935684
+    second: TIle13_50
+  - first:
+      213: -8801164825727942468
+    second: TIle13_51
+  - first:
+      213: 421587614293883428
+    second: TIle13_52
+  - first:
+      213: -4095262498432518007
+    second: TIle13_53
+  - first:
+      213: -8804046291451313894
+    second: TIle13_54
+  - first:
+      213: -7139374611595524381
+    second: TIle13_55
+  - first:
+      213: 6026778472039601508
+    second: TIle13_56
+  - first:
+      213: 4139502351695057836
+    second: TIle13_57
+  - first:
+      213: -3458113137695612770
+    second: TIle13_58
+  - first:
+      213: 41585578715894204
+    second: TIle13_59
+  - first:
+      213: -1836038451115035022
+    second: TIle13_60
+  - first:
+      213: -2915937473262393861
+    second: TIle13_61
+  - first:
+      213: 8915796939148531868
+    second: TIle13_62
+  - first:
+      213: -3827460313004695279
+    second: TIle13_63
+  - first:
+      213: -3496705064757413009
+    second: TIle13_64
+  - first:
+      213: 8906056430155375439
+    second: TIle13_65
+  - first:
+      213: -8669526672338192599
+    second: TIle13_66
+  - first:
+      213: 3109809612277352593
+    second: TIle13_67
+  - first:
+      213: -3986361382453451995
+    second: TIle13_68
+  - first:
+      213: -5215284571751368943
+    second: TIle13_69
+  - first:
+      213: 1796094727774994035
+    second: TIle13_70
+  - first:
+      213: -5868819932580214252
+    second: TIle13_71
+  - first:
+      213: -294068721815312981
+    second: TIle13_72
+  - first:
+      213: 8827782825929153313
+    second: TIle13_73
+  - first:
+      213: 1731416533475328860
+    second: TIle13_74
+  - first:
+      213: -4729850753083977942
+    second: TIle13_75
+  - first:
+      213: 8084189401149327125
+    second: TIle13_76
+  - first:
+      213: 2961344111281965301
+    second: TIle13_77
+  - first:
+      213: -3163336427617688591
+    second: TIle13_78
+  - first:
+      213: -2785542683895690571
+    second: TIle13_79
+  - first:
+      213: 5319391139283260537
+    second: TIle13_80
+  - first:
+      213: -1267226768917342609
+    second: TIle13_81
+  - first:
+      213: -4002530837884492497
+    second: TIle13_82
+  - first:
+      213: -2442158062610938807
+    second: TIle13_83
+  - first:
+      213: -5131502390665145876
+    second: TIle13_84
+  - first:
+      213: 3768143159061548114
+    second: TIle13_85
+  - first:
+      213: -7815524010956474901
+    second: TIle13_86
+  - first:
+      213: -2767614592258201968
+    second: TIle13_87
+  - first:
+      213: -8965362173160816798
+    second: TIle13_88
+  - first:
+      213: 4950902311789740386
+    second: TIle13_89
+  - first:
+      213: 3158437207431744999
+    second: TIle13_90
+  - first:
+      213: 1548217044459836855
+    second: TIle13_91
+  - first:
+      213: 5554146083603468433
+    second: TIle13_92
+  - first:
+      213: 7326037638010186220
+    second: TIle13_93
+  - first:
+      213: -1532678048822245464
+    second: TIle13_94
+  - first:
+      213: -1284904084160838008
+    second: TIle13_95
+  - first:
+      213: 3107916161954877229
+    second: TIle13_96
+  - first:
+      213: -7983109969197541340
+    second: TIle13_97
+  - first:
+      213: 294414422149662339
+    second: TIle13_98
+  - first:
+      213: 8116579095721601026
+    second: TIle13_99
+  - first:
+      213: 8069728106943167482
+    second: TIle13_100
+  - first:
+      213: 6479404303761982604
+    second: TIle13_101
+  - first:
+      213: 1827478972472656297
+    second: TIle13_102
+  - first:
+      213: 4505345024108278453
+    second: TIle13_103
+  - first:
+      213: 4486741478036715977
+    second: TIle13_104
+  - first:
+      213: -7207130908515882672
+    second: TIle13_105
+  - first:
+      213: 6189336241057562890
+    second: TIle13_106
+  - first:
+      213: 8886084998675323543
+    second: TIle13_107
+  - first:
+      213: -9011938461946306668
+    second: TIle13_108
+  - first:
+      213: 4726592175032378717
+    second: TIle13_109
+  - first:
+      213: 3250918106996377363
+    second: TIle13_110
+  - first:
+      213: 7787349589169660472
+    second: TIle13_111
+  - first:
+      213: 7351749536211406462
+    second: TIle13_112
+  - first:
+      213: -2883760742598787434
+    second: TIle13_113
+  - first:
+      213: -823914365915157189
+    second: TIle13_114
+  - first:
+      213: 7847001781612422935
+    second: TIle13_115
+  - first:
+      213: -1383855865937673276
+    second: TIle13_116
+  - first:
+      213: -7929791257916304530
+    second: TIle13_117
+  - first:
+      213: 7337950988618076155
+    second: TIle13_118
+  - first:
+      213: -397318672041476920
+    second: TIle13_119
+  - first:
+      213: -8447770690722126258
+    second: TIle13_120
+  - first:
+      213: -6980511269587524654
+    second: TIle13_121
+  - first:
+      213: 8168347227058471838
+    second: TIle13_122
+  - first:
+      213: 2215845865913580830
+    second: TIle13_123
+  - first:
+      213: 1546943050019957112
+    second: TIle13_124
+  - first:
+      213: 749872249267550428
+    second: TIle13_125
+  - first:
+      213: 6078450458203309256
+    second: TIle13_126
+  - first:
+      213: 8820662434661998288
+    second: TIle13_127
+  - first:
+      213: 2847385667788130651
+    second: TIle13_128
+  - first:
+      213: 4845372523967961857
+    second: TIle13_129
+  - first:
+      213: 690732907314120402
+    second: TIle13_130
+  - first:
+      213: 1059617782101668137
+    second: TIle13_131
+  - first:
+      213: 1671178372802856794
+    second: TIle13_132
+  - first:
+      213: -1202127884563101175
+    second: TIle13_133
+  - first:
+      213: 2634326417882025054
+    second: TIle13_134
+  - first:
+      213: -3340677293634582866
+    second: TIle13_135
+  - first:
+      213: -8185610206407673503
+    second: TIle13_136
+  - first:
+      213: -4423198178136176863
+    second: TIle13_137
+  - first:
+      213: 4073471646097629610
+    second: TIle13_138
+  - first:
+      213: -3760851440786093725
+    second: TIle13_139
+  - first:
+      213: -8075120521739923605
+    second: TIle13_140
+  - first:
+      213: -5474702953761100574
+    second: TIle13_141
+  - first:
+      213: 7149537897554650166
+    second: TIle13_142
+  - first:
+      213: 548648712626858616
+    second: TIle13_143
+  - first:
+      213: -7479265649008965527
+    second: TIle13_144
+  - first:
+      213: -1532807928585418368
+    second: TIle13_145
+  - first:
+      213: 1530761419884061100
+    second: TIle13_146
+  - first:
+      213: 8835351129570326146
+    second: TIle13_147
+  - first:
+      213: 6586019095646279188
+    second: TIle13_148
+  - first:
+      213: -3068211047786616135
+    second: TIle13_149
+  - first:
+      213: -8735018229412532997
+    second: TIle13_150
+  - first:
+      213: 4664031208773514199
+    second: TIle13_151
+  - first:
+      213: 5148917979998119741
+    second: TIle13_152
+  - first:
+      213: 1928477288161694195
+    second: TIle13_153
+  - first:
+      213: -8192892499039564190
+    second: TIle13_154
+  - first:
+      213: 7831180507166540822
+    second: TIle13_155
+  - first:
+      213: -3397950156111948218
+    second: TIle13_156
+  - first:
+      213: -609499083940536044
+    second: TIle13_157
+  - first:
+      213: -5044342800957237174
+    second: TIle13_158
+  - first:
+      213: -1393556091036358811
+    second: TIle13_159
+  - first:
+      213: -6482579061553473122
+    second: TIle13_160
+  - first:
+      213: -4409451568231097403
+    second: TIle13_161
+  - first:
+      213: 5443783902558168371
+    second: TIle13_162
+  - first:
+      213: 1816608780293534153
+    second: TIle13_163
+  - first:
+      213: 3743068968225990164
+    second: TIle13_164
+  - first:
+      213: 3076399137383069400
+    second: TIle13_165
+  - first:
+      213: -6586866107316465123
+    second: TIle13_166
+  - first:
+      213: 1685243693827352020
+    second: TIle13_167
+  - first:
+      213: 4179442212988127754
+    second: TIle13_168
+  - first:
+      213: 4963438780768881730
+    second: TIle13_169
+  - first:
+      213: 6030096801302247231
+    second: TIle13_170
+  - first:
+      213: 3578600899761828513
+    second: TIle13_171
+  - first:
+      213: -7113230902480298640
+    second: TIle13_172
+  - first:
+      213: -5526090356312652432
+    second: TIle13_173
+  - first:
+      213: 3862051344488436084
+    second: TIle13_174
+  - first:
+      213: -335051149276659647
+    second: TIle13_175
+  - first:
+      213: 8800722905469314477
+    second: TIle13_176
+  - first:
+      213: 6484556656372889046
+    second: TIle13_177
+  - first:
+      213: 6270019317975255869
+    second: TIle13_178
+  - first:
+      213: -8990861856587647789
+    second: TIle13_179
+  - first:
+      213: 7642101844811516231
+    second: TIle13_180
+  - first:
+      213: 226494015202070802
+    second: TIle13_181
+  - first:
+      213: -2809416779458629493
+    second: TIle13_182
+  - first:
+      213: -4697004218305974381
+    second: TIle13_183
+  - first:
+      213: -1021122391971679524
+    second: TIle13_184
+  - first:
+      213: 8238006815755091278
+    second: TIle13_185
+  - first:
+      213: -3408328650027600699
+    second: TIle13_186
+  - first:
+      213: 4390761309245971044
+    second: TIle13_187
+  - first:
+      213: 5295597023853637077
+    second: TIle13_188
+  - first:
+      213: -2307962598967018015
+    second: TIle13_189
+  - first:
+      213: -2539098912351709334
+    second: TIle13_190
+  - first:
+      213: -5203138349790121517
+    second: TIle13_191
+  - first:
+      213: 5265701159554582941
+    second: TIle13_192
+  - first:
+      213: 250910178308578657
+    second: TIle13_193
+  - first:
+      213: -8237906393637694823
+    second: TIle13_194
+  - first:
+      213: -7554721800836624416
+    second: TIle13_195
+  - first:
+      213: -7522730416229439256
+    second: TIle13_196
+  - first:
+      213: -2714635372384504207
+    second: TIle13_197
+  - first:
+      213: 1950421114278206530
+    second: TIle13_198
+  - first:
+      213: 8136869181870436398
+    second: TIle13_199
+  - first:
+      213: -3677569282445282278
+    second: TIle13_200
+  - first:
+      213: 3161890612077958108
+    second: TIle13_201
+  - first:
+      213: -1766304371310651219
+    second: TIle13_202
+  - first:
+      213: 2685590579083994852
+    second: TIle13_203
+  - first:
+      213: -8709553632168566950
+    second: TIle13_204
+  - first:
+      213: 2531588480810996160
+    second: TIle13_205
+  - first:
+      213: 7580713189419187750
+    second: TIle13_206
+  - first:
+      213: -3922454175304591331
+    second: TIle13_207
+  - first:
+      213: -5132220415484199014
+    second: TIle13_208
+  - first:
+      213: 1950316460138683565
+    second: TIle13_209
+  - first:
+      213: -2388437185116917372
+    second: TIle13_210
+  - first:
+      213: -8687693380843791646
+    second: TIle13_211
+  - first:
+      213: 5148167357359463366
+    second: TIle13_212
+  - first:
+      213: 1246581814711441714
+    second: TIle13_213
+  - first:
+      213: -7057899028839066274
+    second: TIle13_214
+  - first:
+      213: 2789090232770341563
+    second: TIle13_215
+  - first:
+      213: -8286272382823407750
+    second: TIle13_216
+  - first:
+      213: 5646997468068580453
+    second: TIle13_217
+  - first:
+      213: -1257409202486658546
+    second: TIle13_218
+  - first:
+      213: -3235300826053596949
+    second: TIle13_219
+  - first:
+      213: -218289178221821707
+    second: TIle13_220
+  - first:
+      213: 7999757659123919263
+    second: TIle13_221
+  - first:
+      213: 1422088580797538388
+    second: TIle13_222
+  - first:
+      213: 8328005689858597487
+    second: TIle13_223
+  - first:
+      213: 1249801767887631078
+    second: TIle13_224
+  - first:
+      213: 2811490983796631777
+    second: TIle13_225
+  - first:
+      213: -6528065745309075183
+    second: TIle13_226
+  - first:
+      213: 4487635228532580279
+    second: TIle13_227
+  - first:
+      213: 9058951117756318409
+    second: TIle13_228
+  - first:
+      213: 7057254248572018565
+    second: TIle13_229
+  - first:
+      213: -5547863114566097661
+    second: TIle13_230
+  - first:
+      213: 2844178740905563503
+    second: TIle13_231
+  - first:
+      213: -4802445911494130491
+    second: TIle13_232
+  - first:
+      213: -6903151585468081996
+    second: TIle13_233
+  - first:
+      213: 6664179112699889616
+    second: TIle13_234
+  - first:
+      213: -6436705141145237666
+    second: TIle13_235
+  - first:
+      213: 4407404337422470393
+    second: TIle13_236
+  - first:
+      213: -8081782182461450176
+    second: TIle13_237
+  - first:
+      213: 4132453589128653171
+    second: TIle13_238
+  - first:
+      213: 7704331438187984296
+    second: TIle13_239
+  - first:
+      213: 4478289947300611378
+    second: TIle13_240
+  - first:
+      213: 6151253482778903326
+    second: TIle13_241
+  - first:
+      213: -1050345030868373130
+    second: TIle13_242
+  - first:
+      213: 2162399565621912346
+    second: TIle13_243
+  - first:
+      213: 1774247865679498083
+    second: TIle13_244
+  - first:
+      213: 4543115179143927403
+    second: TIle13_245
+  - first:
+      213: -7016747770918180618
+    second: TIle13_246
+  - first:
+      213: 6442478247999757124
+    second: TIle13_247
+  - first:
+      213: -5914727595489038673
+    second: TIle13_248
+  - first:
+      213: -7771901391280422950
+    second: TIle13_249
+  - first:
+      213: -3167521616221267337
+    second: TIle13_250
+  - first:
+      213: 4790093848480022121
+    second: TIle13_251
+  - first:
+      213: 4501143802073704393
+    second: TIle13_252
+  - first:
+      213: -6990023778322251780
+    second: TIle13_253
+  - first:
+      213: -3331237331431783605
+    second: TIle13_254
+  - first:
+      213: 7777050951266844171
+    second: TIle13_255
+  - first:
+      213: 1026091100590666963
+    second: TIle13_256
+  - first:
+      213: 4734922188194888753
+    second: TIle13_257
+  - first:
+      213: 2735704109402871955
+    second: TIle13_258
+  - first:
+      213: 428946052910598866
+    second: TIle13_259
+  - first:
+      213: -1435118670408730487
+    second: TIle13_260
+  - first:
+      213: -3446616173426827173
+    second: TIle13_261
+  - first:
+      213: -2863070743230220214
+    second: TIle13_262
+  - first:
+      213: -5825959866391718212
+    second: TIle13_263
+  - first:
+      213: 1740753362836182981
+    second: TIle13_264
+  - first:
+      213: 3462297415019811615
+    second: TIle13_265
+  - first:
+      213: 698190085158633986
+    second: TIle13_266
+  - first:
+      213: 43223195728641814
+    second: TIle13_267
+  - first:
+      213: -2947418039039137678
+    second: TIle13_268
+  - first:
+      213: 3697738009848829810
+    second: TIle13_269
+  - first:
+      213: -4754654915817649805
+    second: TIle13_270
+  - first:
+      213: 8765995445855309751
+    second: TIle13_271
+  - first:
+      213: 2691344466002057818
+    second: TIle13_272
+  - first:
+      213: -942568473896680487
+    second: TIle13_273
+  - first:
+      213: -1661163051724928356
+    second: TIle13_274
+  - first:
+      213: -7279303114786608749
+    second: TIle13_275
+  - first:
+      213: -8889213425427767471
+    second: TIle13_276
+  - first:
+      213: 4404226284864708623
+    second: TIle13_277
+  - first:
+      213: -4524654205624195028
+    second: TIle13_278
+  - first:
+      213: -111815286219884113
+    second: TIle13_279
+  - first:
+      213: 5407436707528476618
+    second: TIle13_280
+  - first:
+      213: -1763832127138808052
+    second: TIle13_281
+  - first:
+      213: 6972670475982444604
+    second: TIle13_282
+  - first:
+      213: -5258402815382147124
+    second: TIle13_283
+  - first:
+      213: -5143983675804044695
+    second: TIle13_284
+  - first:
+      213: 7991109435396053800
+    second: TIle13_285
+  - first:
+      213: -4842236009266023003
+    second: TIle13_286
+  - first:
+      213: -3283719623462684137
+    second: TIle13_287
+  - first:
+      213: -8079242617991787149
+    second: TIle13_288
+  - first:
+      213: 9188331731933236698
+    second: TIle13_289
+  - first:
+      213: -4351726704747838109
+    second: TIle13_290
+  - first:
+      213: -3856495964322297207
+    second: TIle13_291
+  - first:
+      213: 6417960549573419894
+    second: TIle13_292
+  - first:
+      213: -7521113029631812904
+    second: TIle13_293
+  - first:
+      213: -193356349978496590
+    second: TIle13_294
+  - first:
+      213: -2855491623767711957
+    second: TIle13_295
+  - first:
+      213: -5365249555868962596
+    second: TIle13_296
+  - first:
+      213: 3780059257114619261
+    second: TIle13_297
+  - first:
+      213: -1571300596049736684
+    second: TIle13_298
+  - first:
+      213: -2968646550354450313
+    second: TIle13_299
+  - first:
+      213: -7002521013834988274
+    second: TIle13_300
+  - first:
+      213: 3886899145645546344
+    second: TIle13_301
+  - first:
+      213: -1086467297380411896
+    second: TIle13_302
+  - first:
+      213: -7649790155386863415
+    second: TIle13_303
+  - first:
+      213: -4139921131255959028
+    second: TIle13_304
+  - first:
+      213: -2774972223898093389
+    second: TIle13_305
+  - first:
+      213: 5658798361527471177
+    second: TIle13_306
+  - first:
+      213: -932443909531779662
+    second: TIle13_307
+  - first:
+      213: 3257828612855417395
+    second: TIle13_308
+  - first:
+      213: 6278686773713359249
+    second: TIle13_309
+  - first:
+      213: -2719087684485908313
+    second: TIle13_310
+  - first:
+      213: 5854859839654935135
+    second: TIle13_311
+  - first:
+      213: 8665149443697630582
+    second: TIle13_312
+  - first:
+      213: 3252751498449778377
+    second: TIle13_313
+  - first:
+      213: -780332367021220669
+    second: TIle13_314
+  - first:
+      213: -367968075179307450
+    second: TIle13_315
+  - first:
+      213: -4255848418257944702
+    second: TIle13_316
+  - first:
+      213: 6592123449581633091
+    second: TIle13_317
+  - first:
+      213: 2282409923699898293
+    second: TIle13_318
+  - first:
+      213: 2324421935379342748
+    second: TIle13_319
+  - first:
+      213: -6444268578343136150
+    second: TIle13_320
+  - first:
+      213: -6327527036586235252
+    second: TIle13_321
+  - first:
+      213: -3645988919316744819
+    second: TIle13_322
+  - first:
+      213: 8899411366643483287
+    second: TIle13_323
+  - first:
+      213: -157437129398714917
+    second: TIle13_324
+  - first:
+      213: -2654322857173035611
+    second: TIle13_325
+  - first:
+      213: 7565618798172999395
+    second: TIle13_326
+  - first:
+      213: -2331872620918132004
+    second: TIle13_327
+  - first:
+      213: 4092575949422077336
+    second: TIle13_328
+  - first:
+      213: 8137472575169016998
+    second: TIle13_329
+  - first:
+      213: -5136020557633898552
+    second: TIle13_330
+  - first:
+      213: 2680336225030384198
+    second: TIle13_331
+  - first:
+      213: -6906641878876276707
+    second: TIle13_332
+  - first:
+      213: 3182897436901451471
+    second: TIle13_333
+  - first:
+      213: -8584208174220514046
+    second: TIle13_334
+  - first:
+      213: 1378677544920055805
+    second: TIle13_335
+  - first:
+      213: 2756649842636341875
+    second: TIle13_336
+  - first:
+      213: -1084288763186569034
+    second: TIle13_337
+  - first:
+      213: 6142156343211287664
+    second: TIle13_338
+  - first:
+      213: 7837774468702870727
+    second: TIle13_339
+  - first:
+      213: -8327507748503865001
+    second: TIle13_340
+  - first:
+      213: -2004865695477943900
+    second: TIle13_341
+  - first:
+      213: 8722115868576209076
+    second: TIle13_342
+  - first:
+      213: -504748169238757529
+    second: TIle13_343
+  - first:
+      213: -429147794530442533
+    second: TIle13_344
+  - first:
+      213: 2275493153911403308
+    second: TIle13_345
+  - first:
+      213: 4174218245395260657
+    second: TIle13_346
+  - first:
+      213: -4277268808898043979
+    second: TIle13_347
+  - first:
+      213: 8498071827474051160
+    second: TIle13_348
+  - first:
+      213: -2679018816800090590
+    second: TIle13_349
+  - first:
+      213: 6849904463366167244
+    second: TIle13_350
+  - first:
+      213: -9105320252411724946
+    second: TIle13_351
+  - first:
+      213: 8963332552135240919
+    second: TIle13_352
+  - first:
+      213: 4594822403767048082
+    second: TIle13_353
+  - first:
+      213: -4793294470370532118
+    second: TIle13_354
+  - first:
+      213: 7351773049321797153
+    second: TIle13_355
+  - first:
+      213: -6420580717654388694
+    second: TIle13_356
+  - first:
+      213: -2177719313027922893
+    second: TIle13_357
+  - first:
+      213: 3878396535994859163
+    second: TIle13_358
+  - first:
+      213: -2084889740532809093
+    second: TIle13_359
+  - first:
+      213: 8260795017539959824
+    second: TIle13_360
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TIle13_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 551.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f5c9a25abe1b720800000000000000
+      internalID: 2860326332973997980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 551.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13be38b6c23e11e0800000000000000
+      internalID: -2225285336798416102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 551.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ff3d3ff1155b670800000000000000
+      internalID: 8553832264936718161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 558
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d323184943f5e03e0800000000000000
+      internalID: -2085624897991527875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 555
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2486b2f2d5b73e50800000000000000
+      internalID: 6789094880904119343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 554
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8f3c3e53f7b1340800000000000000
+      internalID: 4835598494343624889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 555
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82d5fdb0eb0fc940800000000000000
+      internalID: 5318482744835429002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_7
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 557
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3987bc5e2903cd7e0800000000000000
+      internalID: -1739461948593178477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 83
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5058431, y: 0.549824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ca9fc350d59ad80800000000000000
+      internalID: -8238951766218396635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 477
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcebce9fd3ad0c310800000000000000
+      internalID: 1423377441969979083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 476
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d7d45a8ae18f740800000000000000
+      internalID: 5185928680593784189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 478
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98feabcef062d4e80800000000000000
+      internalID: -8192850297279025271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_12
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 477
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e979c500c6a886c0800000000000000
+      internalID: -4140876513706149406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 477
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d879e7ae30211d1a0800000000000000
+      internalID: -6786623355442260083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 477
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cd5c8d424deb210800000000000000
+      internalID: 1350750192978484238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_15
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 475
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f6eea9922a80e0800000000000000
+      internalID: -2266961418967910943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c995bd5564b783820800000000000000
+      internalID: 2898201902231280028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 395
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6814aaa02b2fd9560800000000000000
+      internalID: 7322275415671325062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 395
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f0dc29743fa9cf0800000000000000
+      internalID: -244615741007130876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_19
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 395
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97ccae762edced70800000000000000
+      internalID: 9073871606160082847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 395
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29d38879f3a97a10800000000000000
+      internalID: 1907736209032206638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_21
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 386
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d477f8234b7084ac0800000000000000
+      internalID: -3870835409201170611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_22
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 393.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77865e786e23d7c0800000000000000
+      internalID: -4047840613744867458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_23
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 393.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f571adbf921ac590800000000000000
+      internalID: -7653284139472161295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71d101b413a88d00800000000000000
+      internalID: 975208628590072191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 315
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ad0fe7a4abd4f70800000000000000
+      internalID: 9173192845143628438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 316
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5962a7c93ad84af30800000000000000
+      internalID: 4585946054414444181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_27
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 315
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c92c2ea4948c8190800000000000000
+      internalID: -7958840667358352951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_28
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 315
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873ddaec1d01d83b0800000000000000
+      internalID: -5508728275902540936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_29
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 288
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b4167d1583cfd70800000000000000
+      internalID: 9078192873029061457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_30
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 314.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5b332cf51373d30800000000000000
+      internalID: 4411048647382513145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_31
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 314.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faae0cbe9c25b3d0800000000000000
+      internalID: -3191595700650595597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 235
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524e3412b2162db30800000000000000
+      internalID: 4310614631216571429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 235
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed64de0521629420800000000000000
+      internalID: 2635275543755648481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_34
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 235
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae53302b74286d030800000000000000
+      internalID: 3519143403277465066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_35
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 235
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44077cbcde9694820800000000000000
+      internalID: 2902967904864006212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_36
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 235
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deada97f65c0b290800000000000000
+      internalID: -7876578665697530153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_37
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 234
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081246e5957be0750800000000000000
+      internalID: 6273152925437272448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_38
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 235.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ba275b5fb7d6df0800000000000000
+      internalID: -185355714410927318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_39
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 235.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627300f99a76f05a0800000000000000
+      internalID: -6552904954586056922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb99398d7ecfd2070800000000000000
+      internalID: 8083394978901105083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_41
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 157
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64f7cae47b5aa180800000000000000
+      internalID: -9103363139062729620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 157
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923495cdf680cdbf0800000000000000
+      internalID: -298354198782065879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_43
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 157
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6b98c9af25dd0d0800000000000000
+      internalID: -3396467307645913364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_44
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 157
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cb936d3353e8c80800000000000000
+      internalID: -8318652964953015167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_45
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 158
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d29247d8d9030c0800000000000000
+      internalID: -4598001988680471240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_46
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 156.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc3ad949a9e43060800000000000000
+      internalID: 6932422639727819986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_47
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 156.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34bb5ba9a65e5a80800000000000000
+      internalID: -8476242161940319169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 82
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91439091a68e35d0800000000000000
+      internalID: -3080877066601414243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_49
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 76
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a0f7c424d8acf80800000000000000
+      internalID: -8085494865099552120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_50
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 76
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407989b7c9fb02460800000000000000
+      internalID: 7214977281856935684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_51
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 76
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0c2d8b83bfbd580800000000000000
+      internalID: -8801164825727942468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_52
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 76
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42af0b793b7c9d500800000000000000
+      internalID: 421587614293883428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_53
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 77
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98873fe8474ba27c0800000000000000
+      internalID: -4095262498432518007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_54
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 77.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1103f33b8eb1d580800000000000000
+      internalID: -8804046291451313894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle13_55
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 77.875
+        width: 79.375
+        height: 79.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e60865ed98dbec90800000000000000
+      internalID: -7139374611595524381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

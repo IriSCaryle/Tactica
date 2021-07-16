@@ -11,16 +11,10 @@ public class Gamemanager : MonoBehaviour
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
 
+    RectTransform[,] stagerect = new RectTransform[10, 10];
+
     void Start()
     {
-        for(int i = 0; i < 10; i++)
-        {
-            for (int j = 0; j < 10; j++)
-            {
-                stageblocks[i, j] = stageblockholder[i].transform.GetChild(j).gameObject;
-                Debug.Log(stageblocks[i, j].name +"parent:"+stageblocks[i,j].transform.parent.name+ "i="+i +"j="+j);
-            }
-        }
         genereatebject();
     }
 
@@ -36,12 +30,12 @@ public class Gamemanager : MonoBehaviour
         {
             for (int j = 0; j < 10; j++)
             {
+                stageblocks[i, j] = stageblockholder[i].transform.GetChild(j).gameObject;
+                stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
                 stage[i, j] = Instantiate(
                     testimage,
-                    stageblocks[i, j].transform.localPosition,
-                    Quaternion.identity);
-
-                stage[i, j].transform.parent = parent.transform;
+                    stagerect[i,j].position,
+                    Quaternion.identity,parent.transform);
             }
         }
     }

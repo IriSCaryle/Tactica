@@ -913,17 +913,7 @@ MonoBehaviour:
   parent: {fileID: 2128612992}
   testimage: {fileID: 6502152099548179584, guid: acf08c2aff4b8e04db0021ef37787171,
     type: 3}
-  stageblockholder:
-  - {fileID: 2112469694}
-  - {fileID: 1794925545}
-  - {fileID: 549412849}
-  - {fileID: 1771174609}
-  - {fileID: 1215669460}
-  - {fileID: 1263214886}
-  - {fileID: 2065768221}
-  - {fileID: 857663377}
-  - {fileID: 2058186}
-  - {fileID: 592940652}
+  stageblockholder: {fileID: 732456659}
 --- !u!114 &409539025
 MonoBehaviour:
   m_ObjectHideFlags: 0

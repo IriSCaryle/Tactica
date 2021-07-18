@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
+    [Header("生成した画像の親")]
     [SerializeField] GameObject parent;
+    [Header("生成する画像")]
     [SerializeField] GameObject testimage;
 
-    [SerializeField] GameObject[] stageblockholder = new GameObject[10];
+    [Header("参照するオブジェクト")]
+    [SerializeField] GameObject stageblockholder;
+    GameObject[] SBHHorizontal = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
 
@@ -18,20 +22,16 @@ public class Gamemanager : MonoBehaviour
         genereatebject();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void genereatebject()
     {
         for(int i = 0; i < 10; i++)
         {
+            SBHHorizontal[i] = stageblockholder.transform.GetChild(i).gameObject;
             for (int j = 0; j < 10; j++)
             {
-                stageblocks[i, j] = stageblockholder[i].transform.GetChild(j).gameObject;
+                stageblocks[i, j] = SBHHorizontal[i].transform.GetChild(j).gameObject;
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
+
                 stage[i, j] = Instantiate(
                     testimage,
                     stagerect[i,j].position,

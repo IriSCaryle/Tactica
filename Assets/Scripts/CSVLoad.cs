@@ -5,7 +5,9 @@ using System.IO;
 public class CSVLoad : MonoBehaviour
 {
 
-    List<string[]> CSVList = new List<string[]>(); 
+    List<string[]> CSVList = new List<string[]>();
+
+    public Dictionary<int, GameObject> Blocks = new Dictionary<int, GameObject>();
     // Start is called before the first frame update
     void Start()
     {

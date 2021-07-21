@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
+    [SerializeField] Prayer prayer;
+
     [Header("生成した画像の親")]
     [SerializeField] GameObject parent;
     [Header("生成する画像")]
@@ -16,6 +18,8 @@ public class Gamemanager : MonoBehaviour
     GameObject[,] stage = new GameObject[10, 10];
 
     RectTransform[,] stagerect = new RectTransform[10, 10];
+
+    Stagemanager[,] stagemanager = new Stagemanager[10, 10];
 
     void Start()
     {
@@ -36,7 +40,16 @@ public class Gamemanager : MonoBehaviour
                     testimage,
                     stagerect[i,j].position,
                     Quaternion.identity,parent.transform);
+
+                stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
+                stagemanager[i, j].vertical = i;
+                stagemanager[i, j].horizontal = j;
             }
         }
+    }
+
+    public void StagePointCheck(int x, int y)
+    {
+
     }
 }

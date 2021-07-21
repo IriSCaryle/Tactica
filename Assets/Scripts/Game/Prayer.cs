@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Prayer : MonoBehaviour
 {
+    int vartical;
+    int horizontal;
+
     [Header("プレイヤーの残り歩数")]
     [SerializeField] int player_maxcount;
     int player_count;

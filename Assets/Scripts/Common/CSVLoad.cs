@@ -9,7 +9,7 @@ public class CSVLoad : MonoBehaviour
 
     public Dictionary<int, GameObject> Blocks = new Dictionary<int, GameObject>();
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         LoadCSV();
     }

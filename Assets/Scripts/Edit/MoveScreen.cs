@@ -25,7 +25,6 @@ public class MoveScreen : MonoBehaviour
     {
         if (Input.GetMouseButton(1) )//&& isFreeLook)
         {
-            
             touchpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             collider2D = Physics2D.OverlapPoint(touchpos);
             Debug.Log(touchpos);
@@ -39,7 +38,6 @@ public class MoveScreen : MonoBehaviour
             else
             {
                 Vector3 diff = startpos - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
                 this.transform.position += diff;
             }
         }  
@@ -55,4 +53,6 @@ public class MoveScreen : MonoBehaviour
             isFreeLook =false;
         }
     }
+
+    
 }

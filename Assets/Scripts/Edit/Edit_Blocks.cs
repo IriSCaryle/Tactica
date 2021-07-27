@@ -11,7 +11,7 @@ public class Edit_Blocks : MonoBehaviour
 
     [SerializeField] EditManager editManager;
 
-    [SerializeField] GameObject RoadLayer;
+    [SerializeField] GameObject Layer1;
     // Start is called before the first frame update
     void Start()
     {

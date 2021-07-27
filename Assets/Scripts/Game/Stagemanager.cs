@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Stagemanager : MonoBehaviour
 {
+    Prayer prayer;
     Gamemanager gamemanager;
 
     public int vertical;
@@ -12,6 +13,7 @@ public class Stagemanager : MonoBehaviour
 
     void Awake()
     {
+        prayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Prayer>();
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
     }
 
@@ -22,8 +24,9 @@ public class Stagemanager : MonoBehaviour
 
     public void oncrick()
     {
-        Debug.Log("!");
+        Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
 
-
+        // gamemanager.StagePointCheck(vertical, horizontal);
+        prayer.Walk(vertical, horizontal);
     }
 }

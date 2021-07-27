@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Prayer : MonoBehaviour
 {
-    int vartical;
-    int horizontal;
-
     [Header("プレイヤーの残り歩数")]
     [SerializeField] int player_maxcount;
-    int player_count;
-    bool player_alive;
+    [SerializeField] int player_count;
 
+    [SerializeField] int p_vartical;
+    [SerializeField] int p_horizontal;
 
     void Start()
     {
@@ -60,15 +58,70 @@ public class Prayer : MonoBehaviour
         }
     }
 
-    public void Countcheak()//行動
+    public bool Countcheak()//行動
     {
-        if (player_maxcount > 0) player_maxcount--;
-        else player_alive = false;
+        if (player_count > 0)
+        {
+            player_count--;
+            return (true);
+        }
+        else return (false);
     }
 
     public void StageReset()//盤面リセット
     {
-        player_alive = true;
         player_count = player_maxcount;
+    }
+
+    public void Walk(int x, int y)
+    {
+        int cangecount;
+        int walkX = x - p_vartical;
+        int walkY = y - p_horizontal;
+
+        if (walkX == 0)
+        {
+            if (walkY > 0) cangecount = 1;//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
+            else cangecount = -1;
+
+            while (walkY != 0)
+            {
+                if (Countcheak())
+                {
+                    p_horizontal += cangecount;
+                    walkY -= cangecount;
+                    Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                }
+                else
+                {
+                    Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                    break;
+                }
+            }
+        } else if (walkY == 0)
+        {
+            if (walkX > 0) cangecount = 1;//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
+            else cangecount = -1;
+
+            while (walkX != 0)
+            {
+                if (Countcheak())
+                {
+                    p_vartical += cangecount;
+                    walkX -= cangecount;
+                    Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                }
+                else
+                {
+                    Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                    break;
+                }
+            }
+        } else
+        {
+            Debug.LogError("移動に失敗しました：プレイヤーの位置と直線上にある位置に向かってのみ移動できます");
+            return;
+        }
+        Debug.Log("移動完了　現在のプレイヤーの位置:" + p_vartical + ":" + p_horizontal);
     }
 }

@@ -21,17 +21,9 @@ public class Gamemanager : MonoBehaviour
 
     Stagemanager[,] stagemanager = new Stagemanager[10, 10];
 
-    int p_vartical;
-    int p_horizontal;
-
     void Start()
     {
         genereatebject();
-
-        //確認用
-        p_vartical = 1;
-        p_horizontal = 1;
-        //
     }
 
     void genereatebject()
@@ -56,9 +48,8 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-   /* public void StagePointCheck(int x, int y)
+    public bool objectsearch(int x,int y)
     {
-        if (x == p_vartical) prayer.Walk(0, y - p_horizontal);
-        else if (y == p_horizontal) prayer.Walk(x - p_vartical, 0);
-    }*/
+        return stagemanager[x, y].objectTraffic();
+    }
 }

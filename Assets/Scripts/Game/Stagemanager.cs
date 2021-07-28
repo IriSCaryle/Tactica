@@ -8,8 +8,12 @@ public class Stagemanager : MonoBehaviour
     Prayer prayer;
     Gamemanager gamemanager;
 
+    [Header("オブジェクトの座標")]
     public int vertical;
     public int horizontal;
+
+    [Header("このオブジェクトは通過可能か")]
+    [SerializeField] bool Traffic;
 
     void Awake()
     {
@@ -28,5 +32,10 @@ public class Stagemanager : MonoBehaviour
 
         // gamemanager.StagePointCheck(vertical, horizontal);
         prayer.Walk(vertical, horizontal);
+    }
+
+    public bool objectTraffic()
+    {
+        return Traffic;
     }
 }

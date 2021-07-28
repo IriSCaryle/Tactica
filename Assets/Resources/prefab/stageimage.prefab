@@ -118,3 +118,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vertical: 0
   horizontal: 0
+  Traffic: 1

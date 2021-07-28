@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class Prayer : MonoBehaviour
 {
+    Gamemanager gamemanager;
+
     [Header("プレイヤーの残り歩数")]
     [SerializeField] int player_maxcount;
     [SerializeField] int player_count;
 
+    [Header("プレイヤーの位置")]
     [SerializeField] int p_vartical;
     [SerializeField] int p_horizontal;
+
+    private void Awake()
+    {
+        gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
+    }
 
     void Start()
     {
@@ -86,11 +94,18 @@ public class Prayer : MonoBehaviour
 
             while (walkY != 0)
             {
-                if (Countcheak())
+                if (Countcheak())//プレイヤーの生存判定
                 {
-                    p_horizontal += cangecount;
-                    walkY -= cangecount;
-                    Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                    if (gamemanager.objectsearch(p_vartical, p_horizontal + cangecount))//通行可能かの判定
+                    {
+                        p_horizontal += cangecount;//移動
+                        walkY -= cangecount;
+                        Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                    } else
+                    {
+                        Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
+                        break;
+                    }
                 }
                 else
                 {
@@ -98,18 +113,26 @@ public class Prayer : MonoBehaviour
                     break;
                 }
             }
-        } else if (walkY == 0)
+        } else if (walkY == 0)//上の処理とほとんど同じなので上を参照してください
         {
-            if (walkX > 0) cangecount = 1;//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
+            if (walkX > 0) cangecount = 1;
             else cangecount = -1;
 
             while (walkX != 0)
             {
                 if (Countcheak())
                 {
-                    p_vartical += cangecount;
-                    walkX -= cangecount;
-                    Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                    if (gamemanager.objectsearch(p_vartical + cangecount, p_horizontal))
+                    {
+                        p_vartical += cangecount;
+                        walkX -= cangecount;
+                        Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
+                    }
+                    else
+                    {
+                        Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
+                        break;
+                    }
                 }
                 else
                 {

@@ -13,7 +13,7 @@ public class Gamemanager : MonoBehaviour
 
     [Header("参照するオブジェクト")]
     [SerializeField] GameObject stageblockholder;
-    GameObject[] SBHHorizontal = new GameObject[10];
+    GameObject[] SBHVartical = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
 
@@ -30,10 +30,10 @@ public class Gamemanager : MonoBehaviour
     {
         for(int i = 0; i < 10; i++)
         {
-            SBHHorizontal[i] = stageblockholder.transform.GetChild(i).gameObject;
+            SBHVartical[i] = stageblockholder.transform.GetChild(i).gameObject;
             for (int j = 0; j < 10; j++)
             {
-                stageblocks[i, j] = SBHHorizontal[i].transform.GetChild(j).gameObject;
+                stageblocks[i, j] = SBHVartical[i].transform.GetChild(j).gameObject;
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
 
                 stage[i, j] = Instantiate(
@@ -42,14 +42,14 @@ public class Gamemanager : MonoBehaviour
                     Quaternion.identity,parent.transform);
 
                 stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
-                stagemanager[i, j].vertical = j;
-                stagemanager[i, j].horizontal = i;
+                stagemanager[i, j].vertical = i;
+                stagemanager[i, j].horizontal = j;
             }
         }
     }
 
     public bool objectsearch(int x,int y)
     {
-        return stagemanager[x, y].objectTraffic();
+        return stagemanager[x,y].objectTraffic();
     }
 }

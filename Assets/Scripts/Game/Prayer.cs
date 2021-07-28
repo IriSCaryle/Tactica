@@ -106,8 +106,7 @@ public class Prayer : MonoBehaviour
                         Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
                         break;
                     }
-                }
-                else
+                } else
                 {
                     Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
                     break;
@@ -127,14 +126,12 @@ public class Prayer : MonoBehaviour
                         p_vartical += cangecount;
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
-                    }
-                    else
+                    } else 
                     {
                         Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
                         break;
                     }
-                }
-                else
+                } else
                 {
                     Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
                     break;

@@ -20,7 +20,19 @@ public class Edit_Blocks : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log("vertical:"+vertical+",horizontal:"+horizontal);
-        editManager.EdittingStage[vertical, horizontal] = editManager.CurrentBlockID;
+        if (editManager.eraser.isOn)
+        {
+            editManager.EdittingStage[vertical, horizontal] = 0;
+            Destroy(Layer1);
+        }
+        else
+        {
+            Debug.Log("vertical:" + vertical + ",horizontal:" + horizontal);
+            editManager.EdittingStage[vertical, horizontal] = editManager.CurrentBlockID;
+            Destroy(Layer1);
+            Layer1 = Instantiate<GameObject>(editManager.csvLoad.Blocks[editManager.CurrentBlockID], new Vector3(0, 0, 0), Quaternion.identity, this.transform);
+            Layer1.transform.localPosition = new Vector3(0, 0, 0);
+            Layer1.transform.localScale = new Vector3(0.01f, 0.01f, 1);
+        }
     }
 }

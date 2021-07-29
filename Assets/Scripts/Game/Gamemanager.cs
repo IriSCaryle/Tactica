@@ -52,4 +52,15 @@ public class Gamemanager : MonoBehaviour
     {
         return stagemanager[x,y].objectTraffic();
     }
+
+    public string objecttagsearch(int x,int y)
+    {
+        Debug.Log("これは" + stage[x, y].gameObject.tag + "です");
+        return stage[x, y].gameObject.tag;
+    }
+
+    public void rockmovesearch(int x,int y,int z,string Coordinate)
+    {
+        stagemanager[x, y].rockmove(z, Coordinate);
+    }
 }

@@ -7,8 +7,8 @@ public class Prayer : MonoBehaviour
     Gamemanager gamemanager;
 
     [Header("プレイヤーの残り歩数")]
-    [SerializeField] int player_maxcount;
-    [SerializeField] int player_count;
+    [SerializeField] int player_maxLife;
+    [SerializeField] int player_Life;
 
     [Header("プレイヤーの位置")]
     [SerializeField] int p_vartical;
@@ -43,11 +43,11 @@ public class Prayer : MonoBehaviour
                 break;
 
             case "thorn"://棘
-                player_count -= 1;
+                player_Life -= 1;
                 break;
 
             case "medcine"://薬
-                player_count += 1;
+                player_Life += 1;
                 break;
 
             case "teleport_A"://テレポートA
@@ -68,9 +68,9 @@ public class Prayer : MonoBehaviour
 
     public bool Countcheak()//行動
     {
-        if (player_count > 0)
+        if (player_Life > 0)
         {
-            player_count--;
+            player_Life--;
             return (true);
         }
         else return (false);
@@ -78,11 +78,12 @@ public class Prayer : MonoBehaviour
 
     public void StageReset()//盤面リセット
     {
-        player_count = player_maxcount;
+        player_Life = player_maxLife;
     }
 
     public void Walk(int x, int y)
     {
+        bool firstmove = true;
         int cangecount;
         int walkX = x - p_vartical;
         int walkY = y - p_horizontal;
@@ -98,11 +99,16 @@ public class Prayer : MonoBehaviour
                 {
                     if (gamemanager.objectsearch(p_vartical, p_horizontal + cangecount))//通行可能かの判定
                     {
+                        firstmove = false;
                         p_horizontal += cangecount;//移動
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
                     } else
                     {
+                        if (gamemanager.objecttagsearch(p_vartical, p_horizontal + cangecount) == "rock" && firstmove)
+                        {
+                            gamemanager.rockmovesearch(p_vartical, p_horizontal + cangecount,cangecount,"horizontal");
+                        }
                         Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
                         break;
                     }
@@ -123,11 +129,16 @@ public class Prayer : MonoBehaviour
                 {
                     if (gamemanager.objectsearch(p_vartical + cangecount, p_horizontal))
                     {
+                        firstmove = false;
                         p_vartical += cangecount;
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
-                    } else 
+                    } else
                     {
+                        if (gamemanager.objecttagsearch(p_vartical + cangecount, p_horizontal) == "rock" && firstmove)
+                        {
+                            gamemanager.rockmovesearch(p_vartical + cangecount, p_horizontal, cangecount, "vertical");
+                        }
                         Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
                         break;
                     }

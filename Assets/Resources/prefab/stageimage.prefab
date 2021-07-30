@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4580081290023468956}
   m_Layer: 5
   m_Name: stageimage
-  m_TagString: Untagged
+  m_TagString: teleport_A
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

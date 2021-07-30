@@ -56,11 +56,27 @@ public class Gamemanager : MonoBehaviour
     public string objecttagsearch(int x,int y)
     {
         Debug.Log("これは" + stage[x, y].gameObject.tag + "です");
-        return stage[x, y].gameObject.tag;
+        return stage[x, y].gameObject.tag;//タグ→ID
     }
 
     public void rockmovesearch(int x,int y,int z,string Coordinate)
     {
         stagemanager[x, y].rockmove(z, Coordinate);
+    }
+
+    public (int,int,bool) teleportsearch(string x)
+    {
+
+        for(int i = 0;i < 10; i++)
+        {
+            for(int j = 0;j < 10; j++)
+            {
+                if(stage[i,j].gameObject.tag == "teleport_" + x)//タグ→ID
+                {
+                    return (i, j,true);
+                }
+            }
+        }
+        return (0, 0, false);
     }
 }

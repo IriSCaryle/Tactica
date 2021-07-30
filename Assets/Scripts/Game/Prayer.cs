@@ -14,7 +14,7 @@ public class Prayer : MonoBehaviour
     [SerializeField] int p_vartical;
     [SerializeField] int p_horizontal;
 
-    private void Awake()
+    void Awake()
     {
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
     }
@@ -48,7 +48,11 @@ public class Prayer : MonoBehaviour
                 break;
 
             case "teleport_A"://テレポートA
-                //もう一方のテレポートの座標まで移動する(この効果で移動した先のテレポートは判定しない)
+                if (gamemanager.teleportsearch("A").Item3)
+                {
+                    p_vartical = gamemanager.teleportsearch("A").Item1;
+                    p_horizontal = gamemanager.teleportsearch("A").Item2;
+                }
                 judge = false;
                 break;
 
@@ -106,7 +110,7 @@ public class Prayer : MonoBehaviour
                         p_horizontal += cangecount;//移動
                         if (!Contactjudgment())
                         {
-                            Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
+                            Debug.LogWarning("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
 

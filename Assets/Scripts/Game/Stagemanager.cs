@@ -42,25 +42,25 @@ public class Stagemanager : MonoBehaviour
     {
         if (Coordinate == "vertical")
         {
-            if (gamemanager.objectsearch(vertical + i, horizontal))
+            if (gamemanager.objectTrafficsearch(vertical + i, horizontal))
             {
                 vertical += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
             }
             else
             {
-                Debug.LogError("岩の移動に失敗しました:通行不可の場所に差し掛かりました");
+                Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         }else if(Coordinate == "horizontal")
         {
-            if (gamemanager.objectsearch(vertical, horizontal + i))
+            if (gamemanager.objectTrafficsearch(vertical, horizontal + i))
             {
                 horizontal += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
             }
             else
             {
-                Debug.LogError("岩の移動に失敗しました:通行不可の場所に差し掛かりました");
+                Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         }
     }

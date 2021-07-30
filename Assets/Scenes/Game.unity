@@ -1979,8 +1979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f966d045990f50a44a051a5dce01e286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_maxcount: 10
-  player_count: 0
+  player_maxLife: 1
+  player_Life: 0
   p_vartical: 1
   p_horizontal: 1
 --- !u!4 &831476466

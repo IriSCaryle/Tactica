@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gamemanager
+  - road
+  - wall
+  - rock
+  - ice
+  - thorn
+  - medcine
+  - hole
+  - teleport_A
+  - teleport_B
+  - stairs
   layers:
   - Default
   - TransparentFX

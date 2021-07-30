@@ -48,7 +48,7 @@ public class Gamemanager : MonoBehaviour
         }
     }
 
-    public bool objectsearch(int x,int y)
+    public bool objectTrafficsearch(int x,int y)
     {
         return stagemanager[x,y].objectTraffic();
     }

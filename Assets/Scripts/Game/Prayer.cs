@@ -29,21 +29,18 @@ public class Prayer : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public bool Contactjudgment()//接触判定
     {
-        Contactjudgment(other.gameObject);
-    }
-
-    public void Contactjudgment(GameObject other)//接触判定
-    {
-        switch (other .tag)
+        bool judge = true;
+        switch (gamemanager.objecttagsearch(p_vartical,p_horizontal))
         {
             case "ice"://氷
                 //このマスに乗る前の進行方向を記録してその方向の1マス先が通行可能ならその方向に移動する
+                judge = false;
                 break;
 
             case "thorn"://棘
-                player_Life -= 1;
+                if (!Countcheak()) Debug.LogError("死亡しました");
                 break;
 
             case "medcine"://薬
@@ -52,18 +49,24 @@ public class Prayer : MonoBehaviour
 
             case "teleport_A"://テレポートA
                 //もう一方のテレポートの座標まで移動する(この効果で移動した先のテレポートは判定しない)
+                judge = false;
                 break;
 
             case "teleport_B"://テレポートB
+                judge = false;
                 break;
 
             case "stairs"://階段
+                Debug.Log("CLAER");
+                judge = false;
                 break;
 
-            case "Player"://検証用
+            case "Untagged"://検証用
                 Debug.Log("hit");
+                judge = false;
                 break;
         }
+        return judge;
     }
 
     public bool Countcheak()//行動
@@ -95,26 +98,40 @@ public class Prayer : MonoBehaviour
 
             while (walkY != 0)
             {
-                if (Countcheak())//プレイヤーの生存判定
+                if (gamemanager.objectTrafficsearch(p_vartical, p_horizontal + cangecount))//通行可能かの判定
                 {
-                    if (gamemanager.objectsearch(p_vartical, p_horizontal + cangecount))//通行可能かの判定
+                    if (Countcheak())//プレイヤーの生存判定
                     {
                         firstmove = false;
                         p_horizontal += cangecount;//移動
+                        if (!Contactjudgment())
+                        {
+                            Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
+                            break;
+                        }
+
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
                     } else
                     {
-                        if (gamemanager.objecttagsearch(p_vartical, p_horizontal + cangecount) == "rock" && firstmove)
-                        {
-                            gamemanager.rockmovesearch(p_vartical, p_horizontal + cangecount,cangecount,"horizontal");
-                        }
-                        Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
+                        Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
                         break;
                     }
                 } else
                 {
-                    Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                    if (gamemanager.objecttagsearch(p_vartical, p_horizontal + cangecount) == "rock" && firstmove)//接触したオブジェクトが岩か＆これが一回目の移動か
+                    {
+                        if (Countcheak())//プレイヤーの生存判定
+                        {
+                            gamemanager.rockmovesearch(p_vartical, p_horizontal + cangecount, cangecount, "horizontal");//岩を移動する
+                        }
+                        else
+                        {
+                            Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                            break;
+                        }
+                    }
+                    Debug.LogError("移動に失敗しました：通行不可のオブジェクトに接触しました");
                     break;
                 }
             }
@@ -125,26 +142,40 @@ public class Prayer : MonoBehaviour
 
             while (walkX != 0)
             {
-                if (Countcheak())
+                if (gamemanager.objectTrafficsearch(p_vartical + cangecount, p_horizontal))
                 {
-                    if (gamemanager.objectsearch(p_vartical + cangecount, p_horizontal))
+                    if (Countcheak())
                     {
                         firstmove = false;
                         p_vartical += cangecount;
+                        if (!Contactjudgment())
+                        {
+                            Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
+                            break;
+                        }
+
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
                     } else
                     {
-                        if (gamemanager.objecttagsearch(p_vartical + cangecount, p_horizontal) == "rock" && firstmove)
-                        {
-                            gamemanager.rockmovesearch(p_vartical + cangecount, p_horizontal, cangecount, "vertical");
-                        }
-                        Debug.LogError("移動に失敗しました：通行不可の箇所に差し掛かりました");
+                        Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
                         break;
                     }
                 } else
                 {
-                    Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                    if (gamemanager.objecttagsearch(p_vartical + cangecount, p_horizontal) == "rock" && firstmove)
+                    {
+                        if (Countcheak())//プレイヤーの生存判定
+                        {
+                            gamemanager.rockmovesearch(p_vartical + cangecount, p_horizontal, cangecount, "vertical");
+                        }
+                        else
+                        {
+                            Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
+                            break;
+                        }
+                    }
+                    Debug.LogError("移動に失敗しました：通行不可のオブジェクトに接触しました");
                     break;
                 }
             }

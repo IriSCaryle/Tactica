@@ -13,6 +13,8 @@ public class Prayer : MonoBehaviour
     [Header("プレイヤーの位置")]
     [SerializeField] int p_vartical;
     [SerializeField] int p_horizontal;
+    public int t_vartical;
+    public int t_horizontal;
 
     void Awake()
     {
@@ -48,15 +50,22 @@ public class Prayer : MonoBehaviour
                 break;
 
             case "teleport_A"://テレポートA
-                if (gamemanager.teleportsearch("A").Item3)
+                if (gamemanager.teleportsearch("B"))
                 {
-                    p_vartical = gamemanager.teleportsearch("A").Item1;
-                    p_horizontal = gamemanager.teleportsearch("A").Item2;
+                    p_vartical = t_vartical;
+                    p_horizontal = t_horizontal;
+                    Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_vartical + "," + p_horizontal);
                 }
                 judge = false;
                 break;
 
             case "teleport_B"://テレポートB
+                if (gamemanager.teleportsearch("A"))
+                {
+                    p_vartical = t_vartical;
+                    p_horizontal = t_horizontal;
+                    Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_vartical + "," + p_horizontal);
+                }
                 judge = false;
                 break;
 

@@ -29,7 +29,6 @@ public class Stagemanager : MonoBehaviour
     public void oncrick()
     {
         Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
-       // gamemanager.objecttagsearch(vertical, horizontal);
         prayer.Walk(vertical, horizontal);
     }
 
@@ -46,8 +45,7 @@ public class Stagemanager : MonoBehaviour
             {
                 vertical += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
-            }
-            else
+            } else
             {
                 Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
@@ -57,11 +55,17 @@ public class Stagemanager : MonoBehaviour
             {
                 horizontal += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
-            }
-            else
+            } else
             {
                 Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         }
+    }
+
+    public bool teleporttraffic(int x,int y)
+    {
+        prayer.t_vartical = x;
+        prayer.t_horizontal = y;
+        return true;
     }
 }

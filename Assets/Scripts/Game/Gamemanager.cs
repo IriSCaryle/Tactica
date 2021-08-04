@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class Gamemanager : MonoBehaviour
 {
-    [SerializeField] Prayer prayer;
+    // [SerializeField] Prayer prayer;
+    CSVLoad cSVLoad;
 
     [Header("生成した画像の親")]
     [SerializeField] GameObject parent;
@@ -23,6 +25,7 @@ public class Gamemanager : MonoBehaviour
 
     void Start()
     {
+        cSVLoad = GetComponent<CSVLoad>();
         genereatebject();
     }
 
@@ -64,19 +67,18 @@ public class Gamemanager : MonoBehaviour
         stagemanager[x, y].rockmove(z, Coordinate);
     }
 
-    public (int,int,bool) teleportsearch(string x)
+    public bool teleportsearch(string x)
     {
-
         for(int i = 0;i < 10; i++)
         {
             for(int j = 0;j < 10; j++)
             {
                 if(stage[i,j].gameObject.tag == "teleport_" + x)//タグ→ID
                 {
-                    return (i, j,true);
+                    return stagemanager[i,j].teleporttraffic(i,j);
                 }
             }
         }
-        return (0, 0, false);
+        return false;
     }
 }

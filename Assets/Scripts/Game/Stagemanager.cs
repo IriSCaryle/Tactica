@@ -13,7 +13,9 @@ public class Stagemanager : MonoBehaviour
     public int horizontal;
 
     [Header("このオブジェクトは通過可能か")]
-    [SerializeField] bool Traffic;
+    public bool Traffic;
+
+    public int ID = 0;
 
     void Awake()
     {
@@ -41,22 +43,34 @@ public class Stagemanager : MonoBehaviour
     {
         if (Coordinate == "vertical")
         {
-            if (gamemanager.objectTrafficsearch(vertical + i, horizontal))
+            if (gamemanager.objecttagsearch(vertical + i, horizontal) == 1)
             {
                 vertical += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
             } else
             {
+                if (gamemanager.objecttagsearch(vertical + i, horizontal) == 6)
+                {
+                    gamemanager.mapcange(vertical + i, horizontal, 7);
+                    ID = 1;
+                    Debug.Log("岩によって穴が塞がりました");
+                }
                 Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
-        }else if(Coordinate == "horizontal")
+        } else if (Coordinate == "horizontal")
         {
-            if (gamemanager.objectTrafficsearch(vertical, horizontal + i))
+            if (gamemanager.objecttagsearch(vertical, horizontal + i) == 1)
             {
                 horizontal += i;
                 Debug.Log("岩の位置:" + vertical + ":" + horizontal);
             } else
             {
+                if (gamemanager.objecttagsearch(vertical, horizontal + i) == 6)
+                {
+                    gamemanager.mapcange(vertical, horizontal + i, 7);
+                    ID = 1;
+                    Debug.Log("岩によって穴が塞がりました");
+                }
                 Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         }

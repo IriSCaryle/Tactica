@@ -16,6 +16,9 @@ public class Prayer : MonoBehaviour
     public int t_vartical;
     public int t_horizontal;
 
+    [Header("回復薬での回復量")]
+    [SerializeField] int caer;
+
     void Awake()
     {
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
@@ -36,21 +39,22 @@ public class Prayer : MonoBehaviour
         bool judge = true;
         switch (gamemanager.objecttagsearch(p_vartical,p_horizontal))
         {
-            case "ice"://氷
+            case 3://氷
                 //このマスに乗る前の進行方向を記録してその方向の1マス先が通行可能ならその方向に移動する
                 judge = false;
                 break;
 
-            case "thorn"://棘
+            case 4://棘
                 if (!Countcheak()) Debug.LogError("死亡しました");
                 break;
 
-            case "medcine"://薬
+            case 5://薬
                 player_Life += 1;
+                gamemanager.mapcange(p_vartical, p_horizontal, 1);
                 break;
 
-            case "teleport_A"://テレポートA
-                if (gamemanager.teleportsearch("B"))
+            case 8://テレポートA
+                if (gamemanager.teleportsearch(9))
                 {
                     p_vartical = t_vartical;
                     p_horizontal = t_horizontal;
@@ -59,8 +63,8 @@ public class Prayer : MonoBehaviour
                 judge = false;
                 break;
 
-            case "teleport_B"://テレポートB
-                if (gamemanager.teleportsearch("A"))
+            case 9://テレポートB
+                if (gamemanager.teleportsearch(8))
                 {
                     p_vartical = t_vartical;
                     p_horizontal = t_horizontal;
@@ -69,14 +73,13 @@ public class Prayer : MonoBehaviour
                 judge = false;
                 break;
 
-            case "stairs"://階段
+            case 10://階段
                 Debug.Log("CLAER");
                 judge = false;
                 break;
 
-            case "Untagged"://検証用
-                Debug.Log("hit");
-                judge = false;
+            case 0://検証用
+                Debug.Log("HIT");
                 break;
         }
         return judge;
@@ -119,9 +122,11 @@ public class Prayer : MonoBehaviour
                         p_horizontal += cangecount;//移動
                         if (!Contactjudgment())
                         {
+                            gamemanager.gameturncange();
                             Debug.LogWarning("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
+                        gamemanager.gameturncange();
 
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
@@ -132,11 +137,12 @@ public class Prayer : MonoBehaviour
                     }
                 } else
                 {
-                    if (gamemanager.objecttagsearch(p_vartical, p_horizontal + cangecount) == "rock" && firstmove)//接触したオブジェクトが岩か＆これが一回目の移動か
+                    if (gamemanager.objecttagsearch(p_vartical, p_horizontal + cangecount) == 2 && firstmove)//接触したオブジェクトが岩か＆これが一回目の移動か
                     {
                         if (Countcheak())//プレイヤーの生存判定
                         {
                             gamemanager.rockmovesearch(p_vartical, p_horizontal + cangecount, cangecount, "horizontal");//岩を移動する
+                            gamemanager.gameturncange();
                         }
                         else
                         {
@@ -163,9 +169,11 @@ public class Prayer : MonoBehaviour
                         p_vartical += cangecount;
                         if (!Contactjudgment())
                         {
+                            gamemanager.gameturncange();
                             Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
+                        gamemanager.gameturncange();
 
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_vartical + ":" + p_horizontal);
@@ -176,11 +184,12 @@ public class Prayer : MonoBehaviour
                     }
                 } else
                 {
-                    if (gamemanager.objecttagsearch(p_vartical + cangecount, p_horizontal) == "rock" && firstmove)
+                    if (gamemanager.objecttagsearch(p_vartical + cangecount, p_horizontal) == 2 && firstmove)
                     {
                         if (Countcheak())//プレイヤーの生存判定
                         {
                             gamemanager.rockmovesearch(p_vartical + cangecount, p_horizontal, cangecount, "vertical");
+                            gamemanager.gameturncange();
                         }
                         else
                         {

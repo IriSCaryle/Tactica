@@ -18,6 +18,7 @@ public class Gamemanager : MonoBehaviour
     GameObject[] SBHVartical = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
+    int[,] stagepass = new int[10, 10];
 
     RectTransform[,] stagerect = new RectTransform[10, 10];
 
@@ -29,7 +30,7 @@ public class Gamemanager : MonoBehaviour
         genereatebject();
     }
 
-    void genereatebject()
+    void genereatebject()//ブロック生成＆ID取り込み
     {
         for(int i = 0; i < 10; i++)
         {
@@ -41,39 +42,62 @@ public class Gamemanager : MonoBehaviour
 
                 stage[i, j] = Instantiate(
                     testimage,
+                    //cSVLoad.Blocks[1],
                     stagerect[i,j].position,
                     Quaternion.identity,parent.transform);
 
                 stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
+                stagepass[i, j] = stagemanager[i, j].ID;
                 stagemanager[i, j].vertical = i;
                 stagemanager[i, j].horizontal = j;
             }
         }
     }
 
-    public bool objectTrafficsearch(int x,int y)
+    public void gameturncange()//ブロックが動いた際にオブジェクトのマップを更新する
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            for(int j = 0;j < 10; j++)
+            {
+                stagepass[i, j] = stagemanager[i, j].ID;
+            }
+        }
+    }
+
+    public bool objectTrafficsearch(int x,int y)//侵入可能かの判定
     {
         return stagemanager[x,y].objectTraffic();
     }
 
-    public string objecttagsearch(int x,int y)
+    public int objecttagsearch(int x,int y)//objectのIDをみる
     {
-        Debug.Log("これは" + stage[x, y].gameObject.tag + "です");
-        return stage[x, y].gameObject.tag;//タグ→ID
+        Debug.Log("これは" + stagepass[x,y] + "です");
+        return stagepass[x,y];//タグ→ID
     }
 
-    public void rockmovesearch(int x,int y,int z,string Coordinate)
+    public void rockmovesearch(int x,int y,int z,string Coordinate)//岩を動かす処理
     {
         stagemanager[x, y].rockmove(z, Coordinate);
     }
 
-    public bool teleportsearch(string x)
+    public void mapcange(int x, int y, int z)//穴が塞がる処理
+    {
+        stagemanager[x, y].ID = z;
+    }
+
+    public void Trafficcange(int x, int y)
+    {
+        stagemanager[x, y].Traffic = !stagemanager[x, y].Traffic;
+    }
+
+    public bool teleportsearch(int x)//もう一方のテレポートを探す処理
     {
         for(int i = 0;i < 10; i++)
         {
             for(int j = 0;j < 10; j++)
             {
-                if(stage[i,j].gameObject.tag == "teleport_" + x)//タグ→ID
+                if(stagepass[i,j] == x)//タグ→ID
                 {
                     return stagemanager[i,j].teleporttraffic(i,j);
                 }

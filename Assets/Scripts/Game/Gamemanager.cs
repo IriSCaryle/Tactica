@@ -15,7 +15,7 @@ public class Gamemanager : MonoBehaviour
 
     [Header("参照するオブジェクト")]
     [SerializeField] GameObject stageblockholder;
-    GameObject[] SBHVartical = new GameObject[10];
+    GameObject[] SBHHrizontal = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
     int[,] stagepass = new int[10, 10];
@@ -24,20 +24,32 @@ public class Gamemanager : MonoBehaviour
 
     Stagemanager[,] stagemanager = new Stagemanager[10, 10];
 
+    [Header("ID更新ボタン")]//検証用
+    [SerializeField] bool iDupdate;
+
     void Start()
     {
         cSVLoad = GetComponent<CSVLoad>();
         genereatebject();
     }
 
+    private void Update()
+    {
+        if (iDupdate)
+        {
+            gameturncange();
+            iDupdate = false;
+        }
+    }
+
     void genereatebject()//ブロック生成＆ID取り込み
     {
         for(int i = 0; i < 10; i++)
         {
-            SBHVartical[i] = stageblockholder.transform.GetChild(i).gameObject;
+            SBHHrizontal[i] = stageblockholder.transform.GetChild(i).gameObject;
             for (int j = 0; j < 10; j++)
             {
-                stageblocks[i, j] = SBHVartical[i].transform.GetChild(j).gameObject;
+                stageblocks[i, j] = SBHHrizontal[i].transform.GetChild(j).gameObject;
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
 
                 stage[i, j] = Instantiate(

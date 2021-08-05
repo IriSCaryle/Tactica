@@ -9,8 +9,8 @@ public class Stagemanager : MonoBehaviour
     Gamemanager gamemanager;
 
     [Header("オブジェクトの座標")]
-    public int vertical;
     public int horizontal;
+    public int vertical;
 
     [Header("このオブジェクトは通過可能か")]
     public bool Traffic;
@@ -30,8 +30,8 @@ public class Stagemanager : MonoBehaviour
 
     public void oncrick()
     {
-        Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
-        prayer.Walk(vertical, horizontal);
+        Debug.Log("縦:" + horizontal + " 横:" + vertical + " がクリックされました");
+        prayer.Walk(horizontal, vertical);
     }
 
     public bool objectTraffic()
@@ -41,33 +41,33 @@ public class Stagemanager : MonoBehaviour
 
     public void rockmove(int i, string Coordinate)
     {
-        if (Coordinate == "vertical")
+        if (Coordinate == "horizontal")
         {
-            if (gamemanager.objecttagsearch(vertical + i, horizontal) == 1)
+            if (gamemanager.objecttagsearch(horizontal + i, vertical) == 1)
             {
-                vertical += i;
-                Debug.Log("岩の位置:" + vertical + ":" + horizontal);
+                horizontal += i;
+                Debug.Log("岩の位置:" + horizontal + ":" + vertical);
             } else
             {
-                if (gamemanager.objecttagsearch(vertical + i, horizontal) == 6)
+                if (gamemanager.objecttagsearch(horizontal + i, vertical) == 6)
                 {
-                    gamemanager.mapcange(vertical + i, horizontal, 7);
+                    gamemanager.mapcange(horizontal + i, vertical, 7);
                     ID = 1;
                     Debug.Log("岩によって穴が塞がりました");
                 }
                 Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
-        } else if (Coordinate == "horizontal")
+        } else if (Coordinate == "vertical")
         {
-            if (gamemanager.objecttagsearch(vertical, horizontal + i) == 1)
+            if (gamemanager.objecttagsearch(horizontal, vertical + i) == 1)
             {
                 horizontal += i;
-                Debug.Log("岩の位置:" + vertical + ":" + horizontal);
+                Debug.Log("岩の位置:" + horizontal + ":" + vertical);
             } else
             {
-                if (gamemanager.objecttagsearch(vertical, horizontal + i) == 6)
+                if (gamemanager.objecttagsearch(horizontal, vertical + i) == 6)
                 {
-                    gamemanager.mapcange(vertical, horizontal + i, 7);
+                    gamemanager.mapcange(horizontal, vertical + i, 7);
                     ID = 1;
                     Debug.Log("岩によって穴が塞がりました");
                 }
@@ -78,8 +78,8 @@ public class Stagemanager : MonoBehaviour
 
     public bool teleporttraffic(int x,int y)
     {
-        prayer.t_vartical = x;
-        prayer.t_horizontal = y;
+        prayer.t_horizontal = x;
+        prayer.t_vartical = y;
         return true;
     }
 }

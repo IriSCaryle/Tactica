@@ -60,8 +60,8 @@ public class Gamemanager : MonoBehaviour
 
                 stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
                 stagepass[i, j] = stagemanager[i, j].ID;
-                stagemanager[i, j].vertical = i;
-                stagemanager[i, j].horizontal = j;
+                stagemanager[i, j].horizontal = i;
+                stagemanager[i, j].vertical = j;
             }
         }
     }

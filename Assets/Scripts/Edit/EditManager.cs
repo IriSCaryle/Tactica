@@ -5,9 +5,11 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 public class EditManager : MonoBehaviour
 {
-    public int[,] EdittingStage = new int[,] {
+
+    public int[,] EdittingStage = new int[,] {//現在のブロック配列
 
     {18,19,19,19,19,19,19,19,19,12},
     {17,0,0,0,0,0,0,0,0,13},
@@ -19,17 +21,41 @@ public class EditManager : MonoBehaviour
     {17,0,0,0,0,0,0,0,0,13},
     {17,0,0,0,0,0,0,0,0,13},
     {16,15,15,15,15,15,15,15,15,14},
-    
+
     };
 
-    [Range(0, 36)] public int CurrentBlockID =0;
+    int[,] initStage = new int[,]//初期状態のブロック配列
+    {
+    {18,19,19,19,19,19,19,19,19,12},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {17,0,0,0,0,0,0,0,0,13},
+    {16,15,15,15,15,15,15,15,15,14},
 
-    public CSVLoad csvLoad;
-
+    };
+    [Header("現在選択しているブロックのID")]
+    [Range(0, 36)] public int CurrentBlockID = 0;
+    [Header("選択しているイメージ画像")]
     [SerializeField] Image CurrentImage;
+    [Header("消しゴムトグル")]
     public Toggle eraser;
+    [Header("各種スクリプト")]
+    public CSVLoad csvLoad;
     [SerializeField] EditMapSetting editMapSetting;
-    GameObject tmp;
+
+    GameObject tmp;//選択しているブロックのイメージオブジェクト
+    [Header("ブロックのイメージの親オブジェクト")]
+    [SerializeField] GameObject[] BlocksParentObject = new GameObject[8];
+    GameObject[,] BlockObjects = new GameObject[8, 8];
+    [Header("エラー用イメージオブジェクト")]
+    [SerializeField] GameObject Error1;
+    [SerializeField] GameObject Error2;
+    [SerializeField] GameObject Error3;
 
     
     // Start is called before the first frame update
@@ -54,10 +80,24 @@ public class EditManager : MonoBehaviour
 
     void initBoard()
     {
-        File.CreateText(Application.streamingAssetsPath + "/" + "test.ini");
-        
+        EdittingStage = initStage;
+        GetObjects();
     }
 
+
+    void GetObjects()
+    {
+        for (int v = 1; v <= BlockObjects.GetLength(0); v++)
+        {
+            
+            for(int h = 1; h <= BlockObjects.GetLength(1); h++)
+            {
+                BlockObjects[v - 1, h - 1] = BlocksParentObject[v - 1].transform.GetChild(h).gameObject;
+            }
+        }
+
+        Debug.Log("BlockObjectの取得が完了");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -145,13 +185,73 @@ public class EditManager : MonoBehaviour
     }
     public void OnClickSave()
     {
+        if (CheckNull())
+        {
+            Debug.Log("セーブを開始");
+            Save();
+        }
+        else
+        {
+            Debug.LogError("エラーが発生していますせーぷを中止します");
+        }
+
+    }
+
+    public void OnClickOpen()
+    {
+        Open();
+    }
+
+    public void Open()
+    {
+        string path = EditorUtility.OpenFilePanel("CSVファイルを開いてください", Application.streamingAssetsPath, "CSV");
+        if (string.IsNullOrEmpty(path))
+        {
+            return;
+        }
+
+
+    }
+    bool CheckNull()
+    {
+        string FolderName = editMapSetting.FileName;
+        string Step = editMapSetting.Life;
+        string PlayerXpos = editMapSetting.PlayerHorizontal;
+        string PlayerYpos = editMapSetting.PlayerVertical;
+
+        if (string.IsNullOrEmpty(FolderName))
+        {
+            Debug.LogError("フォルダ名が設定されていません");
+            Error3.SetActive(true);
+            return false;
+        }
+        if (string.IsNullOrEmpty(Step))
+        {
+            Debug.LogError("歩数が設定されていません");
+            Error2.SetActive(true);
+            return false;
+        }
+        if(string.IsNullOrEmpty(PlayerXpos) || string.IsNullOrEmpty(PlayerYpos))
+        {
+            Debug.LogError("プレイヤーの初期位置が設定されていません");
+            Error1.SetActive(true);
+            return false;
+        }
+
+
+        return true;
+
+    }
+  
+    void Save()
+    {
         WriteBoardLine();
-        string folderpath = Application.streamingAssetsPath +"/"+ editMapSetting.FileName;
+        string folderpath = Application.streamingAssetsPath + "/" + editMapSetting.FileName;
         if (Directory.Exists(folderpath))
         {
             Debug.Log("フォルダを発見、上書きします");
             Debug.Log("CSVファイルを生成");
-            GenerateCSVFile(folderpath,editMapSetting.FileName);
+            GenerateCSVFile(folderpath, editMapSetting.FileName);
             Debug.Log("iniファイルを生成");
             Generateini(folderpath, editMapSetting.FileName);
         }
@@ -161,13 +261,9 @@ public class EditManager : MonoBehaviour
             Debug.Log("フォルダ作成");
             GenerateFolder(folderpath);
             Debug.Log("iniファイルを生成");
-            Generateini(folderpath,editMapSetting.FileName);
+            Generateini(folderpath, editMapSetting.FileName);
             Debug.Log("CSVファイルを生成");
-            GenerateCSVFile(folderpath,editMapSetting.FileName);
+            GenerateCSVFile(folderpath, editMapSetting.FileName);
         }
-       
     }
-
-  
-
 }

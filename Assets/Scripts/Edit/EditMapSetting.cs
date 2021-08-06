@@ -9,13 +9,23 @@ public class EditMapSetting : MonoBehaviour
 
     [SerializeField] InputField life;
 
+
+    [SerializeField] InputField X;
+
+    [SerializeField] InputField Y;
+
+
     public string FileName;
 
     public string Life;
+
+    public string PlayerVertical;
+
+    public string PlayerHorizontal;
     // Start is called before the first frame update
     void Start()
     {
-        
+ 
     }
 
     // Update is called once per frame
@@ -32,5 +42,15 @@ public class EditMapSetting : MonoBehaviour
     public void OnClickChangeStepName()
     {
         Life = life.text;
+    }
+
+    public void ChangePlayerXpos()
+    {
+        PlayerHorizontal = X.text;
+    }
+
+    public void ChangePlayerYpos()
+    {
+        PlayerVertical = Y.text;
     }
 }

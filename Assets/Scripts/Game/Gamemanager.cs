@@ -7,6 +7,7 @@ public class Gamemanager : MonoBehaviour
 {
     // [SerializeField] Prayer prayer;
     CSVLoad cSVLoad;
+    [SerializeField] Animator animator;
 
     [Header("生成した画像の親")]
     [SerializeField] GameObject parent;
@@ -29,6 +30,7 @@ public class Gamemanager : MonoBehaviour
 
     void Start()
     {
+        //Clearanim();
         cSVLoad = GetComponent<CSVLoad>();
         genereatebject();
     }
@@ -116,5 +118,11 @@ public class Gamemanager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void Clearanim()
+    {
+        animator.gameObject.SetActive(true);
+        animator.SetTrigger("CLEARanim");
     }
 }

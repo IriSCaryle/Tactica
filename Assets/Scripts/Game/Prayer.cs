@@ -97,6 +97,7 @@ public class Prayer : MonoBehaviour
                 break;
 
             case 10://階段
+                gamemanager.Clearanim();
                 Debug.Log("CLAER");
                 judge = false;
                 break;

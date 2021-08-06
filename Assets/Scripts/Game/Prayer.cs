@@ -8,14 +8,12 @@ public class Prayer : MonoBehaviour
     Gamemanager gamemanager;
 
     [Header("プレイヤーの残り歩数")]
-    [SerializeField] int player_maxLife;
-    [SerializeField] int player_Life;
+    public int player_maxLife;//本来はゲームデータに保存される数値なので必要性がない(検証用)
+    public int player_Life;
 
     [Header("プレイヤーの位置")]
-    [SerializeField] int p_horizontal;
-    [SerializeField] int p_vartical;
-    public int t_vartical;
-    public int t_horizontal;
+    public int p_horizontal;
+    public int p_vartical;
 
     [Header("回復薬での回復量")]
     [SerializeField] int care;
@@ -29,12 +27,6 @@ public class Prayer : MonoBehaviour
     void Start()
     {
         playermove();
-        StageReset();
-    }
-
-    void Update()
-    {
-        
     }
 
     public bool Contactjudgment(int cange,string direction)//接触判定
@@ -73,14 +65,12 @@ public class Prayer : MonoBehaviour
 
             case 5://薬
                 player_Life += care;
-                gamemanager.mapcange(p_horizontal, p_vartical, 1);
+                gamemanager.mapcange(p_horizontal, p_vartical, 1, true);
                 break;
 
             case 8://テレポートA
                 if (gamemanager.teleportsearch(9))
                 {
-                    p_horizontal = t_horizontal;
-                    p_vartical = t_vartical;
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
                 }
                 judge = false;
@@ -89,8 +79,6 @@ public class Prayer : MonoBehaviour
             case 9://テレポートB
                 if (gamemanager.teleportsearch(8))
                 {
-                    p_horizontal = t_horizontal;
-                    p_vartical = t_vartical;
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
                 }
                 judge = false;
@@ -119,12 +107,7 @@ public class Prayer : MonoBehaviour
         else return (false);
     }
 
-    public void StageReset()//盤面リセット
-    {
-        player_Life = player_maxLife;
-    }
-
-    void playermove()
+    public void playermove()
     {
         rectTransform.anchoredPosition = new Vector2(p_horizontal * 125, p_vartical * -125 + 20);
     }

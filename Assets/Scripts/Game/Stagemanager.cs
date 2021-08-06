@@ -23,11 +23,6 @@ public class Stagemanager : MonoBehaviour
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
     }
 
-    void Update()
-    {
-
-    }
-
     public void oncrick()
     {
         Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
@@ -51,11 +46,11 @@ public class Stagemanager : MonoBehaviour
             {
                 if (gamemanager.objecttagsearch(horizontal + i, vertical) == 6)
                 {
-                    gamemanager.mapcange(horizontal + i, vertical, 7);
+                    gamemanager.mapcange(horizontal + i, vertical, 7, true);
                     ID = 1;
-                    Debug.Log("岩によって穴が塞がりました");
-                }
-                Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
+                    Traffic = true;
+                    Debug.LogWarning("岩によって穴が塞がりました");
+                }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         } else if (Coordinate == "vertical")
         {
@@ -67,19 +62,19 @@ public class Stagemanager : MonoBehaviour
             {
                 if (gamemanager.objecttagsearch(horizontal, vertical + i) == 6)
                 {
-                    gamemanager.mapcange(horizontal, vertical + i, 7);
+                    gamemanager.mapcange(horizontal, vertical + i, 7, true);
                     ID = 1;
-                    Debug.Log("岩によって穴が塞がりました");
-                }
-                Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
+                    Traffic = true;
+                    Debug.LogWarning("岩によって穴が塞がりました");
+                }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         }
     }
 
     public bool teleporttraffic(int x,int y)
     {
-        prayer.t_horizontal = x;
-        prayer.t_vartical = y;
+        prayer.p_horizontal = x;
+        prayer.p_vartical = y;
         return true;
     }
 }

@@ -5,7 +5,7 @@ using System.IO;
 
 public class Gamemanager : MonoBehaviour
 {
-    // [SerializeField] Prayer prayer;
+    [SerializeField] Prayer prayer;
     CSVLoad cSVLoad;
     [SerializeField] Animator animator;
 
@@ -19,6 +19,7 @@ public class Gamemanager : MonoBehaviour
     GameObject[] SBHHrizontal = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
+    int[,] startpass = new int[10, 10];
     int[,] stagepass = new int[10, 10];
 
     RectTransform[,] stagerect = new RectTransform[10, 10];
@@ -31,8 +32,10 @@ public class Gamemanager : MonoBehaviour
     void Start()
     {
         //Clearanim();
+        prayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Prayer>();
         cSVLoad = GetComponent<CSVLoad>();
         genereatebject();
+        gamereset();
     }
 
     private void Update()
@@ -61,11 +64,30 @@ public class Gamemanager : MonoBehaviour
                     Quaternion.identity,parent.transform);
 
                 stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
-                stagepass[i, j] = stagemanager[i, j].ID;
+
+                startpass[i, j] = stagemanager[i, j].ID;
+
                 stagemanager[i, j].horizontal = i;
                 stagemanager[i, j].vertical = j;
             }
         }
+    }
+
+    public void gamereset()//ステージの状態を初期化する
+    {
+        prayer.player_Life = prayer.player_maxLife;//検証用
+        prayer.p_horizontal = 1;//検証用
+        prayer.p_vartical = 1;//検証用
+        prayer.playermove();
+
+        for (int i = 0; i < 10; i++)
+        {
+            for(int j = 0;j < 10; j++)
+            {
+                stagepass[i, j] = startpass[i, j];
+            }
+        }
+        Debug.Log("リセットしました");
     }
 
     public void gameturncange()//ブロックが動いた際にオブジェクトのマップを更新する
@@ -87,7 +109,7 @@ public class Gamemanager : MonoBehaviour
     public int objecttagsearch(int x,int y)//objectのIDをみる
     {
         Debug.Log("これは" + stagepass[x,y] + "です");
-        return stagepass[x,y];//タグ→ID
+        return stagepass[x,y];
     }
 
     public void rockmovesearch(int x,int y,int z,string Coordinate)//岩を動かす処理
@@ -95,14 +117,10 @@ public class Gamemanager : MonoBehaviour
         stagemanager[x, y].rockmove(z, Coordinate);
     }
 
-    public void mapcange(int x, int y, int z)//穴が塞がる処理
+    public void mapcange(int x, int y, int z, bool traffic)//オブジェクトを変更する処理
     {
         stagemanager[x, y].ID = z;
-    }
-
-    public void Trafficcange(int x, int y)
-    {
-        stagemanager[x, y].Traffic = !stagemanager[x, y].Traffic;
+        stagemanager[x, y].Traffic = traffic;
     }
 
     public bool teleportsearch(int x)//もう一方のテレポートを探す処理
@@ -111,7 +129,7 @@ public class Gamemanager : MonoBehaviour
         {
             for(int j = 0;j < 10; j++)
             {
-                if(stagepass[i,j] == x)//タグ→ID
+                if(stagepass[i,j] == x)
                 {
                     return stagemanager[i,j].teleporttraffic(i,j);
                 }

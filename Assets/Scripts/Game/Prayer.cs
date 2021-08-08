@@ -15,6 +15,9 @@ public class Prayer : MonoBehaviour
     public int p_horizontal;
     public int p_vartical;
 
+    [Header("1歩歩くたびに待つ時間(歩/秒)")]
+    [SerializeField] float stand;
+
     [Header("回復薬での回復量")]
     [SerializeField] int care;
 
@@ -112,7 +115,7 @@ public class Prayer : MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(p_horizontal * 125, p_vartical * -125 + 20);
     }
 
-    public void Walk(int x, int y)
+    public IEnumerator Walk(int x, int y)
     {
         bool firstmove = true;
         int cangecount;
@@ -144,6 +147,7 @@ public class Prayer : MonoBehaviour
 
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
+                        yield return new WaitForSeconds(stand);
                     } else
                     {
                         Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
@@ -193,6 +197,7 @@ public class Prayer : MonoBehaviour
 
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
+                        yield return new WaitForSeconds(stand);
                     } else
                     {
                         Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
@@ -220,7 +225,7 @@ public class Prayer : MonoBehaviour
         } else
         {
             Debug.LogError("移動に失敗しました：プレイヤーの位置と直線上にある位置に向かってのみ移動できます");
-            return;
+            yield break;
         }
         Debug.Log("移動完了　現在のプレイヤーの位置:" + p_horizontal + ":" + p_vartical);
     }

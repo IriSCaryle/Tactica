@@ -2685,6 +2685,7 @@ MonoBehaviour:
   player_Life: 0
   p_horizontal: 0
   p_vartical: 0
+  stand: 0.2
   care: 0
 --- !u!114 &1190153965
 MonoBehaviour:

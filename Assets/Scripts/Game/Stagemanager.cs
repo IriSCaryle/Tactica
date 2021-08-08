@@ -26,7 +26,7 @@ public class Stagemanager : MonoBehaviour
     public void oncrick()
     {
         Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
-        prayer.Walk(horizontal, vertical);
+        StartCoroutine(prayer.Walk(horizontal, vertical));
     }
 
     public bool objectTraffic()

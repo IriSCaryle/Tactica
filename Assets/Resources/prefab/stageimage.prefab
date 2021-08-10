@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4580081290023468956}
   m_Layer: 5
   m_Name: stageimage
-  m_TagString: Untagged
+  m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d7ca5514a3b54b908a9b78fe9c293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vertical: 0
   horizontal: 0
+  vertical: 0
   Traffic: 1
+  ID: 0

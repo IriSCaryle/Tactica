@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Prayer : MonoBehaviour
+public class Player : MonoBehaviour
 {
     RectTransform rectTransform;
     Gamemanager gamemanager;
@@ -29,7 +29,7 @@ public class Prayer : MonoBehaviour
 
     void Start()
     {
-        playermove();
+        gamemanager.gameturncange();
     }
 
     public bool Contactjudgment(int cange,string direction)//接触判定
@@ -44,8 +44,9 @@ public class Prayer : MonoBehaviour
                     if(gamemanager.objectTrafficsearch(p_horizontal, p_vartical + cange))
                     {
                         p_vartical += cange;
-                        playermove();
+                        gamemanager.gameturncange();
                         Debug.LogWarning("滑る！");
+                        gamemanager.SEoneshot(3);
                         Contactjudgment(cange, direction);//氷以外に到達するまで繰り返すことになる
                     }
                 } 
@@ -54,8 +55,9 @@ public class Prayer : MonoBehaviour
                     if (gamemanager.objectTrafficsearch(p_horizontal + cange, p_vartical)) 
                     {
                         p_horizontal += cange;
-                        playermove();
+                        gamemanager.gameturncange();
                         Debug.LogWarning("滑る！");
+                        gamemanager.SEoneshot(3);
                         Contactjudgment(cange, direction);
                     }
                 }
@@ -63,17 +65,20 @@ public class Prayer : MonoBehaviour
                 break;
 
             case 4://棘
+                gamemanager.SEoneshot(4);
                 if (!Countcheak()) Debug.LogError("死亡しました");
                 break;
 
             case 5://薬
                 player_Life += care;
+                gamemanager.SEoneshot(5);
                 gamemanager.mapcange(p_horizontal, p_vartical, 1, true);
                 break;
 
             case 8://テレポートA
                 if (gamemanager.teleportsearch(9))
                 {
+                    gamemanager.SEoneshot(8);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
                 }
                 judge = false;
@@ -82,6 +87,7 @@ public class Prayer : MonoBehaviour
             case 9://テレポートB
                 if (gamemanager.teleportsearch(8))
                 {
+                    gamemanager.SEoneshot(8);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
                 }
                 judge = false;
@@ -89,6 +95,7 @@ public class Prayer : MonoBehaviour
 
             case 10://階段
                 gamemanager.Clearanim();
+                gamemanager.SEoneshot(10);
                 Debug.Log("CLAER");
                 judge = false;
                 break;
@@ -108,11 +115,6 @@ public class Prayer : MonoBehaviour
             return (true);
         }
         else return (false);
-    }
-
-    public void playermove()
-    {
-        rectTransform.anchoredPosition = new Vector2(p_horizontal * 125, p_vartical * -125 + 20);
     }
 
     public IEnumerator Walk(int x, int y)
@@ -136,7 +138,6 @@ public class Prayer : MonoBehaviour
                         firstmove = false;
 
                         p_vartical += cangecount;//移動
-                        playermove();
                         if (!Contactjudgment(cangecount,"p_vartical"))
                         {
                             gamemanager.gameturncange();
@@ -186,7 +187,6 @@ public class Prayer : MonoBehaviour
                         firstmove = false;
 
                         p_horizontal += cangecount;
-                        playermove();
                         if (!Contactjudgment(cangecount,"p_horizontal"))
                         {
                             gamemanager.gameturncange();

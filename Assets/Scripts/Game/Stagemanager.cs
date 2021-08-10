@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Stagemanager : MonoBehaviour
 {
-    Prayer prayer;
+    Player player;
     Gamemanager gamemanager;
 
     [Header("オブジェクトの座標")]
@@ -19,14 +19,14 @@ public class Stagemanager : MonoBehaviour
 
     void Awake()
     {
-        prayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Prayer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
     }
 
     public void oncrick()
     {
         Debug.Log("縦:" + vertical + " 横:" + horizontal + " がクリックされました");
-        StartCoroutine(prayer.Walk(horizontal, vertical));
+        StartCoroutine(player.Walk(horizontal, vertical));
     }
 
     public bool objectTraffic()
@@ -73,8 +73,8 @@ public class Stagemanager : MonoBehaviour
 
     public bool teleporttraffic(int x,int y)
     {
-        prayer.p_horizontal = x;
-        prayer.p_vartical = y;
+        player.p_horizontal = x;
+        player.p_vartical = y;
         return true;
     }
 }

@@ -5,9 +5,14 @@ using System.IO;
 
 public class Gamemanager : MonoBehaviour
 {
-    [SerializeField] Prayer prayer;
+    [SerializeField] Player player;
+    [SerializeField] RectTransform player_rectTransform;
     CSVLoad cSVLoad;
     [SerializeField] Animator animator;
+
+    [Header("オーディオ")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] sE;
 
     [Header("生成した画像の親")]
     [SerializeField] GameObject parent;
@@ -32,7 +37,8 @@ public class Gamemanager : MonoBehaviour
     void Start()
     {
         //Clearanim();
-        prayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Prayer>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player_rectTransform = player.GetComponent<RectTransform>();
         cSVLoad = GetComponent<CSVLoad>();
         genereatebject();
         gamereset();
@@ -75,10 +81,10 @@ public class Gamemanager : MonoBehaviour
 
     public void gamereset()//ステージの状態を初期化する
     {
-        prayer.player_Life = prayer.player_maxLife;//検証用
-        prayer.p_horizontal = 1;//検証用
-        prayer.p_vartical = 1;//検証用
-        prayer.playermove();
+        player.player_Life = player.player_maxLife;//検証用
+        player.p_horizontal = 1;//検証用
+        player.p_vartical = 1;//検証用
+        gameturncange();
 
         for (int i = 0; i < 10; i++)
         {
@@ -90,13 +96,15 @@ public class Gamemanager : MonoBehaviour
         Debug.Log("リセットしました");
     }
 
-    public void gameturncange()//ブロックが動いた際にオブジェクトのマップを更新する
+    public void gameturncange()//マップを更新する
     {
-        for(int i = 0; i < 10; i++)
+        player_rectTransform.anchoredPosition = new Vector2(player.p_horizontal * 125, player.p_vartical * -125 + 20);
+        for (int i = 0; i < 10; i++)
         {
             for(int j = 0;j < 10; j++)
             {
                 stagepass[i, j] = stagemanager[i, j].ID;
+                //オブジェクトの画像を差し替える処理をここに書く
             }
         }
     }
@@ -142,5 +150,10 @@ public class Gamemanager : MonoBehaviour
     {
         animator.gameObject.SetActive(true);
         animator.SetTrigger("CLEARanim");
+    }
+
+    public void SEoneshot(int i)
+    {
+        audioSource.PlayOneShot(sE[i]);
     }
 }

@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 public class MenuManager : MonoBehaviour
 {
 
     [SerializeField] GameObject Menu;
     [SerializeField] Toggle MenuToggle;
+
     [SerializeField] GameObject FileSetting;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class MenuManager : MonoBehaviour
         
     }
 
+
+   
 
     public void OnClickMenu()
     {

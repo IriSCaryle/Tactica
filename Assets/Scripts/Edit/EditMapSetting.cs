@@ -10,9 +10,9 @@ public class EditMapSetting : MonoBehaviour
     [SerializeField] InputField life;
 
 
-    [SerializeField] InputField X;
+    public InputField X;
 
-    [SerializeField] InputField Y;
+    public InputField Y;
 
 
     public string FileName;

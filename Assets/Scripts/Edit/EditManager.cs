@@ -47,7 +47,7 @@ public class EditManager : MonoBehaviour
     [Header("各種スクリプト")]
     public CSVLoad csvLoad;
     [SerializeField] EditMapSetting editMapSetting;
-
+    [SerializeField] PalletManager palletManager;
     GameObject tmp;//選択しているブロックのイメージオブジェクト
     [Header("ブロックのイメージの親オブジェクト")]
     [SerializeField] GameObject[] BlocksParentObject = new GameObject[8];
@@ -56,8 +56,8 @@ public class EditManager : MonoBehaviour
     [SerializeField] GameObject Error1;
     [SerializeField] GameObject Error2;
     [SerializeField] GameObject Error3;
-
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +82,7 @@ public class EditManager : MonoBehaviour
     {
         EdittingStage = initStage;
         GetObjects();
+        palletManager.LoadSprites();
     }
 
 
@@ -265,5 +266,13 @@ public class EditManager : MonoBehaviour
             Debug.Log("CSVファイルを生成");
             GenerateCSVFile(folderpath, editMapSetting.FileName);
         }
+    }
+
+    public void SettingPlayer(int vertical,int horizontal)
+    {
+        editMapSetting.PlayerHorizontal = horizontal.ToString();
+        editMapSetting.PlayerVertical = vertical.ToString();
+        editMapSetting.X.text = horizontal.ToString();
+        editMapSetting.Y.text = vertical.ToString();
     }
 }

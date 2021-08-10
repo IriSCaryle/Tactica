@@ -12,6 +12,7 @@ public class Edit_Blocks : MonoBehaviour
     [SerializeField] EditManager editManager;
 
     [SerializeField] GameObject Layer1;
+    [SerializeField] GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class Edit_Blocks : MonoBehaviour
         {
             editManager.EdittingStage[vertical, horizontal] = 0;
             Destroy(Layer1);
+        }
+        else if(editManager.CurrentBlockID == 37)
+        {
+            AddPlayer();
         }
         else
         {
@@ -39,5 +44,14 @@ public class Edit_Blocks : MonoBehaviour
         Layer1 = Instantiate<GameObject>(editManager.csvLoad.Blocks[currentID], new Vector3(0, 0, 0), Quaternion.identity, this.transform);
         Layer1.transform.localPosition = new Vector3(0, 0, 0);
         Layer1.transform.localScale = new Vector3(0.01f, 0.01f, 1);
+    }
+
+    public void AddPlayer()
+    {
+        Debug.Log("Player  "+"vertical:" + vertical + ",horizontal:" + horizontal);
+        Player = Instantiate<GameObject>(Resources.Load<GameObject>("prefab/PlayerImage"), new Vector3(0, 0, 0), Quaternion.identity, this.transform);
+        Player.transform.localPosition = new Vector3(0, 0, 0);
+        Player.transform.localScale = new Vector3(0.01f, 0.01f, 1);
+        editManager.SettingPlayer(vertical,horizontal);
     }
 }

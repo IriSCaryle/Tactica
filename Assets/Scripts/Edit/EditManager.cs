@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
+using SFB;
 public class EditManager : MonoBehaviour
 {
 
@@ -216,7 +216,7 @@ public class EditManager : MonoBehaviour
 
     void Open()
     {
-        string path = EditorUtility.OpenFilePanel("CSVファイルを開いてください", Application.streamingAssetsPath, "CSV");
+        string path = StandaloneFileBrowser.OpenFilePanel("CSVファイルを開いてください", Application.streamingAssetsPath,"CSV",false)[0];
         if (string.IsNullOrEmpty(path))
         {
             return;

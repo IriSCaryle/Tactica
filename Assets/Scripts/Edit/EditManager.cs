@@ -174,6 +174,8 @@ public class EditManager : MonoBehaviour
 
         inifile.Open(filepath);
         inifile.WriteValue("Player",":Life",editMapSetting.Life);
+        inifile.WriteValue("Player", ":X", editMapSetting.PlayerHorizontal);
+        inifile.WriteValue("Player", ":Y", editMapSetting.PlayerVertical);
         inifile.Close();
     }
 

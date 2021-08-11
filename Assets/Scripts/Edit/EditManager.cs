@@ -56,7 +56,8 @@ public class EditManager : MonoBehaviour
     [SerializeField] GameObject Error1;
     [SerializeField] GameObject Error2;
     [SerializeField] GameObject Error3;
-    
+
+    List<int[]> ReadMap = new List<int[]>();
 
     // Start is called before the first frame update
     void Start()
@@ -64,15 +65,15 @@ public class EditManager : MonoBehaviour
         OnClickBlockChange();
         initBoard();
     }
-    void WriteBoardLine()
+    void WriteBoardLine(int[,] board)
     {
         Debug.Log("現在のボードの状況");
-        for (int i = 0; i < EdittingStage.GetLength(0); i++)
+        for (int i = 0; i < board.GetLength(0); i++)
         {
             string tmp = "";
-            for (int h = 0; h < EdittingStage.GetLength(1); h++)
+            for (int h = 0; h < board.GetLength(1); h++)
             {
-                tmp += EdittingStage[i, h] + ",";
+                tmp += board[i, h] + ",";
             }
             Debug.Log(tmp);
         }
@@ -144,7 +145,15 @@ public class EditManager : MonoBehaviour
             string line = "";
             for(int h = 0; h < EdittingStage.GetLength(1); h++)
             {
-                line += string.Format("{0},", EdittingStage[v, h]);
+                if (h == EdittingStage.GetLength(1) - 1)
+                {
+                    line += string.Format("{0}", EdittingStage[v, h]);
+                }
+                else
+                {
+                    line += string.Format("{0},", EdittingStage[v, h]);
+                }
+                
             }
 
             file.WriteLine(line);
@@ -203,7 +212,7 @@ public class EditManager : MonoBehaviour
         Open();
     }
 
-    public void Open()
+    void Open()
     {
         string path = EditorUtility.OpenFilePanel("CSVファイルを開いてください", Application.streamingAssetsPath, "CSV");
         if (string.IsNullOrEmpty(path))
@@ -211,7 +220,35 @@ public class EditManager : MonoBehaviour
             return;
         }
 
+        StreamReader reader = new StreamReader(path);
 
+        while (reader.Peek() > -1)
+        {
+            int[] line = new int[0];
+
+            string[] stline = reader.ReadLine().Split(',');
+
+            Array.Resize(ref line, stline.Length);
+
+            for (int i = 0; i < stline.Length; i++)
+            {
+                int.TryParse(stline[i], out line[i]);
+            }
+
+            ReadMap.Add(line);
+
+        }
+
+        for (int v = 0; v < ReadMap.Count; v++)
+        {
+            string line="";
+            for(int h = 0; h < ReadMap[v].Length; ++h)
+            {
+                line += ReadMap[v][h] + ","; 
+                Debug.Log("v:" + v + ",h:" + h + ",value:" + ReadMap[v][h]);
+            }
+            Debug.Log("Line" + v + ":" + line);
+        }
     }
     bool CheckNull()
     {
@@ -244,9 +281,12 @@ public class EditManager : MonoBehaviour
 
     }
   
+
+ 
+
     void Save()
     {
-        WriteBoardLine();
+        WriteBoardLine(EdittingStage);
         string folderpath = Application.streamingAssetsPath + "/" + editMapSetting.FileName;
         if (Directory.Exists(folderpath))
         {

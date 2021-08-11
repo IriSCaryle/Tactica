@@ -54,7 +54,7 @@ public class PalletManager : MonoBehaviour
     {
         int index = 0;
         GameObject Wall;
-        for(int id = 20; id <= 36; id++)// 12 => 壁オブジェクトの開始ID 36 =>壁オブジェクト終了ID
+        for(int id = 12; id <= 36; id++)// 12 => 壁オブジェクトの開始ID 36 =>壁オブジェクト終了ID
         {
             Wall = Instantiate<GameObject>(cSVLoad.Blocks[id], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[index].transform.GetChild(0).gameObject.transform);
             Wall.transform.SetAsFirstSibling();
@@ -70,20 +70,20 @@ public class PalletManager : MonoBehaviour
     void LoadIce()
     {//3 =>氷ブロック
         GameObject Ice;
-        Ice = Instantiate<GameObject>(cSVLoad.Blocks[3], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[17].transform.GetChild(0).gameObject.transform);
+        Ice = Instantiate<GameObject>(cSVLoad.Blocks[3], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[25].transform.GetChild(0).gameObject.transform);
         Ice.transform.SetAsFirstSibling();
         Ice.transform.localPosition = new Vector3(0, 0, 0);
         Ice.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Ice);
-        PalletBlocksID[17] = 3;
+        PalletBlocksID[25] = 3;
     }
 
     void LoadHole()
     {//6,7 =>穴ブロック
         GameObject Hole1;
         GameObject Hole2;
-        Hole1 = Instantiate<GameObject>(cSVLoad.Blocks[6], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[18].transform.GetChild(0).gameObject.transform);
-        Hole2 = Instantiate<GameObject>(cSVLoad.Blocks[7], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[19].transform.GetChild(0).gameObject.transform);
+        Hole1 = Instantiate<GameObject>(cSVLoad.Blocks[6], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[26].transform.GetChild(0).gameObject.transform);
+        Hole2 = Instantiate<GameObject>(cSVLoad.Blocks[7], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[27].transform.GetChild(0).gameObject.transform);
 
         Hole1.transform.SetAsFirstSibling();
         Hole2.transform.SetAsFirstSibling();
@@ -97,16 +97,16 @@ public class PalletManager : MonoBehaviour
         PalletObjects.Add(Hole1);
         PalletObjects.Add(Hole2);
 
-        PalletBlocksID[18] = 6;
-        PalletBlocksID[19] = 7;
+        PalletBlocksID[26] = 6;
+        PalletBlocksID[27] = 7;
     }
 
     void LoadTeleport()
     {//8,9 =>テレポートブロック
         GameObject Teleport1;
         GameObject Teleport2;
-        Teleport1 = Instantiate<GameObject>(cSVLoad.Blocks[8], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[20].transform.GetChild(0).gameObject.transform);
-        Teleport2 = Instantiate<GameObject>(cSVLoad.Blocks[9], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[21].transform.GetChild(0).gameObject.transform);
+        Teleport1 = Instantiate<GameObject>(cSVLoad.Blocks[8], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[28].transform.GetChild(0).gameObject.transform);
+        Teleport2 = Instantiate<GameObject>(cSVLoad.Blocks[9], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[29].transform.GetChild(0).gameObject.transform);
 
         Teleport1.transform.SetAsFirstSibling();
         Teleport2.transform.SetAsFirstSibling();
@@ -120,61 +120,61 @@ public class PalletManager : MonoBehaviour
         PalletObjects.Add(Teleport1);
         PalletObjects.Add(Teleport2);
 
-        PalletBlocksID[20] = 8;
-        PalletBlocksID[21] = 9;
+        PalletBlocksID[28] = 8;
+        PalletBlocksID[29] = 9;
     } 
     void LoadStair()
     {//10 =>階段ブロック
         GameObject Stair;
-        Stair = Instantiate<GameObject>(cSVLoad.Blocks[10], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[22].transform.GetChild(0).gameObject.transform);
+        Stair = Instantiate<GameObject>(cSVLoad.Blocks[10], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[30].transform.GetChild(0).gameObject.transform);
         Stair.transform.SetAsFirstSibling();
         Stair.transform.localPosition = new Vector3(0, 0, 0);
         Stair.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Stair);
-        PalletBlocksID[22] = 10;
+        PalletBlocksID[30] = 10;
     }
 
     void LoadMedicine()
     {//5 =>回復ブロック
         GameObject Medicine;
-        Medicine = Instantiate<GameObject>(cSVLoad.Blocks[5], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[23].transform.GetChild(0).gameObject.transform);
+        Medicine = Instantiate<GameObject>(cSVLoad.Blocks[5], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[31].transform.GetChild(0).gameObject.transform);
         Medicine.transform.SetAsFirstSibling();
         Medicine.transform.localPosition = new Vector3(0, 0, 0);
         Medicine.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Medicine);
-        PalletBlocksID[23] = 5;
+        PalletBlocksID[31] = 5;
     }
 
     void LoadThorn()
     {//4 =>棘ブロック
         GameObject Thorn;
-        Thorn = Instantiate<GameObject>(cSVLoad.Blocks[4], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[24].transform.GetChild(0).gameObject.transform);
+        Thorn = Instantiate<GameObject>(cSVLoad.Blocks[4], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[32].transform.GetChild(0).gameObject.transform);
         Thorn.transform.localPosition = new Vector3(0, 0, 0);
         Thorn.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Thorn);
-        PalletBlocksID[24] = 4;
+        PalletBlocksID[32] = 4;
     }
 
     void LoadRock()
     {//2 =>岩ブロック
         GameObject Rock;
-        Rock = Instantiate<GameObject>(cSVLoad.Blocks[2], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[25].transform.GetChild(0).gameObject.transform);
+        Rock = Instantiate<GameObject>(cSVLoad.Blocks[2], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[33].transform.GetChild(0).gameObject.transform);
         Rock.transform.SetAsFirstSibling();
         Rock.transform.localPosition = new Vector3(0, 0, 0);
         Rock.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Rock);
-        PalletBlocksID[25] = 2;
+        PalletBlocksID[33] = 2;
     }
 
     void LoadPlayer()
     {
         GameObject Player;
-        Player = Instantiate<GameObject>(Resources.Load<GameObject>("prefab/PlayerImage"), new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[26].transform.GetChild(0).gameObject.transform);
+        Player = Instantiate<GameObject>(Resources.Load<GameObject>("prefab/PlayerImage"), new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[34].transform.GetChild(0).gameObject.transform);
         Player.transform.SetAsFirstSibling();
         Player.transform.localPosition = new Vector3(0, 0, 0);
         Player.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         PalletObjects.Add(Player);
-        PalletBlocksID[26] = 37;
+        PalletBlocksID[34] = 37;
     }
 
 

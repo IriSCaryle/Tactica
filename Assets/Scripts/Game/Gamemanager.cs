@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 
 public class Gamemanager : MonoBehaviour
@@ -9,6 +10,8 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] RectTransform player_rectTransform;
     CSVLoad cSVLoad;
     [SerializeField] Animator animator;
+
+    INIParser ini = new INIParser();
 
     [Header("オーディオ")]
     [SerializeField] AudioSource audioSource;
@@ -31,6 +34,8 @@ public class Gamemanager : MonoBehaviour
 
     Stagemanager[,] stagemanager = new Stagemanager[10, 10];
 
+    string testpath = Application.streamingAssetsPath + "/icepark01";
+
     [Header("ID更新ボタン")]//検証用
     [SerializeField] bool iDupdate;
 
@@ -40,7 +45,6 @@ public class Gamemanager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         player_rectTransform = player.GetComponent<RectTransform>();
         cSVLoad = GetComponent<CSVLoad>();
-        genereatebject();
         gamereset();
     }
 
@@ -50,6 +54,40 @@ public class Gamemanager : MonoBehaviour
         {
             gameturncange();
             iDupdate = false;
+        }
+    }
+
+    void iniload()
+    {
+        ini.Open(testpath + "/icepark01.ini");
+        int.TryParse(ini.ReadValue("Player", ":Life", "0"), out player.player_maxLife);
+        int.TryParse(ini.ReadValue("Player", ":X", "1"), out player.p_horizontal);
+        int.TryParse(ini.ReadValue("Player", ":Y", "1"), out player.p_vartical);
+
+        player.player_Life = player.player_maxLife;
+
+        Debug.LogWarning(player.p_horizontal + "," + player.p_vartical);
+    }
+
+    void mapload()
+    {
+        string path = testpath + "/icepark01.csv";
+        StreamReader streamReader = new StreamReader(path);
+
+        int count = 0;
+        while (streamReader.Peek() > -1)
+        {
+            string teststr = "";
+            int[] intline = new int[10];
+            string[] line = streamReader.ReadLine().Split(',');
+            for(int i = 0;i < line.Length; i++)
+            {
+                int.TryParse(line[i], out intline[i]);
+                startpass[i,count] = intline[i];
+                teststr += intline[i] + ",";
+            }
+            count++;
+            Debug.Log(teststr);
         }
     }
 
@@ -63,27 +101,32 @@ public class Gamemanager : MonoBehaviour
                 stageblocks[i, j] = SBHHrizontal[i].transform.GetChild(j).gameObject;
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
 
+                Debug.Log("stagepass:" + i + "," + j + "=" + stagepass[i, j]);
+
                 stage[i, j] = Instantiate(
-                    testimage,
-                    //cSVLoad.Blocks[1],
+                    cSVLoad.Blocks[stagepass[i,j]],
                     stagerect[i,j].position,
                     Quaternion.identity,parent.transform);
 
-                stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
+                if (stagepass[i, j] == 2 || stagepass[i, j] == 6 || startpass[i, j] == 7 || startpass[i, j] == 4 || startpass[i, j] == 5)
+                {
+                    Image image = stage[i, j].GetComponent<Image>();
+                    image.color = Color.white;
+                }
+                //stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
 
-                startpass[i, j] = stagemanager[i, j].ID;
+                //startpass[i, j] = stagemanager[i, j].ID;
 
-                stagemanager[i, j].horizontal = i;
-                stagemanager[i, j].vertical = j;
+                //stagemanager[i, j].horizontal = i;
+                //stagemanager[i, j].vertical = j;
             }
         }
     }
 
     public void gamereset()//ステージの状態を初期化する
     {
-        player.player_Life = player.player_maxLife;//検証用
-        player.p_horizontal = 1;//検証用
-        player.p_vartical = 1;//検証用
+        iniload();
+        mapload();
         gameturncange();
 
         for (int i = 0; i < 10; i++)
@@ -94,6 +137,8 @@ public class Gamemanager : MonoBehaviour
             }
         }
         Debug.Log("リセットしました");
+
+        genereatebject();
     }
 
     public void gameturncange()//マップを更新する
@@ -103,7 +148,7 @@ public class Gamemanager : MonoBehaviour
         {
             for(int j = 0;j < 10; j++)
             {
-                stagepass[i, j] = stagemanager[i, j].ID;
+                //stagepass[i, j] = stagemanager[i, j].ID;
                 //オブジェクトの画像を差し替える処理をここに書く
             }
         }

@@ -156,6 +156,7 @@ public class Player : MonoBehaviour
                     }
                 } else
                 {
+                    Debug.Log("岩かどうか");
                     if (gamemanager.objecttagsearch(p_horizontal, p_vartical + cangecount) == 2 && firstmove)//接触したオブジェクトが岩か＆これが一回目の移動か
                     {
                         if (Countcheak())//プレイヤーの生存判定
@@ -205,6 +206,7 @@ public class Player : MonoBehaviour
                     }
                 } else
                 {
+                    Debug.Log("岩かどうか");
                     if (gamemanager.objecttagsearch(p_horizontal + cangecount, p_vartical) == 2 && firstmove)
                     {
                         if (Countcheak())//プレイヤーの生存判定

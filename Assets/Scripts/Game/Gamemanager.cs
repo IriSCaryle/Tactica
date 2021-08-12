@@ -113,12 +113,12 @@ public class Gamemanager : MonoBehaviour
                     Image image = stage[i, j].GetComponent<Image>();
                     image.color = Color.white;
                 }
-                //stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
+                stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
 
-                //startpass[i, j] = stagemanager[i, j].ID;
+                stagemanager[i, j].ID = startpass[i, j];
 
-                //stagemanager[i, j].horizontal = i;
-                //stagemanager[i, j].vertical = j;
+                stagemanager[i, j].horizontal = i;
+                stagemanager[i, j].vertical = j;
             }
         }
     }
@@ -144,14 +144,6 @@ public class Gamemanager : MonoBehaviour
     public void gameturncange()//マップを更新する
     {
         player_rectTransform.anchoredPosition = new Vector2(player.p_horizontal * 125, player.p_vartical * -125 + 20);
-        for (int i = 0; i < 10; i++)
-        {
-            for(int j = 0;j < 10; j++)
-            {
-                //stagepass[i, j] = stagemanager[i, j].ID;
-                //オブジェクトの画像を差し替える処理をここに書く
-            }
-        }
     }
 
     public bool objectTrafficsearch(int x,int y)//侵入可能かの判定

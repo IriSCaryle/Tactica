@@ -23,7 +23,7 @@ public class Edit_Blocks : MonoBehaviour
     {
         if (editManager.eraser.isOn)
         {
-            editManager.EdittingStage[vertical, horizontal] = 0;
+            editManager.EdittingStage[vertical, horizontal] = 1;
             Destroy(Layer1);
         }
         else if(editManager.CurrentBlockID == 37)

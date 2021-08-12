@@ -27,6 +27,7 @@ public class Gamemanager : MonoBehaviour
     GameObject[] SBHHrizontal = new GameObject[10];
     GameObject[,] stageblocks = new GameObject[10, 10];
     GameObject[,] stage = new GameObject[10, 10];
+    Image[,] stageimage = new Image[10, 10];
     int[,] startpass = new int[10, 10];
     int[,] stagepass = new int[10, 10];
 
@@ -102,25 +103,33 @@ public class Gamemanager : MonoBehaviour
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
 
                 Debug.Log("stagepass:" + i + "," + j + "=" + stagepass[i, j]);
-
-                stage[i, j] = Instantiate(
-                    cSVLoad.Blocks[stagepass[i,j]],
-                    stagerect[i,j].position,
-                    Quaternion.identity,parent.transform);
-
-                if (stagepass[i, j] == 2 || stagepass[i, j] == 6 || startpass[i, j] == 7 || startpass[i, j] == 4 || startpass[i, j] == 5)
-                {
-                    Image image = stage[i, j].GetComponent<Image>();
-                    image.color = Color.white;
-                }
-                stagemanager[i, j] = stage[i, j].GetComponent<Stagemanager>();
-
-                stagemanager[i, j].ID = startpass[i, j];
-
-                stagemanager[i, j].horizontal = i;
-                stagemanager[i, j].vertical = j;
+                objectinst(i,j,stagepass[i,j]);
             }
         }
+    }
+
+    void objectinst(int x,int y ,int z)
+    {
+        stage[x, y] = Instantiate(
+            cSVLoad.Blocks[z],
+            stagerect[x, y].position,
+            Quaternion.identity,
+            parent.transform
+            );
+
+        stageimage[x, y] = stage[x, y].GetComponent<Image>();
+
+        if (z == 2 || z == 6 || z == 7 || z == 4 || z == 5)
+        {
+            Debug.LogWarning("!");
+            stageimage[x, y].color = Color.white;
+        }
+        stagemanager[x, y] = stage[x, y].GetComponent<Stagemanager>();
+
+        stagemanager[x, y].ID = z;
+
+        stagemanager[x, y].horizontal = x;
+        stagemanager[x, y].vertical = y;
     }
 
     public void gamereset()//ステージの状態を初期化する
@@ -153,19 +162,20 @@ public class Gamemanager : MonoBehaviour
 
     public int objecttagsearch(int x,int y)//objectのIDをみる
     {
-        Debug.Log("これは" + stagepass[x,y] + "です");
-        return stagepass[x,y];
+        Debug.Log("これは" + stagemanager[x,y].ID + "です");
+        return stagemanager[x, y].ID;
     }
 
     public void rockmovesearch(int x,int y,int z,string Coordinate)//岩を動かす処理
     {
         stagemanager[x, y].rockmove(z, Coordinate);
+        Debug.Log(z + Coordinate);
     }
 
-    public void mapcange(int x, int y, int z, bool traffic)//オブジェクトを変更する処理
+    public void mapcange(int x, int y, int z)//オブジェクトを変更する処理
     {
-        stagemanager[x, y].ID = z;
-        stagemanager[x, y].Traffic = traffic;
+        Destroy(stage[x, y]);
+        objectinst(x, y, z);
     }
 
     public bool teleportsearch(int x)//もう一方のテレポートを探す処理

@@ -921,7 +921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f521ff0f24b346d44808e641d4770db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prayer: {fileID: 0}
+  player: {fileID: 0}
   player_rectTransform: {fileID: 0}
   animator: {fileID: 1103906135}
   audioSource: {fileID: 409539026}
@@ -2777,7 +2777,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190153964
 MonoBehaviour:
@@ -2816,7 +2816,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -540375121143967267, guid: 41289e9248eb8c8409d9b5b7e19a6ea5,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

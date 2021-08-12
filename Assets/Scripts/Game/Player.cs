@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             case 5://薬
                 player_Life += care;
                 gamemanager.SEoneshot(5);
-                gamemanager.mapcange(p_horizontal, p_vartical, 1, true);
+                gamemanager.mapcange(p_horizontal, p_vartical, 1);
                 break;
 
             case 8://テレポートA
@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
                 {
                     gamemanager.SEoneshot(8);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
+                    gamemanager.gameturncange();
                 }
                 judge = false;
                 break;
@@ -89,6 +90,7 @@ public class Player : MonoBehaviour
                 {
                     gamemanager.SEoneshot(8);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
+                    gamemanager.gameturncange();
                 }
                 judge = false;
                 break;
@@ -138,13 +140,12 @@ public class Player : MonoBehaviour
                         firstmove = false;
 
                         p_vartical += cangecount;//移動
+                        gamemanager.gameturncange();
                         if (!Contactjudgment(cangecount,"p_vartical"))
                         {
-                            gamemanager.gameturncange();
                             Debug.LogWarning("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
-                        gamemanager.gameturncange();
 
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
@@ -161,7 +162,8 @@ public class Player : MonoBehaviour
                     {
                         if (Countcheak())//プレイヤーの生存判定
                         {
-                            gamemanager.rockmovesearch(p_horizontal, p_vartical + cangecount, cangecount, "vartical");//岩を移動する
+                            Debug.Log("動かせます");
+                            gamemanager.rockmovesearch(p_horizontal, p_vartical + cangecount, cangecount, "vertical");//岩を移動する
                             gamemanager.gameturncange();
                         }
                         else
@@ -188,13 +190,12 @@ public class Player : MonoBehaviour
                         firstmove = false;
 
                         p_horizontal += cangecount;
+                        gamemanager.gameturncange();
                         if (!Contactjudgment(cangecount,"p_horizontal"))
                         {
-                            gamemanager.gameturncange();
                             Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
-                        gamemanager.gameturncange();
 
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
@@ -211,6 +212,7 @@ public class Player : MonoBehaviour
                     {
                         if (Countcheak())//プレイヤーの生存判定
                         {
+                            Debug.Log("動かせます");
                             gamemanager.rockmovesearch(p_horizontal + cangecount, p_vartical, cangecount, "horizontal");
                             gamemanager.gameturncange();
                         }

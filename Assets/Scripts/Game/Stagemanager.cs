@@ -36,35 +36,38 @@ public class Stagemanager : MonoBehaviour
 
     public void rockmove(int i, string Coordinate)
     {
+        Debug.Log("!");
         if (Coordinate == "horizontal")
         {
+            Debug.Log("横");
             if (gamemanager.objecttagsearch(horizontal + i, vertical) == 1)
             {
-                horizontal += i;
-                Debug.Log("岩の位置:" + horizontal + ":" + vertical);
+                gamemanager.mapcange(horizontal + i, vertical, 2);
+                gamemanager.mapcange(horizontal, vertical, 1);
+                Debug.Log("岩の位置:" + horizontal + i + ":" + vertical);
             } else
             {
                 if (gamemanager.objecttagsearch(horizontal + i, vertical) == 6)
                 {
-                    gamemanager.mapcange(horizontal + i, vertical, 7, true);
-                    ID = 1;
-                    Traffic = true;
+                    gamemanager.mapcange(horizontal + i, vertical, 7);
+                    gamemanager.mapcange(horizontal, vertical, 1);
                     Debug.LogWarning("岩によって穴が塞がりました");
                 }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         } else if (Coordinate == "vertical")
         {
+            Debug.Log("縦");
             if (gamemanager.objecttagsearch(horizontal, vertical + i) == 1)
             {
-                horizontal += i;
-                Debug.Log("岩の位置:" + horizontal + ":" + vertical);
+                gamemanager.mapcange(horizontal, vertical + i, 2);
+                gamemanager.mapcange(horizontal, vertical, 1);
+                Debug.Log("岩の位置:" + horizontal + ":" + vertical + i);
             } else
             {
                 if (gamemanager.objecttagsearch(horizontal, vertical + i) == 6)
                 {
-                    gamemanager.mapcange(horizontal, vertical + i, 7, true);
-                    ID = 1;
-                    Traffic = true;
+                    gamemanager.mapcange(horizontal, vertical + i, 7);
+                    gamemanager.mapcange(horizontal, vertical, 1);
                     Debug.LogWarning("岩によって穴が塞がりました");
                 }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }

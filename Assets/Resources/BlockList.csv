@@ -35,4 +35,4 @@ BlockID,Name,Prefab Path
 34,Block_Wall_L_3,prefab/Block_Wall/Block_Wall_L_3
 35,Block_Wall_L_4,prefab/Block_Wall/Block_Wall_L_4
 36,Block_Wall_4,prefab/Block_Wall/Block_Wall_4
-37,Block_Player,prefab/Block_Player/
+37,Block_Player,prefab/Block_Player/Player

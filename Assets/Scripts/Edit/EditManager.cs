@@ -65,7 +65,7 @@ public class EditManager : MonoBehaviour
         OnClickBlockChange();
         initBoard();
     }
-    void WriteBoardLine(int[,] board)
+    public void WriteBoardLine(int[,] board)
     {
         Debug.Log("現在のボードの状況");
         for (int i = 0; i < board.GetLength(0); i++)

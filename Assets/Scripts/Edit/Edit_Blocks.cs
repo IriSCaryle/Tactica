@@ -44,6 +44,7 @@ public class Edit_Blocks : MonoBehaviour
         Layer1 = Instantiate<GameObject>(editManager.csvLoad.Blocks[currentID], new Vector3(0, 0, 0), Quaternion.identity, this.transform);
         Layer1.transform.localPosition = new Vector3(0, 0, 0);
         Layer1.transform.localScale = new Vector3(0.01f, 0.01f, 1);
+        editManager.WriteBoardLine(editManager.EdittingStage);
     }
 
     public void AddPlayer()

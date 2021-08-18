@@ -35,10 +35,18 @@ public class Gamemanager : MonoBehaviour
 
     Stagemanager[,] stagemanager = new Stagemanager[10, 10];
 
-    string testpath = Application.streamingAssetsPath + "/icepark01";
+    [Header("読み込むステージ名")]
+    [SerializeField] string stagename;
+
+    string testpath;
 
     [Header("ID更新ボタン")]//検証用
     [SerializeField] bool iDupdate;
+
+    void Awake()
+    {
+        testpath = Application.streamingAssetsPath + "/" + stagename;
+    }
 
     void Start()
     {
@@ -60,7 +68,7 @@ public class Gamemanager : MonoBehaviour
 
     void iniload()
     {
-        ini.Open(testpath + "/icepark01.ini");
+        ini.Open(testpath + "/" + stagename + ".ini");
         int.TryParse(ini.ReadValue("Player", ":Life", "0"), out player.player_maxLife);
         int.TryParse(ini.ReadValue("Player", ":X", "1"), out player.p_horizontal);
         int.TryParse(ini.ReadValue("Player", ":Y", "1"), out player.p_vartical);
@@ -72,7 +80,7 @@ public class Gamemanager : MonoBehaviour
 
     void mapload()
     {
-        string path = testpath + "/icepark01.csv";
+        string path = testpath + "/" + stagename + ".csv";
         StreamReader streamReader = new StreamReader(path);
 
         int count = 0;

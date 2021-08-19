@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
     RectTransform rectTransform;
     Gamemanager gamemanager;
     public Text life_text;
+    //[SerializeField] Text log_text;
 
     [Header("プレイヤーの残り歩数")]
-    public int player_maxLife;//本来はゲームデータに保存される数値なので必要性がない(検証用)
+    public int player_maxLife;
     public int player_Life;
 
     [Header("プレイヤーの位置")]
@@ -20,9 +21,8 @@ public class Player : MonoBehaviour
     [Header("1歩歩くたびに待つ時間(歩/秒)")]
     [SerializeField] float stand;
 
-    [Header("回復薬での回復量")]
-    [SerializeField] int care;
-
+    [Header("プレイヤーのアニメーション")]
+    [SerializeField] Animator player_anim;
     [SerializeField] float speed;
 
     float stop = 0.1f;
@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        //log_text.text = "ぼうけんかいし\n";
+        life_text.text ="のこり" + player_maxLife +"ほ" ;
         gamemanager.gameturncange();
     }
 
@@ -58,9 +60,13 @@ public class Player : MonoBehaviour
         
         float spd = speed * Time.deltaTime;
 
-        life_text.text = player_Life + "";
-
         rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, new Vector2(p_horizontal * 125, p_vartical * -125 + 20), spd);
+    }
+
+    public void resetbutton()
+    {
+        //log_text.text += "---やりなおす\n";
+        gamemanager.gamereset();
     }
 
     public bool Contactjudgment(int cange,string direction)//接触判定
@@ -76,7 +82,7 @@ public class Player : MonoBehaviour
                     {
                         p_vartical += cange;
                         Debug.LogWarning("滑る！");
-                        gamemanager.SEoneshot(3);
+                        gamemanager.SEoneshot(2);
                         //Contactjudgment(cange, direction);//氷以外に到達するまで繰り返すことになる
                         bto = true;
                         cg = cange;
@@ -89,7 +95,7 @@ public class Player : MonoBehaviour
                     {
                         p_horizontal += cange;
                         Debug.LogWarning("滑る！");
-                        gamemanager.SEoneshot(3);
+                        gamemanager.SEoneshot(2);
                         //Contactjudgment(cange, direction);
                         bto = true;
                         cg = cange;
@@ -100,21 +106,25 @@ public class Player : MonoBehaviour
                 break;
 
             case 4://棘
-                gamemanager.SEoneshot(4);
+                gamemanager.SEoneshot(3);
+                //log_text.text += "トゲをふんだ！　1ダメージ\n";
                 if (!Countcheak()) Debug.LogError("死亡しました");
                 break;
 
             case 5://薬
-                player_Life += care;
-                gamemanager.SEoneshot(5);
+                player_Life = player_maxLife;
+                life_text.text = "のこり" + player_Life + "ほ";
+                gamemanager.SEoneshot(4);
+                //log_text.text += "くすりだ！　げんきになった\n";
                 gamemanager.mapcange(p_horizontal, p_vartical, 1);
                 break;
 
             case 8://テレポートA
                 if (gamemanager.teleportsearch(9))
                 {
-                    gamemanager.SEoneshot(8);
+                    gamemanager.SEoneshot(7);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
+                    //log_text.text += "ワープした！";
                     gamemanager.gameturncange();
                 }
                 judge = false;
@@ -125,6 +135,7 @@ public class Player : MonoBehaviour
                 {
                     gamemanager.SEoneshot(8);
                     Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
+                    //log_text.text += "ワープした！";
                     gamemanager.gameturncange();
                 }
                 judge = false;
@@ -132,8 +143,9 @@ public class Player : MonoBehaviour
 
             case 10://階段
                 gamemanager.Clearanim();
-                gamemanager.SEoneshot(10);
+                gamemanager.SEoneshot(9);
                 Debug.Log("CLAER");
+                //log_text.text += "～CLEAR～";
                 judge = false;
                 break;
 
@@ -149,6 +161,8 @@ public class Player : MonoBehaviour
         if (player_Life > 0)
         {
             player_Life--;
+            life_text.text = "のこり" + player_Life + "ほ";
+            // if (player_Life == 0) log_text.text += "\nああ！しんじゃった！\n";
             return (true);
         }
         else return (false);
@@ -163,8 +177,16 @@ public class Player : MonoBehaviour
 
         if (walkX == 0)
         {
-            if (walkY > 0) cangecount = 1;//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
-            else cangecount = -1;
+            if (walkY > 0) 
+            {
+                cangecount = 1;
+                player_anim.SetTrigger("down");
+            }//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
+            else 
+            { 
+                cangecount = -1;
+                player_anim.SetTrigger("up");
+            }
 
             while (walkY != 0)
             {
@@ -175,15 +197,15 @@ public class Player : MonoBehaviour
                         firstmove = false;
 
                         p_vartical += cangecount;//移動
+                        yield return new WaitForSeconds(stand);
                         if (!Contactjudgment(cangecount,"p_vartical"))
                         {
+                            //log_text.text += "\n";
                             Debug.LogWarning("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
-
                         walkY -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
-                        yield return new WaitForSeconds(stand);
                     } else
                     {
                         Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
@@ -211,8 +233,16 @@ public class Player : MonoBehaviour
             }
         } else if (walkY == 0)//上の処理とほとんど同じなので上を参照してください
         {
-            if (walkX > 0) cangecount = 1;
-            else cangecount = -1;
+            if (walkX > 0)
+            {
+                cangecount = 1;
+                player_anim.SetTrigger("right");
+            }
+            else
+            {
+                cangecount = -1;
+                player_anim.SetTrigger("left");
+            }
 
             while (walkX != 0)
             {
@@ -223,15 +253,15 @@ public class Player : MonoBehaviour
                         firstmove = false;
 
                         p_horizontal += cangecount;
+                        yield return new WaitForSeconds(stand);
                         if (!Contactjudgment(cangecount,"p_horizontal"))
                         {
+                            //log_text.text += "\n";
                             Debug.LogError("移動を終了しました：特別なオブジェクトに接触しました");
                             break;
                         }
-
                         walkX -= cangecount;
                         Debug.Log("プレイヤーの位置:" + p_horizontal + ":" + p_vartical);
-                        yield return new WaitForSeconds(stand);
                     } else
                     {
                         Debug.LogError("移動に失敗しました：プレイヤーは死亡しています");
@@ -262,6 +292,7 @@ public class Player : MonoBehaviour
             Debug.LogError("移動に失敗しました：プレイヤーの位置と直線上にある位置に向かってのみ移動できます");
             yield break;
         }
+        player_anim.SetTrigger("idle");
         Debug.Log("移動完了　現在のプレイヤーの位置:" + p_horizontal + ":" + p_vartical);
     }
 }

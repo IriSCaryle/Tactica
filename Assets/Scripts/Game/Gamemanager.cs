@@ -10,6 +10,7 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] RectTransform player_rectTransform;
     CSVLoad cSVLoad;
     [SerializeField] Animator animator;
+    [SerializeField] Animator p_anim;
 
     INIParser ini = new INIParser();
 
@@ -45,7 +46,7 @@ public class Gamemanager : MonoBehaviour
 
     void Awake()
     {
-        testpath = Application.streamingAssetsPath + "/" + stagename;
+        testpath = Application.streamingAssetsPath + "/defaultstages/" + stagename;
     }
 
     void Start()
@@ -129,7 +130,7 @@ public class Gamemanager : MonoBehaviour
 
         if (z == 2 || z == 6 || z == 7 || z == 4 || z == 5)
         {
-            Debug.LogWarning("!");
+            //Debug.LogWarning("!");
             stageimage[x, y].color = Color.white;
         }
         stagemanager[x, y] = stage[x, y].GetComponent<Stagemanager>();
@@ -145,6 +146,7 @@ public class Gamemanager : MonoBehaviour
         iniload();
         mapload();
         gameturncange();
+        p_anim.SetTrigger("idle");
 
         for (int i = 0; i < 10; i++)
         {

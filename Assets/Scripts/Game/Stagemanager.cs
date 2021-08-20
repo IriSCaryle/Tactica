@@ -44,6 +44,7 @@ public class Stagemanager : MonoBehaviour
             {
                 gamemanager.mapcange(horizontal + i, vertical, 2);
                 gamemanager.mapcange(horizontal, vertical, 1);
+                gamemanager.SEoneshot(1);
                 Debug.Log("岩の位置:" + horizontal + i + ":" + vertical);
             } else
             {
@@ -51,8 +52,10 @@ public class Stagemanager : MonoBehaviour
                 {
                     gamemanager.mapcange(horizontal + i, vertical, 7);
                     gamemanager.mapcange(horizontal, vertical, 1);
+                    gamemanager.SEoneshot(1);
                     Debug.LogWarning("岩によって穴が塞がりました");
-                }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
+                }
+                else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }
         } else if (Coordinate == "vertical")
         {
@@ -61,6 +64,7 @@ public class Stagemanager : MonoBehaviour
             {
                 gamemanager.mapcange(horizontal, vertical + i, 2);
                 gamemanager.mapcange(horizontal, vertical, 1);
+                gamemanager.SEoneshot(1);
                 Debug.Log("岩の位置:" + horizontal + ":" + vertical + i);
             } else
             {
@@ -68,6 +72,7 @@ public class Stagemanager : MonoBehaviour
                 {
                     gamemanager.mapcange(horizontal, vertical + i, 7);
                     gamemanager.mapcange(horizontal, vertical, 1);
+                    gamemanager.SEoneshot(1);
                     Debug.LogWarning("岩によって穴が塞がりました");
                 }else Debug.LogError("岩の移動に失敗しました:通行不可のオブジェクトに接触しました");
             }

@@ -11,6 +11,7 @@ public class Gamemanager : MonoBehaviour
     CSVLoad cSVLoad;
     [SerializeField] Animator animator;
     [SerializeField] Animator p_anim;
+    [SerializeField] Text log_text;
 
     INIParser ini = new INIParser();
 
@@ -46,6 +47,7 @@ public class Gamemanager : MonoBehaviour
 
     void Awake()
     {
+        Application.targetFrameRate = 60;
         testpath = Application.streamingAssetsPath + "/defaultstages/" + stagename;
     }
 
@@ -74,6 +76,10 @@ public class Gamemanager : MonoBehaviour
         int.TryParse(ini.ReadValue("Player", ":X", "1"), out player.p_horizontal);
         int.TryParse(ini.ReadValue("Player", ":Y", "1"), out player.p_vartical);
 
+        log_text.text = "*そうさせつめい*\nプレイヤーとちょくせんじょうのマスをクリックかタップするとすすむ\n" +
+            "いわ：となりならうごかせる\nとげ：さわるといたい\nくすり：のむとげんきになる\nこおり：すべる\n" +
+            "ワープ：ワープする\nかいだん：ゴール、ここをめざそう";
+
         player.player_Life = player.player_maxLife;
 
         Debug.LogWarning(player.p_horizontal + "," + player.p_vartical);
@@ -97,7 +103,7 @@ public class Gamemanager : MonoBehaviour
                 teststr += intline[i] + ",";
             }
             count++;
-            Debug.Log(teststr);
+            //Debug.Log(teststr);
         }
     }
 
@@ -111,7 +117,7 @@ public class Gamemanager : MonoBehaviour
                 stageblocks[i, j] = SBHHrizontal[i].transform.GetChild(j).gameObject;
                 stagerect[i, j] = stageblocks[i, j].GetComponent<RectTransform>();
 
-                Debug.Log("stagepass:" + i + "," + j + "=" + stagepass[i, j]);
+                //Debug.Log("stagepass:" + i + "," + j + "=" + stagepass[i, j]);
                 objectinst(i,j,stagepass[i,j]);
             }
         }
@@ -146,7 +152,7 @@ public class Gamemanager : MonoBehaviour
         iniload();
         mapload();
         gameturncange();
-        p_anim.SetTrigger("idle");
+        //p_anim.SetTrigger("idle");
 
         for (int i = 0; i < 10; i++)
         {

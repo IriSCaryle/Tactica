@@ -962,6 +962,7 @@ GameObject:
   - component: {fileID: 409539024}
   - component: {fileID: 409539025}
   - component: {fileID: 409539026}
+  - component: {fileID: 409539027}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Gamemanager
@@ -999,23 +1000,24 @@ MonoBehaviour:
   player_rectTransform: {fileID: 1163294029}
   animator: {fileID: 1103906135}
   p_anim: {fileID: 1163294033}
+  log_text: {fileID: 1547639440}
   audioSource: {fileID: 409539026}
   sE:
+  - {fileID: 8300000, guid: bdc789aee0c731b48bb24bce335464b2, type: 3}
+  - {fileID: 8300000, guid: 51276ea6f107b634e9fd8b11fa87ab6e, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 6119a06c5f49c7c49a7dc57b85a8f31a, type: 3}
+  - {fileID: 8300000, guid: 397fca6f8145f124c82c9196bab5a8da, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: d26683fa67c779c47a82fae9bdf4dc28, type: 3}
+  - {fileID: 8300000, guid: 306adc941d71fd945a78033a16f6ef40, type: 3}
+  - {fileID: 8300000, guid: 9fbe0420651bafd4fb0501e67178c0d2, type: 3}
   parent: {fileID: 2128612992}
   testimage: {fileID: 6502152099548179584, guid: acf08c2aff4b8e04db0021ef37787171,
     type: 3}
   stageblockholder: {fileID: 732456659}
-  stagename: icepark01
+  stagename: stage1
   iDupdate: 0
 --- !u!114 &409539025
 MonoBehaviour:
@@ -1041,9 +1043,105 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.304
   m_Pitch: 1
   Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &409539027
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409539022}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ac26e7464f78a284583ef4f4202e1db8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1710,7 +1808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &664912657
 RectTransform:
   m_ObjectHideFlags: 0

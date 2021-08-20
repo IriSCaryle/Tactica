@@ -6,6 +6,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using SFB;
+using UnityEngine.SceneManagement;
 public class EditManager : MonoBehaviour
 {
 
@@ -46,6 +47,7 @@ public class EditManager : MonoBehaviour
     public Toggle eraser;
     [Header("各種スクリプト")]
     public CSVLoad csvLoad;
+   
     [SerializeField] EditMapSetting editMapSetting;
     [SerializeField] PalletManager palletManager;
     GameObject tmp;//選択しているブロックのイメージオブジェクト
@@ -62,6 +64,7 @@ public class EditManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FadeManager.FadeIn();
         OnClickBlockChange();
         initBoard();
     }
@@ -104,6 +107,11 @@ public class EditManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnClickBackSceneMenu()
+    {
+        FadeManager.FadeOut(0);
     }
     public void OnClickBlockChange()
     {

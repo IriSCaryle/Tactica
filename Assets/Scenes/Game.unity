@@ -1017,7 +1017,7 @@ MonoBehaviour:
   testimage: {fileID: 6502152099548179584, guid: acf08c2aff4b8e04db0021ef37787171,
     type: 3}
   stageblockholder: {fileID: 732456659}
-  stagename: stage1
+  stagename: stage2
   iDupdate: 0
 --- !u!114 &409539025
 MonoBehaviour:

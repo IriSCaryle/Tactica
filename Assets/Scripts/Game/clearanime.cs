@@ -18,6 +18,7 @@ public class clearanime : MonoBehaviour
                 gamemanager.gamereset();
             } catch {
                 gamemanager.stagenumber--;
+                FadeManager.FadeOut(2);
             } 
         }
         gameObject.SetActive(false);

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     RectTransform rectTransform;
+    Image image;
+    [SerializeField] Sprite sprite;
     Gamemanager gamemanager;
     public Text life_text;
 
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        image = GetComponent<Image>();
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
     }
 
@@ -64,6 +67,8 @@ public class Player : MonoBehaviour
 
     public void resetbutton()
     {
+        player_anim.SetTrigger("idle");
+        image.sprite = sprite;
         life_text.text = "のこり" + player_maxLife + "ほ";
         gamemanager.gamereset();
     }
@@ -156,7 +161,12 @@ public class Player : MonoBehaviour
             life_text.text = "のこり" + player_Life + "ほ";
             return (true);
         }
-        else return (false);
+        else 
+        {
+            gamemanager.SEoneshot(2);
+            player_anim.SetTrigger("dead");
+            return false;
+        };
     }
 
     public IEnumerator Walk(int x, int y)

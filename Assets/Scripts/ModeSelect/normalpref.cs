@@ -11,5 +11,6 @@ public class normalpref : MonoBehaviour
         PlayerPrefs.SetInt("StageNum", i);
         PlayerPrefs.SetInt("isEdit", 0);
         PlayerPrefs.Save();
+        FadeManager.FadeOut(3);
     }
 }

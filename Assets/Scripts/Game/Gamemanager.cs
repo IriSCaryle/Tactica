@@ -49,7 +49,7 @@ public class Gamemanager : MonoBehaviour
     [Header("ID更新ボタン")]//検証用
     [SerializeField] bool iDupdate;
 
-    void Awake()
+    void Start()
     {
         Application.targetFrameRate = 60;
         loadtype = PlayerPrefs.GetInt("isEdit");
@@ -63,10 +63,6 @@ public class Gamemanager : MonoBehaviour
         {
             gamepassload();
         }
-    }
-
-    void Start()
-    {
         FadeManager.FadeIn();
         //Clearanim();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -77,6 +73,8 @@ public class Gamemanager : MonoBehaviour
 
     public void gamepassload()
     {
+        Debug.Log(stagenumber);
+        Debug.Log(loadtype);
         stagename = mapCSVLoad.MapNameList[stagenumber];
         testpath = Application.streamingAssetsPath + "/defaultstages/" + stagename;
     }
@@ -194,6 +192,7 @@ public class Gamemanager : MonoBehaviour
 
     public void gameturncange()//マップを更新する
     {
+        Debug.LogError("!");
         player_rectTransform.anchoredPosition = new Vector2(player.p_horizontal * 125, player.p_vartical * -125 + 20);
     }
 

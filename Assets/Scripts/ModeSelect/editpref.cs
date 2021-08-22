@@ -11,5 +11,6 @@ public class editpref : MonoBehaviour
         PlayerPrefs.SetString("StageName", i);
         PlayerPrefs.SetInt("isEdit", 1);
         PlayerPrefs.Save();
+        FadeManager.FadeOut(3);
     }
 }

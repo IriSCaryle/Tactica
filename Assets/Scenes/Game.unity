@@ -999,7 +999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1163294030}
   player_rectTransform: {fileID: 1163294029}
-  mapCSVLoad: {fileID: 0}
+  mapCSVLoad: {fileID: 409539028}
   animator: {fileID: 1103906135}
   p_anim: {fileID: 1163294033}
   log_text: {fileID: 1547639440}
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   sE:
   - {fileID: 8300000, guid: bdc789aee0c731b48bb24bce335464b2, type: 3}
   - {fileID: 8300000, guid: 51276ea6f107b634e9fd8b11fa87ab6e, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 2218b59cad351054da3d1c72481ac0ee, type: 3}
   - {fileID: 8300000, guid: 6119a06c5f49c7c49a7dc57b85a8f31a, type: 3}
   - {fileID: 8300000, guid: 397fca6f8145f124c82c9196bab5a8da, type: 3}
   - {fileID: 0}
@@ -2743,7 +2743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63645e09b93148342badbef1cdd1a929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gamemanager: {fileID: 0}
+  gamemanager: {fileID: 409539024}
+  MapCSV: {fileID: 409539028}
 --- !u!95 &1103906135
 Animator:
   serializedVersion: 3
@@ -3182,6 +3183,12 @@ PrefabInstance:
       propertyPath: log_text
       value: 
       objectReference: {fileID: 1547639440}
+    - target: {fileID: 3988524631278330358, guid: ce83921602ef514448342fffe9df7c0c,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -540375121143967267, guid: 41289e9248eb8c8409d9b5b7e19a6ea5,
+        type: 3}
     - target: {fileID: 6014805188051168520, guid: ce83921602ef514448342fffe9df7c0c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3321,6 +3328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828970912985123807, guid: ce83921602ef514448342fffe9df7c0c,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce83921602ef514448342fffe9df7c0c, type: 3}

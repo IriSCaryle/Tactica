@@ -12228,7 +12228,6 @@ GameObject:
   - component: {fileID: 2726745177538516800}
   - component: {fileID: 2726745177538516804}
   - component: {fileID: 2726745177538516805}
-  - component: {fileID: 7976544600636073633}
   - component: {fileID: 2726745177538516803}
   m_Layer: 5
   m_Name: Block_Road (15)
@@ -21797,19 +21796,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2726745178540145762}
   m_CullTransparentMesh: 0
---- !u!114 &7976544600636073633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2726745177538516801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a24d7ca5514a3b54b908a9b78fe9c293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
-  Traffic: 1
-  ID: 0

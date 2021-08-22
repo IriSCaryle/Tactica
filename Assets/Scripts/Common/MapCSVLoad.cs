@@ -11,7 +11,7 @@ public class MapCSVLoad : MonoBehaviour
     public List<string> MapNameList = new List<string>();
     void Awake()
     {
-       // Load();
+        Load();
     }
     
 

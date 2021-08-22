@@ -19,15 +19,25 @@ public class SelectModeManeger : MonoBehaviour
     [Header("各スクリプト")]
     [SerializeField] MapCSVLoad mapCSV;
     // Start is called before the first frame update
-    string PARENT_DIR = Application.streamingAssetsPath;
+    string PARENT_DIR = Application.streamingAssetsPath+"/";
 
-    List<string> normalmapFolderPath = new List<string>();
-    List<string> editmapFolderPath = new List<string>();
-    List<string> normalFolderName = new List<string>();
-    List<string> editFolderName = new List<string>();
+    [Header("各リスト")]
+    [SerializeField]List<string> normalmapFolderPath = new List<string>();
+    [SerializeField] List<string> editmapFolderPath = new List<string>();
+    [SerializeField] List<string> normalFolderName = new List<string>();
+    [SerializeField] List<string> editFolderName = new List<string>();
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+        
+    }
     void Start()
     {
         LoadEditPath();
+        LoadNormalPath();
+        CreateNormalObject();
+        CreateEditObject();
+        FadeManager.FadeIn();
     }
 
     // Update is called once per frame
@@ -54,15 +64,27 @@ public class SelectModeManeger : MonoBehaviour
 
 
     void LoadEditPath()
-    {
-        string path = PARENT_DIR;//更にサブフォルダを作って親にするので後日記入
+    {    
+        string path = PARENT_DIR;
         editmapFolderPath.AddRange(Directory.GetDirectories(path, "*", System.IO.SearchOption.AllDirectories));
         editmapFolderPath.RemoveAll(s => s.Contains("defaultstages"));
         foreach (string tmp in editmapFolderPath)
         {
-            editFolderName.Add(System.IO.Path.GetDirectoryName(tmp));
-            Debug.Log(tmp);
+           
+            editFolderName.Add(System.IO.Path.GetFileName(tmp));
+            Debug.Log("edit:"+tmp);
+        } 
+    }
+
+    void LoadNormalPath()
+    {
+        normalmapFolderPath.AddRange(mapCSV.Maps.Values);
+        foreach(string tmp in mapCSV.Maps.Values)
+        {
+            normalFolderName.Add(System.IO.Path.GetFileName(System.IO.Path.GetDirectoryName(tmp)));
+            Debug.Log("normal:"+tmp);
         }
+
 
     }
     void CreateNormalObject()
@@ -76,7 +98,7 @@ public class SelectModeManeger : MonoBehaviour
 
             Text txt = prefab.GetComponentInChildren<Text>();
 
-            txt.text = "1-" + i + 1;
+            txt.text = "1-" + (i + 1);
         }
     }
 
@@ -87,11 +109,11 @@ public class SelectModeManeger : MonoBehaviour
             GameObject prefab = Instantiate(editContentPrefab,
                                            Vector3.zero,
                                            Quaternion.identity,
-                                           normalContentParent.transform);
+                                           editStageContentParent.transform);
 
             Text txt = prefab.GetComponentInChildren<Text>();
 
-            txt.text = "1-" + i + 1;
+            txt.text = editFolderName[i];
         }
     }
 }

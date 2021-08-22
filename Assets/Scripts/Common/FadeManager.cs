@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//FadeManager.cs
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,6 +53,7 @@ public class FadeManager : MonoBehaviour
     {
         if (fadeImage == null) Init();
         fadeImage.color = Color.black;
+        alpha = 1f;
         isFadeIn = true;
     }
 
@@ -102,4 +105,5 @@ public class FadeManager : MonoBehaviour
             fadeImage.color = new Color(0.0f, 0.0f, 0.0f, alpha);
         }
     }
+
 }

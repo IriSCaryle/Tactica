@@ -10,6 +10,7 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] RectTransform player_rectTransform;
     CSVLoad cSVLoad;
+    [SerializeField] MapCSVLoad mapCSVLoad;
     [SerializeField] Animator animator;
     [SerializeField] Animator p_anim;
     [SerializeField] Text log_text;
@@ -40,6 +41,8 @@ public class Gamemanager : MonoBehaviour
 
     [Header("読み込むステージ名")]
     [SerializeField] string stagename;
+    public int loadtype;
+    public int stagenumber;
 
     string testpath;
 
@@ -49,7 +52,17 @@ public class Gamemanager : MonoBehaviour
     void Awake()
     {
         Application.targetFrameRate = 60;
-        testpath = Application.streamingAssetsPath + "/defaultstages/" + stagename;
+        loadtype = PlayerPrefs.GetInt("isEdit");
+        stagenumber = PlayerPrefs.GetInt("StageNum");
+        if (loadtype == 1)
+        {
+            stagename = PlayerPrefs.GetString("StageName");
+            testpath = Application.streamingAssetsPath + "/" + stagename;
+        }
+        else
+        {
+            gamepassload();
+        }
     }
 
     void Start()
@@ -60,6 +73,12 @@ public class Gamemanager : MonoBehaviour
         player_rectTransform = player.GetComponent<RectTransform>();
         cSVLoad = GetComponent<CSVLoad>();
         gamereset();
+    }
+
+    public void gamepassload()
+    {
+        stagename = mapCSVLoad.MapNameList[stagenumber];
+        testpath = Application.streamingAssetsPath + "/defaultstages/" + stagename;
     }
 
     private void Update()
@@ -220,6 +239,7 @@ public class Gamemanager : MonoBehaviour
     {
         animator.gameObject.SetActive(true);
         animator.SetTrigger("CLEARanim");
+
     }
 
     public void SEoneshot(int i)

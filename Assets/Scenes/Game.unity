@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 409539025}
   - component: {fileID: 409539026}
   - component: {fileID: 409539027}
+  - component: {fileID: 409539028}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Gamemanager
@@ -998,6 +999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1163294030}
   player_rectTransform: {fileID: 1163294029}
+  mapCSVLoad: {fileID: 0}
   animator: {fileID: 1103906135}
   p_anim: {fileID: 1163294033}
   log_text: {fileID: 1547639440}
@@ -1017,7 +1019,9 @@ MonoBehaviour:
   testimage: {fileID: 6502152099548179584, guid: acf08c2aff4b8e04db0021ef37787171,
     type: 3}
   stageblockholder: {fileID: 732456659}
-  stagename: stage2
+  stagename: stage1
+  loadtype: 0
+  stagenumber: 0
   iDupdate: 0
 --- !u!114 &409539025
 MonoBehaviour:
@@ -1223,6 +1227,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &409539028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409539022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21657a555509a34eb6617f0d0522278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MapNameList: []
 --- !u!1 &423177772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,6 +2743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63645e09b93148342badbef1cdd1a929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 0}
 --- !u!95 &1103906135
 Animator:
   serializedVersion: 3

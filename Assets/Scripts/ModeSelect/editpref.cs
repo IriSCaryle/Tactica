@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class editpref : MonoBehaviour
 {
-    public string i;
+    public string i="";
     // Start is called before the first frame update
     public void OnClick()
     {

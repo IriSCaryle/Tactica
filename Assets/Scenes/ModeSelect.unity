@@ -19893,9 +19893,9 @@ MonoBehaviour:
   editStageList: {fileID: 556376493}
   normalContentParent: {fileID: 936512982}
   editStageContentParent: {fileID: 223177899}
-  normalContentPrefab: {fileID: 8648817849534882428, guid: 943e7190ed24961458ef4a779b86a2e5,
+  normalContentPrefab: {fileID: 1263793848076690825, guid: 0c47c9905c0f56740bf8b53cf35aa2d5,
     type: 3}
-  editContentPrefab: {fileID: 1263793848076690825, guid: 0c47c9905c0f56740bf8b53cf35aa2d5,
+  editContentPrefab: {fileID: 8648817849534882428, guid: 943e7190ed24961458ef4a779b86a2e5,
     type: 3}
   mapCSV: {fileID: 1575233457}
   normalmapFolderPath: []

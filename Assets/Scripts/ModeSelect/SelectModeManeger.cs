@@ -51,11 +51,13 @@ public class SelectModeManeger : MonoBehaviour
     {
         selectModePanel.SetActive(false);
         normalStageList.SetActive(true);
+     
     }
     public void OnClickEditStage()
     {
         selectModePanel.SetActive(false);
         editStageList.SetActive(true);
+    
     }
     public void OnClickEditMode()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class normalpref : MonoBehaviour
 {
-    public int i;
+    public int i=0;
     // Start is called before the first frame update
     public void OnClick()
     {

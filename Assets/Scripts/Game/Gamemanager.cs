@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class Gamemanager : MonoBehaviour
 
     void Start()
     {
+        FadeManager.FadeIn();
         //Clearanim();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         player_rectTransform = player.GetComponent<RectTransform>();
@@ -164,6 +166,11 @@ public class Gamemanager : MonoBehaviour
         Debug.Log("リセットしました");
 
         genereatebject();
+    }
+
+    public void modeselectcange()
+    {
+        FadeManager.FadeOut(2);
     }
 
     public void gameturncange()//マップを更新する

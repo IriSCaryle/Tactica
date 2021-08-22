@@ -76,6 +76,11 @@ public class SelectModeManeger : MonoBehaviour
         } 
     }
 
+    public void OnClickButton()
+    {
+        
+    }
+
     void LoadNormalPath()
     {
         normalmapFolderPath.AddRange(mapCSV.Maps.Values);
@@ -97,7 +102,9 @@ public class SelectModeManeger : MonoBehaviour
                                             normalContentParent.transform);
 
             Text txt = prefab.GetComponentInChildren<Text>();
-
+            normalpref normalpref = prefab.GetComponent<normalpref>();
+            normalpref.i = i;
+            
             txt.text = "1-" + (i + 1);
         }
     }
@@ -112,7 +119,8 @@ public class SelectModeManeger : MonoBehaviour
                                            editStageContentParent.transform);
 
             Text txt = prefab.GetComponentInChildren<Text>();
-
+            editpref editpref = prefab.GetComponent<editpref>();
+            editpref.i = editFolderName[i];
             txt.text = editFolderName[i];
         }
     }

@@ -13,18 +13,21 @@ public class SelectModeAnimation : MonoBehaviour
     [SerializeField] Animator EditMapPanelAnimator;
     [SerializeField] Animator NormalMapPanelAnimator;
 
-
+    [SerializeField] SEAudioSource source;
     public void OnClickNormalStage()
     {
         SelectModePanelanimator.SetTrigger("normalstage");
+        source.OnPlayYes();
     }
     public void OnClickEditStage()
     {
         SelectModePanelanimator.SetTrigger("editstage");
+        source.OnPlayYes();
     }
     public void OnClickEdit()
     {
         SelectModePanelanimator.SetTrigger("edit");
+        source.OnPlayYes();
     }
     public void ActiveBackground()
     {

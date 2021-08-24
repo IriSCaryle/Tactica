@@ -10,9 +10,12 @@ public class CangeScene : MonoBehaviour
     Animator Push;
     [SerializeField]
     Image Buck;
+    [SerializeField]
+    SEAudioSource source;
     public void OnClickStartButton()
     {
         Push.SetTrigger("ChangeScene");
+        source.OnPlayYes();
     }
 
     public void Chage()

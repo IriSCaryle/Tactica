@@ -26,6 +26,8 @@ public class SelectModeManeger : MonoBehaviour
     [SerializeField] List<string> editmapFolderPath = new List<string>();
     [SerializeField] List<string> normalFolderName = new List<string>();
     [SerializeField] List<string> editFolderName = new List<string>();
+
+    [SerializeField] SEAudioSource source;
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -46,6 +48,11 @@ public class SelectModeManeger : MonoBehaviour
         
     }
 
+    public void OnClickBackScene()
+    {
+        source.OnPlayNo();
+        FadeManager.FadeOut(2);
+    }
 
     public void OnClickNormalStage()
     {
@@ -80,7 +87,7 @@ public class SelectModeManeger : MonoBehaviour
 
     public void OnClickButton()
     {
-        
+        source.OnStageStart();
     }
 
     void LoadNormalPath()
@@ -105,9 +112,11 @@ public class SelectModeManeger : MonoBehaviour
 
             Text txt = prefab.GetComponentInChildren<Text>();
             normalpref normalpref = prefab.GetComponent<normalpref>();
+            Button button = prefab.GetComponent<Button>();
             normalpref.i = i;
-            
             txt.text = "1-" + (i + 1);
+          
+            
         }
     }
 
@@ -122,8 +131,10 @@ public class SelectModeManeger : MonoBehaviour
 
             Text txt = prefab.GetComponentInChildren<Text>();
             editpref editpref = prefab.GetComponent<editpref>();
+            Button button = prefab.GetComponent<Button>();
             editpref.i = editFolderName[i];
             txt.text = editFolderName[i];
+            
         }
     }
 }

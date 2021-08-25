@@ -456,6 +456,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &41666528
@@ -641,6 +642,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &45829258
@@ -1149,6 +1151,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &63259821
@@ -1631,6 +1634,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &91835325
@@ -2956,6 +2960,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &211379849
@@ -3213,6 +3218,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &228658921
@@ -3409,6 +3415,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &237198120
@@ -3606,6 +3613,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &239270670
@@ -4171,6 +4179,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &277087239
@@ -4433,6 +4442,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &315354243
@@ -5010,6 +5020,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &366137505
@@ -6081,6 +6092,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &401673567
@@ -7307,6 +7319,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &447624547
@@ -7429,6 +7442,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &462276632
@@ -8677,6 +8691,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &553570155
@@ -8843,6 +8858,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &564785325
@@ -8954,6 +8970,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &569938584
@@ -9076,6 +9093,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &590497211
@@ -11250,6 +11268,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &776274543
@@ -11372,6 +11391,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &779343029
@@ -11837,6 +11857,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &814877178
@@ -12033,6 +12054,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!224 &820853329 stripped
@@ -12504,6 +12526,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &847676449
@@ -12626,6 +12649,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &854577121
@@ -12978,6 +13002,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &857706448
@@ -13300,6 +13325,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &886703468
@@ -14083,6 +14109,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &900686704
@@ -14280,6 +14307,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &912173814
@@ -15924,6 +15952,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1002083959
@@ -16105,6 +16134,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &1007141069
@@ -16356,6 +16386,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1013114967
@@ -16613,6 +16644,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1029936168
@@ -16771,6 +16803,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1033993759
@@ -17611,6 +17644,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1060759278
@@ -17862,6 +17896,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1073130874
@@ -18408,6 +18443,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1081600746
@@ -18692,6 +18728,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1093065995
@@ -18955,6 +18992,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1106873599
@@ -19141,6 +19179,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1111025568
@@ -19444,6 +19483,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1134752384
@@ -19672,6 +19712,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!224 &1157541816 stripped
@@ -19912,6 +19953,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1182577195
@@ -20034,6 +20076,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1189104408
@@ -20368,6 +20411,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1204583693
@@ -20796,6 +20840,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1229538917
@@ -21420,6 +21465,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1264949631
@@ -21637,6 +21683,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1271892767
@@ -21759,6 +21806,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1274704083
@@ -22241,6 +22289,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!224 &1311914186 stripped
@@ -22549,6 +22598,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1328625659
@@ -22821,6 +22871,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 6
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1333715173
@@ -23107,6 +23158,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1346770609
@@ -24536,6 +24588,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1383589018
@@ -24889,6 +24942,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1409450190
@@ -25085,6 +25139,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1414502012
@@ -25864,6 +25919,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1449367215
@@ -26702,6 +26758,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1489235194
@@ -27633,6 +27690,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1001 &1593085961
@@ -28106,6 +28164,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1619022631
@@ -28380,6 +28439,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1648415939
@@ -29412,6 +29472,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1707780712
@@ -29615,6 +29676,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1713904849
@@ -29804,6 +29866,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 0
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1722684336
@@ -31866,6 +31929,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1864661960
@@ -31988,6 +32052,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1865686904
@@ -32110,6 +32175,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 2
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1887791247
@@ -32221,6 +32287,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1903784422
@@ -32343,6 +32410,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1907260728
@@ -32539,6 +32607,7 @@ MonoBehaviour:
   vertical: 8
   horizontal: 1
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1911153891
@@ -32694,6 +32763,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1915444619
@@ -32878,6 +32948,7 @@ MonoBehaviour:
   vertical: 1
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1926694413
@@ -33653,6 +33724,7 @@ MonoBehaviour:
   vertical: 3
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!224 &1953716766 stripped
@@ -34169,6 +34241,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 9
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 0}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1981591200
@@ -34291,6 +34364,7 @@ MonoBehaviour:
   vertical: 5
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1983536744
@@ -34527,6 +34601,7 @@ MonoBehaviour:
   vertical: 6
   horizontal: 7
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1986627804
@@ -34785,6 +34860,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 4
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1993313047
@@ -35097,6 +35173,7 @@ MonoBehaviour:
   vertical: 2
   horizontal: 8
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1999434903
@@ -35717,6 +35794,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 3
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &2035769949
@@ -36333,6 +36411,7 @@ MonoBehaviour:
   vertical: 4
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &2080435940
@@ -36844,6 +36923,7 @@ MonoBehaviour:
   vertical: 7
   horizontal: 5
   editManager: {fileID: 1356487934}
+  palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &2100544977

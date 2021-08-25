@@ -17,6 +17,8 @@ public class Stagemanager : MonoBehaviour
 
     public int ID = 0;
 
+    
+
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();

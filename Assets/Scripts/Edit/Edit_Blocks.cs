@@ -10,7 +10,7 @@ public class Edit_Blocks : MonoBehaviour
     public int horizontal;
 
     [SerializeField] EditManager editManager;
-
+    [SerializeField] PalletManager palletManager;
     [SerializeField] GameObject Layer1;
     [SerializeField] GameObject Player;
     // Start is called before the first frame update
@@ -40,10 +40,16 @@ public class Edit_Blocks : MonoBehaviour
     {
         Debug.Log("vertical:" + vertical + ",horizontal:" + horizontal);
         editManager.EdittingStage[vertical, horizontal] = currentID;
+        int id = 0;
+        for(int i = 0; i < palletManager.PalletBlocksID.Length; i++)
+        {
+            if (palletManager.PalletBlocksID[i] == currentID) id = i;
+        }
         Destroy(Layer1);
-        Layer1 = Instantiate<GameObject>(editManager.csvLoad.Blocks[currentID], new Vector3(0, 0, 0), Quaternion.identity, this.transform);
+        Layer1 = Instantiate<GameObject>(palletManager.PalletObjects[id]/*editManager.csvLoad.Blocks[currentID]*/, new Vector3(0, 0, 0), Quaternion.identity, this.transform);
         Layer1.transform.localPosition = new Vector3(0, 0, 0);
         Layer1.transform.localScale = new Vector3(0.01f, 0.01f, 1);
+
         editManager.WriteBoardLine(editManager.EdittingStage);
     }
 

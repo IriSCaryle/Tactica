@@ -33,6 +33,8 @@ public class Player : MonoBehaviour
     int cg;
     string dirc = "";
 
+    bool Inaction = false;
+
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -62,6 +64,12 @@ public class Player : MonoBehaviour
         float spd = speed * Time.deltaTime;
 
         rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, new Vector2(p_horizontal * 125, p_vartical * -125 + 20), spd);
+        if(Inaction && rectTransform.anchoredPosition ==new Vector2(p_horizontal *125,p_vartical *-125 + 20))
+        {
+            Debug.Log("移動完了　現在のプレイヤーの位置:" + p_horizontal + ":" + p_vartical);
+            Inaction = false;
+            player_anim.SetTrigger("idle");
+        }
 
     }
 
@@ -164,6 +172,7 @@ public class Player : MonoBehaviour
         else 
         {
             gamemanager.SEoneshot(2);
+            player_anim.SetTrigger("idle");
             player_anim.SetTrigger("dead");
             return false;
         };
@@ -171,6 +180,8 @@ public class Player : MonoBehaviour
 
     public IEnumerator Walk(int x, int y)
     {
+        if (Inaction) yield break;
+        Inaction = true;
         bool firstmove = true;
         int cangecount;
         int walkX = x - p_horizontal;
@@ -294,7 +305,5 @@ public class Player : MonoBehaviour
             Debug.LogError("移動に失敗しました：プレイヤーの位置と直線上にある位置に向かってのみ移動できます");
             yield break;
         }
-        Debug.Log("移動完了　現在のプレイヤーの位置:" + p_horizontal + ":" + p_vartical);
-        player_anim.SetTrigger("idle");
     }
 }

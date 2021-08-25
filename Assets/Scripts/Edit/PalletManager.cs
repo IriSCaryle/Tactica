@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.EventSystems;
 public class PalletManager : MonoBehaviour
 {
 
@@ -12,10 +13,10 @@ public class PalletManager : MonoBehaviour
     [SerializeField] ToggleGroup toggleGroup;
 
     [SerializeField] List<Toggle> PalletBlocks;
-    [SerializeField] List<GameObject> PalletObjects;
+    public List<GameObject> PalletObjects;
     public int[] PalletBlocksID = new int[26];
 
-
+   
    
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,7 @@ public class PalletManager : MonoBehaviour
             Wall.transform.SetAsFirstSibling();
             Wall.transform.localPosition = new Vector3(0, 0, 0);
             Wall.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+            Destroy(Wall.transform.GetComponent<EventTrigger>());
             PalletObjects.Add(Wall);
             PalletBlocksID[index] = id;
             index += 1;
@@ -74,6 +76,7 @@ public class PalletManager : MonoBehaviour
         Ice.transform.SetAsFirstSibling();
         Ice.transform.localPosition = new Vector3(0, 0, 0);
         Ice.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Ice.transform.GetChild(0).GetComponent<EventTrigger>());
         PalletObjects.Add(Ice);
         PalletBlocksID[25] = 3;
     }
@@ -93,6 +96,10 @@ public class PalletManager : MonoBehaviour
 
         Hole1.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         Hole2.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+
+        Destroy(Hole1.transform.GetChild(0).GetComponent<EventTrigger>());
+        Destroy(Hole2.transform.GetChild(0).GetComponent<EventTrigger>());
+
 
         PalletObjects.Add(Hole1);
         PalletObjects.Add(Hole2);
@@ -116,6 +123,8 @@ public class PalletManager : MonoBehaviour
 
         Teleport1.transform.localScale = new Vector3(0.64f, 0.64f, 1);
         Teleport2.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Teleport1.transform.GetChild(0).GetComponent<EventTrigger>());
+        Destroy(Teleport2.transform.GetChild(0).GetComponent<EventTrigger>());
 
         PalletObjects.Add(Teleport1);
         PalletObjects.Add(Teleport2);
@@ -130,6 +139,7 @@ public class PalletManager : MonoBehaviour
         Stair.transform.SetAsFirstSibling();
         Stair.transform.localPosition = new Vector3(0, 0, 0);
         Stair.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Stair.GetComponent<EventTrigger>());
         PalletObjects.Add(Stair);
         PalletBlocksID[30] = 10;
     }
@@ -141,6 +151,7 @@ public class PalletManager : MonoBehaviour
         Medicine.transform.SetAsFirstSibling();
         Medicine.transform.localPosition = new Vector3(0, 0, 0);
         Medicine.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Medicine.GetComponent<EventTrigger>());
         PalletObjects.Add(Medicine);
         PalletBlocksID[31] = 5;
     }
@@ -151,6 +162,7 @@ public class PalletManager : MonoBehaviour
         Thorn = Instantiate<GameObject>(cSVLoad.Blocks[4], new Vector3(0, 0, 0), Quaternion.identity, PalletBlocks[32].transform.GetChild(0).gameObject.transform);
         Thorn.transform.localPosition = new Vector3(0, 0, 0);
         Thorn.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Thorn.transform.GetChild(0).GetComponent<EventTrigger>());
         PalletObjects.Add(Thorn);
         PalletBlocksID[32] = 4;
     }
@@ -162,6 +174,7 @@ public class PalletManager : MonoBehaviour
         Rock.transform.SetAsFirstSibling();
         Rock.transform.localPosition = new Vector3(0, 0, 0);
         Rock.transform.localScale = new Vector3(0.64f, 0.64f, 1);
+        Destroy(Rock.GetComponent<EventTrigger>());
         PalletObjects.Add(Rock);
         PalletBlocksID[33] = 2;
     }

@@ -163,7 +163,7 @@ public class EditManager : MonoBehaviour
                 }
                 
             }
-
+            Debug.Log("v" + v + ":" + line);
             file.WriteLine(line);
         }
 

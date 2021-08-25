@@ -29674,7 +29674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vertical: 6
-  horizontal: 0
+  horizontal: 6
   editManager: {fileID: 1356487934}
   palletManager: {fileID: 1356487937}
   Layer1: {fileID: 0}

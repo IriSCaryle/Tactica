@@ -14,6 +14,7 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Animator p_anim;
     [SerializeField] Text log_text;
+    [SerializeField] Text life_text;
 
     INIParser ini = new INIParser();
 
@@ -100,6 +101,8 @@ public class Gamemanager : MonoBehaviour
             "ワープ：ワープする\nかいだん：ゴール、ここをめざそう";
 
         player.player_Life = player.player_maxLife;
+        life_text.text = "のこり" + player.player_Life + "ほ";
+        gameturncange();
 
         Debug.LogWarning(player.p_horizontal + "," + player.p_vartical);
     }
@@ -168,10 +171,9 @@ public class Gamemanager : MonoBehaviour
 
     public void gamereset()//ステージの状態を初期化する
     {
+        player.isdead = false;
         iniload();
         mapload();
-        gameturncange();
-        //p_anim.SetTrigger("idle");
 
         for (int i = 0; i < 10; i++)
         {
@@ -192,7 +194,6 @@ public class Gamemanager : MonoBehaviour
 
     public void gameturncange()//マップを更新する
     {
-        Debug.LogError("!");
         player_rectTransform.anchoredPosition = new Vector2(player.p_horizontal * 125, player.p_vartical * -125 + 20);
     }
 

@@ -34,18 +34,16 @@ public class Player : MonoBehaviour
     string dirc = "";
 
     bool Inaction = false;
+    bool teleport = false;
+    int seek;
+    bool clear = false;
+    public bool isdead = false;
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         image = GetComponent<Image>();
         gamemanager = GameObject.FindGameObjectWithTag("Gamemanager").GetComponent<Gamemanager>();
-    }
-
-    void Start()
-    {
-        life_text.text ="のこり" + player_maxLife +"ほ" ;
-        gamemanager.gameturncange();
     }
 
     void Update()
@@ -66,18 +64,33 @@ public class Player : MonoBehaviour
         rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, new Vector2(p_horizontal * 125, p_vartical * -125 + 20), spd);
         if(Inaction && rectTransform.anchoredPosition ==new Vector2(p_horizontal *125,p_vartical *-125 + 20))
         {
+            if (teleport)
+            {
+                if (gamemanager.teleportsearch(seek))
+                {
+                    gamemanager.SEoneshot(7);
+                    Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
+                    gamemanager.gameturncange();
+                    teleport = false;
+                }
+            }
+            if (clear)
+            {
+                gamemanager.Clearanim();
+                gamemanager.SEoneshot(9);
+                Debug.Log("CLEAR");
+                clear = false;
+            }
             Debug.Log("移動完了　現在のプレイヤーの位置:" + p_horizontal + ":" + p_vartical);
             Inaction = false;
-            player_anim.SetTrigger("idle");
+            if (!isdead) player_anim.SetTrigger("idle");
         }
 
     }
 
     public void resetbutton()
     {
-        player_anim.SetTrigger("idle");
-        image.sprite = sprite;
-        life_text.text = "のこり" + player_maxLife + "ほ";
+        player_anim.Play("idle");
         gamemanager.gamereset();
     }
 
@@ -128,29 +141,19 @@ public class Player : MonoBehaviour
                 break;
 
             case 8://テレポートA
-                if (gamemanager.teleportsearch(9))
-                {
-                    gamemanager.SEoneshot(7);
-                    Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
-                    gamemanager.gameturncange();
-                }
+                teleport = true;
+                seek = 9;
                 judge = false;
                 break;
 
             case 9://テレポートB
-                if (gamemanager.teleportsearch(8))
-                {
-                    gamemanager.SEoneshot(7);
-                    Debug.LogWarning("テレポートに接触しました　現在の位置：" + p_horizontal + "," + p_vartical);
-                    gamemanager.gameturncange();
-                }
+                teleport = true;
+                seek = 8;
                 judge = false;
                 break;
 
             case 10://階段
-                gamemanager.Clearanim();
-                gamemanager.SEoneshot(9);
-                Debug.Log("CLAER");
+                clear = true;
                 judge = false;
                 break;
 
@@ -174,30 +177,32 @@ public class Player : MonoBehaviour
             gamemanager.SEoneshot(2);
             player_anim.SetTrigger("idle");
             player_anim.SetTrigger("dead");
+            isdead = true;
             return false;
         };
     }
 
     public IEnumerator Walk(int x, int y)
     {
-        if (Inaction) yield break;
+        if (Inaction || isdead) yield break;
         Inaction = true;
         bool firstmove = true;
         int cangecount;
         int walkX = x - p_horizontal;
         int walkY = y - p_vartical;
+        string animdirection;
 
         if (walkX == 0)
         {
             if (walkY > 0) 
             {
                 cangecount = 1;
-                player_anim.SetTrigger("down");
+                animdirection = "down";
             }//現在のプレイヤーの位置とタッチされた位置を比較して数値を割り当てる
             else 
             { 
                 cangecount = -1;
-                player_anim.SetTrigger("up");
+                animdirection = "up";
             }
 
             while (walkY != 0)
@@ -206,6 +211,7 @@ public class Player : MonoBehaviour
                 {
                     if (Countcheak())//プレイヤーの生存判定
                     {
+                        if (firstmove) player_anim.SetTrigger(animdirection);
                         firstmove = false;
 
                         gamemanager.SEoneshot(0);
@@ -248,12 +254,12 @@ public class Player : MonoBehaviour
             if (walkX > 0)
             {
                 cangecount = 1;
-                player_anim.SetTrigger("right");
+                animdirection = "right";
             }
             else
             {
                 cangecount = -1;
-                player_anim.SetTrigger("left");
+                animdirection = "left";
             }
 
             while (walkX != 0)
@@ -262,6 +268,7 @@ public class Player : MonoBehaviour
                 {
                     if (Countcheak())
                     {
+                        if (firstmove) player_anim.SetTrigger(animdirection);
                         firstmove = false;
 
                         gamemanager.SEoneshot(0);

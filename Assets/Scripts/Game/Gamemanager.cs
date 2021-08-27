@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Networking;
 public class Gamemanager : MonoBehaviour
 {
     [SerializeField] Player player;
@@ -49,12 +49,24 @@ public class Gamemanager : MonoBehaviour
 
     [Header("ID更新ボタン")]//検証用
     [SerializeField] bool iDupdate;
+    IEnumerator AndroidCSV()
+    {
+        yield return req.SendWebRequest();
+    }
+    IEnumerator Androidini()
+    {
+        yield return req.SendWebRequest();
+    }
+
+
 
     void Start()
     {
         Application.targetFrameRate = 60;
         loadtype = PlayerPrefs.GetInt("isEdit");
         stagenumber = PlayerPrefs.GetInt("StageNum");
+#if UNITY_EDITOR || UNITY_STANDALONE
+        //Unityエディタのみで実行したい処理を記述
         if (loadtype == 1)
         {
             stagename = PlayerPrefs.GetString("StageName");
@@ -70,7 +82,25 @@ public class Gamemanager : MonoBehaviour
         player_rectTransform = player.GetComponent<RectTransform>();
         cSVLoad = GetComponent<CSVLoad>();
         gamereset();
+#endif
+#if UNITY_ANDROID
+        //Androidのみで実行したい処理を記述
+        if (loadtype == 0)
+        {
+            gamepassload();
+        }
+        FadeManager.FadeIn();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player_rectTransform = player.GetComponent<RectTransform>();
+        cSVLoad = GetComponent<CSVLoad>();
+        gamereset();
+#endif
     }
+
+  
+
+
+
 
     public void gamepassload()
     {
@@ -172,9 +202,18 @@ public class Gamemanager : MonoBehaviour
     public void gamereset()//ステージの状態を初期化する
     {
         player.isdead = false;
-        iniload();
-        mapload();
 
+#if UNITY_EDITOR || UNITY_STANDALONE
+        iniload();
+#endif
+#if UNITY_ANDROID
+        //Android版のiniロード
+#if UNITY_EDITOR || UNITY_STANDALONE
+        mapload();
+#endif
+#if UNITY_ANDROID
+        //Android版のマップロード
+#endif
         for (int i = 0; i < 10; i++)
         {
             for(int j = 0;j < 10; j++)
